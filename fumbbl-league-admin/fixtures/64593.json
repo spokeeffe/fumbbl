@@ -1,0 +1,3126 @@
+{
+  "tournament_id": 64593,
+  "tournament_name": "CIBBL - Y13, Autumn - Bronze Division",
+  "season": "13",
+  "schedule": [
+    {
+      "position": 0,
+      "round": 1,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-06-01 10:56:47",
+      "result": {
+        "id": 4628670,
+        "status": "played",
+        "replayId": 1817430,
+        "winner": 1031987,
+        "teams": [
+          {
+            "id": 1119020,
+            "score": 1
+          },
+          {
+            "id": 1031987,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1119020,
+          "name": "Gifted Pilgrims"
+        },
+        {
+          "id": 1031987,
+          "name": "Shield of Settra"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 1,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-06-05 22:39:40",
+      "result": {
+        "id": 4629663,
+        "status": "played",
+        "replayId": 1818566,
+        "winner": 1020358,
+        "teams": [
+          {
+            "id": 1010017,
+            "score": 2
+          },
+          {
+            "id": 1020358,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1010017,
+          "name": "Yennla Eternals"
+        },
+        {
+          "id": 1020358,
+          "name": "Corpse Run Nightmares"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 1,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-06-01 13:14:26",
+      "result": {
+        "id": 4628695,
+        "status": "played",
+        "replayId": 1817455,
+        "winner": 1181723,
+        "teams": [
+          {
+            "id": 1165992,
+            "score": 1
+          },
+          {
+            "id": 1181723,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1165992,
+          "name": "Blood Kiss United"
+        },
+        {
+          "id": 1181723,
+          "name": "Viragos of Vainglory"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 1,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-06-05 17:52:06",
+      "result": {
+        "id": 4629586,
+        "status": "played",
+        "replayId": 1818478,
+        "winner": 1150894,
+        "teams": [
+          {
+            "id": 1150894,
+            "score": 1
+          },
+          {
+            "id": 1090677,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1150894,
+          "name": "Brothers of Skoll"
+        },
+        {
+          "id": 1090677,
+          "name": "King's Shadow Ballers"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 2,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-06-09 15:20:30",
+      "result": {
+        "id": 4630374,
+        "status": "played",
+        "replayId": 1819405,
+        "winner": 1150894,
+        "teams": [
+          {
+            "id": 1119020,
+            "score": 1
+          },
+          {
+            "id": 1150894,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1119020,
+          "name": "Gifted Pilgrims"
+        },
+        {
+          "id": 1150894,
+          "name": "Brothers of Skoll"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 2,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-06-23 23:14:41",
+      "result": {
+        "id": 4633216,
+        "status": "played",
+        "replayId": 1822684,
+        "winner": 1165992,
+        "teams": [
+          {
+            "id": 1010017,
+            "score": 1
+          },
+          {
+            "id": 1165992,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1010017,
+          "name": "Yennla Eternals"
+        },
+        {
+          "id": 1165992,
+          "name": "Blood Kiss United"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 2,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-06-09 13:56:13",
+      "result": {
+        "id": 4630363,
+        "status": "played",
+        "replayId": 1819397,
+        "winner": 1181723,
+        "teams": [
+          {
+            "id": 1020358,
+            "score": 1
+          },
+          {
+            "id": 1181723,
+            "score": 3
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1020358,
+          "name": "Corpse Run Nightmares"
+        },
+        {
+          "id": 1181723,
+          "name": "Viragos of Vainglory"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 2,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-06-09 19:25:01",
+      "result": {
+        "id": 4630422,
+        "status": "played",
+        "replayId": 1819460,
+        "winner": 1031987,
+        "teams": [
+          {
+            "id": 1031987,
+            "score": 2
+          },
+          {
+            "id": 1090677,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1031987,
+          "name": "Shield of Settra"
+        },
+        {
+          "id": 1090677,
+          "name": "King's Shadow Ballers"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 3,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-06-14 20:44:08",
+      "result": {
+        "id": 4631458,
+        "status": "played",
+        "replayId": 1820688,
+        "winner": 1020358,
+        "teams": [
+          {
+            "id": 1119020,
+            "score": 0
+          },
+          {
+            "id": 1020358,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1119020,
+          "name": "Gifted Pilgrims"
+        },
+        {
+          "id": 1020358,
+          "name": "Corpse Run Nightmares"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 3,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-06-30 13:39:54",
+      "result": {
+        "id": 4634446,
+        "status": "played",
+        "replayId": 1824085,
+        "winner": 1010017,
+        "teams": [
+          {
+            "id": 1010017,
+            "score": 3
+          },
+          {
+            "id": 1031987,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1010017,
+          "name": "Yennla Eternals"
+        },
+        {
+          "id": 1031987,
+          "name": "Shield of Settra"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 3,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-07-01 00:06:53",
+      "result": {
+        "id": 4634561,
+        "status": "played",
+        "replayId": 1824215,
+        "winner": 1165992,
+        "teams": [
+          {
+            "id": 1165992,
+            "score": 1
+          },
+          {
+            "id": 1090677,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1165992,
+          "name": "Blood Kiss United"
+        },
+        {
+          "id": 1090677,
+          "name": "King's Shadow Ballers"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 3,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-06-18 13:29:24",
+      "result": {
+        "id": 4632190,
+        "status": "played",
+        "replayId": 1821523,
+        "winner": 1181723,
+        "teams": [
+          {
+            "id": 1150894,
+            "score": 1
+          },
+          {
+            "id": 1181723,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1150894,
+          "name": "Brothers of Skoll"
+        },
+        {
+          "id": 1181723,
+          "name": "Viragos of Vainglory"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 4,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-07-07 14:07:59",
+      "result": {
+        "id": 4635709,
+        "status": "played",
+        "replayId": 1825501,
+        "winner": 1119020,
+        "teams": [
+          {
+            "id": 1119020,
+            "score": 2
+          },
+          {
+            "id": 1010017,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1119020,
+          "name": "Gifted Pilgrims"
+        },
+        {
+          "id": 1010017,
+          "name": "Yennla Eternals"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 4,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-07-06 22:13:46",
+      "result": {
+        "id": 4635607,
+        "status": "played",
+        "replayId": 1825379,
+        "winner": 1020358,
+        "teams": [
+          {
+            "id": 1020358,
+            "score": 1
+          },
+          {
+            "id": 1031987,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1020358,
+          "name": "Corpse Run Nightmares"
+        },
+        {
+          "id": 1031987,
+          "name": "Shield of Settra"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 4,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-07-13 10:08:29",
+      "result": {
+        "id": 0,
+        "status": "forfeit",
+        "replayId": 0,
+        "winner": 1150894,
+        "teams": [
+          {
+            "id": 1165992,
+            "score": 0
+          },
+          {
+            "id": 1150894,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1165992,
+          "name": "Blood Kiss United"
+        },
+        {
+          "id": 1150894,
+          "name": "Brothers of Skoll"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 4,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-07-10 18:07:03",
+      "result": {
+        "id": 4636290,
+        "status": "played",
+        "replayId": 1826184,
+        "winner": 1181723,
+        "teams": [
+          {
+            "id": 1090677,
+            "score": 0
+          },
+          {
+            "id": 1181723,
+            "score": 3
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1090677,
+          "name": "King's Shadow Ballers"
+        },
+        {
+          "id": 1181723,
+          "name": "Viragos of Vainglory"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 5,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-07-19 15:35:08",
+      "result": {
+        "id": 4637810,
+        "status": "played",
+        "replayId": 1827904,
+        "winner": 1119020,
+        "teams": [
+          {
+            "id": 1119020,
+            "score": 0
+          },
+          {
+            "id": 1165992,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1119020,
+          "name": "Gifted Pilgrims"
+        },
+        {
+          "id": 1165992,
+          "name": "Blood Kiss United"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 5,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-07-21 23:28:25",
+      "result": {
+        "id": 4638325,
+        "status": "played",
+        "replayId": 1828466,
+        "winner": 1150894,
+        "teams": [
+          {
+            "id": 1010017,
+            "score": 1
+          },
+          {
+            "id": 1150894,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1010017,
+          "name": "Yennla Eternals"
+        },
+        {
+          "id": 1150894,
+          "name": "Brothers of Skoll"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 5,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-07-13 17:42:58",
+      "result": {
+        "id": 4636754,
+        "status": "played",
+        "replayId": 1826713,
+        "winner": 1020358,
+        "teams": [
+          {
+            "id": 1020358,
+            "score": 1
+          },
+          {
+            "id": 1090677,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1020358,
+          "name": "Corpse Run Nightmares"
+        },
+        {
+          "id": 1090677,
+          "name": "King's Shadow Ballers"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 5,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-07-23 18:12:34",
+      "result": {
+        "id": 4638627,
+        "status": "played",
+        "replayId": 1828834,
+        "winner": 1031987,
+        "teams": [
+          {
+            "id": 1031987,
+            "score": 2
+          },
+          {
+            "id": 1181723,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1031987,
+          "name": "Shield of Settra"
+        },
+        {
+          "id": 1181723,
+          "name": "Viragos of Vainglory"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 6,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-07-26 19:57:37",
+      "result": {
+        "id": 4639163,
+        "status": "played",
+        "replayId": 1829451,
+        "winner": 1119020,
+        "teams": [
+          {
+            "id": 1119020,
+            "score": 1
+          },
+          {
+            "id": 1090677,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1119020,
+          "name": "Gifted Pilgrims"
+        },
+        {
+          "id": 1090677,
+          "name": "King's Shadow Ballers"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 6,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-07-29 20:18:09",
+      "result": {
+        "id": 4639665,
+        "status": "played",
+        "replayId": 1829383,
+        "winner": 1181723,
+        "teams": [
+          {
+            "id": 1010017,
+            "score": 1
+          },
+          {
+            "id": 1181723,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1010017,
+          "name": "Yennla Eternals"
+        },
+        {
+          "id": 1181723,
+          "name": "Viragos of Vainglory"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 6,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-08-02 22:39:08",
+      "result": {
+        "id": 4640379,
+        "status": "played",
+        "replayId": 1830857,
+        "winner": 1165992,
+        "teams": [
+          {
+            "id": 1020358,
+            "score": 1
+          },
+          {
+            "id": 1165992,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1020358,
+          "name": "Corpse Run Nightmares"
+        },
+        {
+          "id": 1165992,
+          "name": "Blood Kiss United"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 6,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-07-28 20:03:46",
+      "result": {
+        "id": 4639491,
+        "status": "played",
+        "replayId": 1829823,
+        "winner": 1150894,
+        "teams": [
+          {
+            "id": 1031987,
+            "score": 0
+          },
+          {
+            "id": 1150894,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1031987,
+          "name": "Shield of Settra"
+        },
+        {
+          "id": 1150894,
+          "name": "Brothers of Skoll"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 7,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-08-08 12:22:14",
+      "result": {
+        "id": 4641360,
+        "status": "played",
+        "replayId": 1832015,
+        "winner": 1181723,
+        "teams": [
+          {
+            "id": 1119020,
+            "score": 1
+          },
+          {
+            "id": 1181723,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1119020,
+          "name": "Gifted Pilgrims"
+        },
+        {
+          "id": 1181723,
+          "name": "Viragos of Vainglory"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 7,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-08-01 00:31:27",
+      "result": {
+        "id": 4640081,
+        "status": "played",
+        "replayId": 1830533,
+        "winner": 1090677,
+        "teams": [
+          {
+            "id": 1010017,
+            "score": 0
+          },
+          {
+            "id": 1090677,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1010017,
+          "name": "Yennla Eternals"
+        },
+        {
+          "id": 1090677,
+          "name": "King's Shadow Ballers"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 7,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-08-04 17:00:43",
+      "result": {
+        "id": 4640672,
+        "status": "played",
+        "replayId": 1831189,
+        "winner": 1150894,
+        "teams": [
+          {
+            "id": 1020358,
+            "score": 0
+          },
+          {
+            "id": 1150894,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1020358,
+          "name": "Corpse Run Nightmares"
+        },
+        {
+          "id": 1150894,
+          "name": "Brothers of Skoll"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 7,
+      "created": "2025-05-26 14:47:13",
+      "modified": "2025-08-13 09:58:45",
+      "result": {
+        "id": 0,
+        "status": "forfeit",
+        "replayId": 0,
+        "winner": 1031987,
+        "teams": [
+          {
+            "id": 1165992,
+            "score": 0
+          },
+          {
+            "id": 1031987,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1165992,
+          "name": "Blood Kiss United"
+        },
+        {
+          "id": 1031987,
+          "name": "Shield of Settra"
+        }
+      ]
+    }
+  ],
+  "matches": {
+    "4628670": {
+      "id": 4628670,
+      "replayId": 1817430,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-06-01",
+      "time": "10:56:47",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1119020,
+        "name": "Gifted Pilgrims",
+        "roster": {
+          "id": 1029,
+          "name": "Spawn of Chaos (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 2,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 1900000,
+        "currentTeamValue": 1900000,
+        "coach": {
+          "id": 6641,
+          "name": "Habeli",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "2000k"
+      },
+      "team2": {
+        "id": 1031987,
+        "name": "Shield of Settra",
+        "roster": {
+          "id": 868,
+          "name": "Khemri (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1890000,
+        "currentTeamValue": 1830000,
+        "coach": {
+          "id": 228016,
+          "name": "Ardonite",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "1810k"
+      }
+    },
+    "4629663": {
+      "id": 4629663,
+      "replayId": 1818566,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-06-05",
+      "time": "22:39:40",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1020358,
+        "name": "Corpse Run Nightmares",
+        "roster": {
+          "id": 931,
+          "name": "Strigoi (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1990000,
+        "currentTeamValue": 1990000,
+        "coach": {
+          "id": 8621,
+          "name": "DaCoach",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "2070k"
+      },
+      "team2": {
+        "id": 1010017,
+        "name": "Yennla Eternals",
+        "roster": {
+          "id": 5138,
+          "name": "Isha (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2105000,
+        "currentTeamValue": 2105000,
+        "coach": {
+          "id": 251232,
+          "name": "kaznaladak",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "2220k"
+      }
+    },
+    "4628695": {
+      "id": 4628695,
+      "replayId": 1817455,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-06-01",
+      "time": "13:14:26",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1165992,
+        "name": "Blood Kiss United",
+        "roster": {
+          "id": 3705,
+          "name": "Necrarch (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1660000,
+        "currentTeamValue": 1660000,
+        "coach": {
+          "id": 22895,
+          "name": "puccios",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 95000,
+        "gate": 0,
+        "tournamentWeight": "1730k"
+      },
+      "team2": {
+        "id": 1181723,
+        "name": "Viragos of Vainglory",
+        "roster": {
+          "id": 902,
+          "name": "Daemons of Slaanesh (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1870000,
+        "currentTeamValue": 1870000,
+        "coach": {
+          "id": 265808,
+          "name": "StrangeFeller",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 105000,
+        "gate": 0,
+        "tournamentWeight": "1920k"
+      }
+    },
+    "4629586": {
+      "id": 4629586,
+      "replayId": 1818478,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-06-05",
+      "time": "17:52:06",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1150894,
+        "name": "Brothers of Skoll",
+        "roster": {
+          "id": 4783,
+          "name": "Cult of Ulric (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 1960000,
+        "currentTeamValue": 1960000,
+        "coach": {
+          "id": 243311,
+          "name": "rodvil",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 60000,
+        "gate": 0,
+        "tournamentWeight": "1700k"
+      },
+      "team2": {
+        "id": 1090677,
+        "name": "King's Shadow Ballers",
+        "roster": {
+          "id": 882,
+          "name": "Simyin (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2285000,
+        "currentTeamValue": 2145000,
+        "coach": {
+          "id": 241575,
+          "name": "Xelron",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 60000,
+        "gate": 0,
+        "tournamentWeight": "2230k"
+      }
+    },
+    "4630374": {
+      "id": 4630374,
+      "replayId": 1819405,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-06-09",
+      "time": "15:20:30",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1119020,
+        "name": "Gifted Pilgrims",
+        "roster": {
+          "id": 1029,
+          "name": "Spawn of Chaos (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 2,
+          "rip": 1
+        },
+        "fanfactor": -1,
+        "teamValue": 1890000,
+        "currentTeamValue": 1690000,
+        "coach": {
+          "id": 6641,
+          "name": "Habeli",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2000k"
+      },
+      "team2": {
+        "id": 1150894,
+        "name": "Brothers of Skoll",
+        "roster": {
+          "id": 4783,
+          "name": "Cult of Ulric (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 1960000,
+        "currentTeamValue": 1870000,
+        "coach": {
+          "id": 243311,
+          "name": "rodvil",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 95000,
+        "gate": 0,
+        "tournamentWeight": "1700k"
+      }
+    },
+    "4633216": {
+      "id": 4633216,
+      "replayId": 1822684,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-06-23",
+      "time": "23:14:41",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1010017,
+        "name": "Yennla Eternals",
+        "roster": {
+          "id": 5138,
+          "name": "Isha (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 2,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 2180000,
+        "currentTeamValue": 2180000,
+        "coach": {
+          "id": 251232,
+          "name": "kaznaladak",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "2220k"
+      },
+      "team2": {
+        "id": 1165992,
+        "name": "Blood Kiss United",
+        "roster": {
+          "id": 3705,
+          "name": "Necrarch (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 2,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 1660000,
+        "currentTeamValue": 1660000,
+        "coach": {
+          "id": 22895,
+          "name": "puccios",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "1730k"
+      }
+    },
+    "4630363": {
+      "id": 4630363,
+      "replayId": 1819397,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-06-09",
+      "time": "13:56:13",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1181723,
+        "name": "Viragos of Vainglory",
+        "roster": {
+          "id": 902,
+          "name": "Daemons of Slaanesh (CIBBL)"
+        },
+        "score": 3,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1870000,
+        "currentTeamValue": 1820000,
+        "coach": {
+          "id": 265808,
+          "name": "StrangeFeller",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 105000,
+        "gate": 0,
+        "tournamentWeight": "1920k"
+      },
+      "team2": {
+        "id": 1020358,
+        "name": "Corpse Run Nightmares",
+        "roster": {
+          "id": 931,
+          "name": "Strigoi (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 3,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1990000,
+        "currentTeamValue": 1970000,
+        "coach": {
+          "id": 8621,
+          "name": "DaCoach",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2070k"
+      }
+    },
+    "4630422": {
+      "id": 4630422,
+      "replayId": 1819460,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-06-09",
+      "time": "19:25:01",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1031987,
+        "name": "Shield of Settra",
+        "roster": {
+          "id": 868,
+          "name": "Khemri (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 3,
+          "rip": 1
+        },
+        "fanfactor": 1,
+        "teamValue": 1800000,
+        "currentTeamValue": 1610000,
+        "coach": {
+          "id": 228016,
+          "name": "Ardonite",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 60000,
+        "gate": 0,
+        "tournamentWeight": "1810k"
+      },
+      "team2": {
+        "id": 1090677,
+        "name": "King's Shadow Ballers",
+        "roster": {
+          "id": 882,
+          "name": "Simyin (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2295000,
+        "currentTeamValue": 2155000,
+        "coach": {
+          "id": 241575,
+          "name": "Xelron",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 40000,
+        "gate": 0,
+        "tournamentWeight": "2230k"
+      }
+    },
+    "4631458": {
+      "id": 4631458,
+      "replayId": 1820688,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-06-14",
+      "time": "20:44:08",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1020358,
+        "name": "Corpse Run Nightmares",
+        "roster": {
+          "id": 931,
+          "name": "Strigoi (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 2010000,
+        "currentTeamValue": 2010000,
+        "coach": {
+          "id": 8621,
+          "name": "DaCoach",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "2070k"
+      },
+      "team2": {
+        "id": 1119020,
+        "name": "Gifted Pilgrims",
+        "roster": {
+          "id": 1029,
+          "name": "Spawn of Chaos (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 2,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 2010000,
+        "currentTeamValue": 1910000,
+        "coach": {
+          "id": 6641,
+          "name": "Habeli",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "2000k"
+      }
+    },
+    "4634446": {
+      "id": 4634446,
+      "replayId": 1824085,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-06-30",
+      "time": "13:39:54",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1010017,
+        "name": "Yennla Eternals",
+        "roster": {
+          "id": 5138,
+          "name": "Isha (CIBBL)"
+        },
+        "score": 3,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 2200000,
+        "currentTeamValue": 2200000,
+        "coach": {
+          "id": 251232,
+          "name": "kaznaladak",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "2220k"
+      },
+      "team2": {
+        "id": 1031987,
+        "name": "Shield of Settra",
+        "roster": {
+          "id": 868,
+          "name": "Khemri (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 2,
+          "si": 5,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1780000,
+        "currentTeamValue": 1780000,
+        "coach": {
+          "id": 228016,
+          "name": "Ardonite",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 60000,
+        "gate": 0,
+        "tournamentWeight": "1810k"
+      }
+    },
+    "4634561": {
+      "id": 4634561,
+      "replayId": 1824215,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-07-01",
+      "time": "00:06:53",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1165992,
+        "name": "Blood Kiss United",
+        "roster": {
+          "id": 3705,
+          "name": "Necrarch (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1680000,
+        "currentTeamValue": 1680000,
+        "coach": {
+          "id": 22895,
+          "name": "puccios",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "1730k"
+      },
+      "team2": {
+        "id": 1090677,
+        "name": "King's Shadow Ballers",
+        "roster": {
+          "id": 882,
+          "name": "Simyin (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 2,
+          "si": 2,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 2225000,
+        "currentTeamValue": 1950000,
+        "coach": {
+          "id": 241575,
+          "name": "Xelron",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "2230k"
+      }
+    },
+    "4632190": {
+      "id": 4632190,
+      "replayId": 1821523,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-06-18",
+      "time": "13:29:24",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1150894,
+        "name": "Brothers of Skoll",
+        "roster": {
+          "id": 4783,
+          "name": "Cult of Ulric (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 2,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1940000,
+        "currentTeamValue": 1670000,
+        "coach": {
+          "id": 243311,
+          "name": "rodvil",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 95000,
+        "gate": 0,
+        "tournamentWeight": "1700k"
+      },
+      "team2": {
+        "id": 1181723,
+        "name": "Viragos of Vainglory",
+        "roster": {
+          "id": 902,
+          "name": "Daemons of Slaanesh (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1920000,
+        "currentTeamValue": 1590000,
+        "coach": {
+          "id": 265808,
+          "name": "StrangeFeller",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 95000,
+        "gate": 0,
+        "tournamentWeight": "1920k"
+      }
+    },
+    "4635709": {
+      "id": 4635709,
+      "replayId": 1825501,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-07-07",
+      "time": "14:07:59",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1119020,
+        "name": "Gifted Pilgrims",
+        "roster": {
+          "id": 1029,
+          "name": "Spawn of Chaos (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 2010000,
+        "currentTeamValue": 1730000,
+        "coach": {
+          "id": 6641,
+          "name": "Habeli",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "2000k"
+      },
+      "team2": {
+        "id": 1010017,
+        "name": "Yennla Eternals",
+        "roster": {
+          "id": 5138,
+          "name": "Isha (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 3,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2260000,
+        "currentTeamValue": 2090000,
+        "coach": {
+          "id": 251232,
+          "name": "kaznaladak",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 60000,
+        "gate": 0,
+        "tournamentWeight": "2220k"
+      }
+    },
+    "4635607": {
+      "id": 4635607,
+      "replayId": 1825379,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-07-06",
+      "time": "22:13:46",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1020358,
+        "name": "Corpse Run Nightmares",
+        "roster": {
+          "id": 931,
+          "name": "Strigoi (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 2010000,
+        "currentTeamValue": 2010000,
+        "coach": {
+          "id": 8621,
+          "name": "DaCoach",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 60000,
+        "gate": 0,
+        "tournamentWeight": "2070k"
+      },
+      "team2": {
+        "id": 1031987,
+        "name": "Shield of Settra",
+        "roster": {
+          "id": 868,
+          "name": "Khemri (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1710000,
+        "currentTeamValue": 1710000,
+        "coach": {
+          "id": 228016,
+          "name": "Ardonite",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 50000,
+        "gate": 0,
+        "tournamentWeight": "1810k"
+      }
+    },
+    "4636290": {
+      "id": 4636290,
+      "replayId": 1826184,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-07-10",
+      "time": "18:07:03",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1090677,
+        "name": "King's Shadow Ballers",
+        "roster": {
+          "id": 882,
+          "name": "Simyin (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 2245000,
+        "currentTeamValue": 2245000,
+        "coach": {
+          "id": 241575,
+          "name": "Xelron",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 60000,
+        "gate": 0,
+        "tournamentWeight": "2230k"
+      },
+      "team2": {
+        "id": 1181723,
+        "name": "Viragos of Vainglory",
+        "roster": {
+          "id": 902,
+          "name": "Daemons of Slaanesh (CIBBL)"
+        },
+        "score": 3,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1890000,
+        "currentTeamValue": 1840000,
+        "coach": {
+          "id": 265808,
+          "name": "StrangeFeller",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 90000,
+        "gate": 0,
+        "tournamentWeight": "1920k"
+      }
+    },
+    "4637810": {
+      "id": 4637810,
+      "replayId": 1827904,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-07-19",
+      "time": "15:35:08",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1165992,
+        "name": "Blood Kiss United",
+        "roster": {
+          "id": 3705,
+          "name": "Necrarch (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 2,
+          "si": 1,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 1700000,
+        "currentTeamValue": 1700000,
+        "coach": {
+          "id": 22895,
+          "name": "puccios",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "1730k"
+      },
+      "team2": {
+        "id": 1119020,
+        "name": "Gifted Pilgrims",
+        "roster": {
+          "id": 1029,
+          "name": "Spawn of Chaos (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2010000,
+        "currentTeamValue": 2010000,
+        "coach": {
+          "id": 6641,
+          "name": "Habeli",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "2000k"
+      }
+    },
+    "4638325": {
+      "id": 4638325,
+      "replayId": 1828466,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-07-21",
+      "time": "23:28:25",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1010017,
+        "name": "Yennla Eternals",
+        "roster": {
+          "id": 5138,
+          "name": "Isha (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2260000,
+        "currentTeamValue": 2185000,
+        "coach": {
+          "id": 251232,
+          "name": "kaznaladak",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "2220k"
+      },
+      "team2": {
+        "id": 1150894,
+        "name": "Brothers of Skoll",
+        "roster": {
+          "id": 4783,
+          "name": "Cult of Ulric (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 3,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1910000,
+        "currentTeamValue": 1910000,
+        "coach": {
+          "id": 243311,
+          "name": "rodvil",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "1700k"
+      }
+    },
+    "4636754": {
+      "id": 4636754,
+      "replayId": 1826713,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-07-13",
+      "time": "17:42:58",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1020358,
+        "name": "Corpse Run Nightmares",
+        "roster": {
+          "id": 931,
+          "name": "Strigoi (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2105000,
+        "currentTeamValue": 1885000,
+        "coach": {
+          "id": 8621,
+          "name": "DaCoach",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "2070k"
+      },
+      "team2": {
+        "id": 1090677,
+        "name": "King's Shadow Ballers",
+        "roster": {
+          "id": 882,
+          "name": "Simyin (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2265000,
+        "currentTeamValue": 2125000,
+        "coach": {
+          "id": 241575,
+          "name": "Xelron",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "2230k"
+      }
+    },
+    "4638627": {
+      "id": 4638627,
+      "replayId": 1828834,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-07-23",
+      "time": "18:12:34",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1181723,
+        "name": "Viragos of Vainglory",
+        "roster": {
+          "id": 902,
+          "name": "Daemons of Slaanesh (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 1910000,
+        "currentTeamValue": 1910000,
+        "coach": {
+          "id": 265808,
+          "name": "StrangeFeller",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "1920k"
+      },
+      "team2": {
+        "id": 1031987,
+        "name": "Shield of Settra",
+        "roster": {
+          "id": 868,
+          "name": "Khemri (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 0,
+          "si": 2,
+          "rip": 1
+        },
+        "fanfactor": 1,
+        "teamValue": 1710000,
+        "currentTeamValue": 1710000,
+        "coach": {
+          "id": 228016,
+          "name": "Ardonite",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 90000,
+        "gate": 0,
+        "tournamentWeight": "1810k"
+      }
+    },
+    "4639163": {
+      "id": 4639163,
+      "replayId": 1829451,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-07-26",
+      "time": "19:57:37",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1090677,
+        "name": "King's Shadow Ballers",
+        "roster": {
+          "id": 882,
+          "name": "Simyin (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2285000,
+        "currentTeamValue": 2240000,
+        "coach": {
+          "id": 241575,
+          "name": "Xelron",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 65000,
+        "gate": 0,
+        "tournamentWeight": "2230k"
+      },
+      "team2": {
+        "id": 1119020,
+        "name": "Gifted Pilgrims",
+        "roster": {
+          "id": 1029,
+          "name": "Spawn of Chaos (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 3,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1900000,
+        "currentTeamValue": 1840000,
+        "coach": {
+          "id": 6641,
+          "name": "Habeli",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "2000k"
+      }
+    },
+    "4639665": {
+      "id": 4639665,
+      "replayId": 1829383,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-07-29",
+      "time": "20:18:09",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1010017,
+        "name": "Yennla Eternals",
+        "roster": {
+          "id": 5138,
+          "name": "Isha (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2280000,
+        "currentTeamValue": 1625000,
+        "coach": {
+          "id": 251232,
+          "name": "kaznaladak",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "2220k"
+      },
+      "team2": {
+        "id": 1181723,
+        "name": "Viragos of Vainglory",
+        "roster": {
+          "id": 902,
+          "name": "Daemons of Slaanesh (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 4,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1830000,
+        "currentTeamValue": 1780000,
+        "coach": {
+          "id": 265808,
+          "name": "StrangeFeller",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "1920k"
+      }
+    },
+    "4640379": {
+      "id": 4640379,
+      "replayId": 1830857,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-08-02",
+      "time": "22:39:08",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1020358,
+        "name": "Corpse Run Nightmares",
+        "roster": {
+          "id": 931,
+          "name": "Strigoi (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 2070000,
+        "currentTeamValue": 2030000,
+        "coach": {
+          "id": 8621,
+          "name": "DaCoach",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2070k"
+      },
+      "team2": {
+        "id": 1165992,
+        "name": "Blood Kiss United",
+        "roster": {
+          "id": 3705,
+          "name": "Necrarch (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1700000,
+        "currentTeamValue": 1700000,
+        "coach": {
+          "id": 22895,
+          "name": "puccios",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 95000,
+        "gate": 0,
+        "tournamentWeight": "1730k"
+      }
+    },
+    "4639491": {
+      "id": 4639491,
+      "replayId": 1829823,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-07-28",
+      "time": "20:03:46",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1150894,
+        "name": "Brothers of Skoll",
+        "roster": {
+          "id": 4783,
+          "name": "Cult of Ulric (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 2,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1930000,
+        "currentTeamValue": 1930000,
+        "coach": {
+          "id": 243311,
+          "name": "rodvil",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "1700k"
+      },
+      "team2": {
+        "id": 1031987,
+        "name": "Shield of Settra",
+        "roster": {
+          "id": 868,
+          "name": "Khemri (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 1710000,
+        "currentTeamValue": 1710000,
+        "coach": {
+          "id": 228016,
+          "name": "Ardonite",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "1810k"
+      }
+    },
+    "4641360": {
+      "id": 4641360,
+      "replayId": 1832015,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-08-08",
+      "time": "12:22:14",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1119020,
+        "name": "Gifted Pilgrims",
+        "roster": {
+          "id": 1029,
+          "name": "Spawn of Chaos (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1890000,
+        "currentTeamValue": 1890000,
+        "coach": {
+          "id": 6641,
+          "name": "Habeli",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "2000k"
+      },
+      "team2": {
+        "id": 1181723,
+        "name": "Viragos of Vainglory",
+        "roster": {
+          "id": 902,
+          "name": "Daemons of Slaanesh (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1850000,
+        "currentTeamValue": 1620000,
+        "coach": {
+          "id": 265808,
+          "name": "StrangeFeller",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "1920k"
+      }
+    },
+    "4640081": {
+      "id": 4640081,
+      "replayId": 1830533,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-08-01",
+      "time": "00:31:27",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1010017,
+        "name": "Yennla Eternals",
+        "roster": {
+          "id": 5138,
+          "name": "Isha (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2280000,
+        "currentTeamValue": 2280000,
+        "coach": {
+          "id": 251232,
+          "name": "kaznaladak",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 35000,
+        "gate": 0,
+        "tournamentWeight": "2220k"
+      },
+      "team2": {
+        "id": 1090677,
+        "name": "King's Shadow Ballers",
+        "roster": {
+          "id": 882,
+          "name": "Simyin (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 2335000,
+        "currentTeamValue": 2030000,
+        "coach": {
+          "id": 241575,
+          "name": "Xelron",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 55000,
+        "gate": 0,
+        "tournamentWeight": "2230k"
+      }
+    },
+    "4640672": {
+      "id": 4640672,
+      "replayId": 1831189,
+      "tournamentId": 64593,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-08-04",
+      "time": "17:00:43",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1020358,
+        "name": "Corpse Run Nightmares",
+        "roster": {
+          "id": 931,
+          "name": "Strigoi (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 2050000,
+        "currentTeamValue": 2050000,
+        "coach": {
+          "id": 8621,
+          "name": "DaCoach",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 65000,
+        "gate": 0,
+        "tournamentWeight": "2070k"
+      },
+      "team2": {
+        "id": 1150894,
+        "name": "Brothers of Skoll",
+        "roster": {
+          "id": 4783,
+          "name": "Cult of Ulric (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2020000,
+        "currentTeamValue": 1790000,
+        "coach": {
+          "id": 243311,
+          "name": "rodvil",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "1700k"
+      }
+    }
+  },
+  "expected_standings": [
+    {"position": 1, "team_id": 1150894, "team_name": "Brothers of Skoll", "coach_name": "rodvil", "wins": 5, "draws": 2, "losses": 0, "td_for": 9, "td_against": 4, "td_delta": 5, "cas_for": 15, "cas_against": 7, "cas_delta": 8, "points": 17},
+    {"position": 2, "team_id": 1181723, "team_name": "Viragos of Vainglory", "coach_name": "StrangeFeller", "wins": 4, "draws": 2, "losses": 1, "td_for": 13, "td_against": 7, "td_delta": 6, "cas_for": 10, "cas_against": 12, "cas_delta": -2, "points": 14},
+    {"position": 3, "team_id": 1031987, "team_name": "Shield of Settra", "coach_name": "Ardonite", "wins": 3, "draws": 1, "losses": 3, "td_for": 6, "td_against": 7, "td_delta": -1, "cas_for": 21, "cas_against": 11, "cas_delta": 10, "points": 10},
+    {"position": 4, "team_id": 1119020, "team_name": "Gifted Pilgrims", "coach_name": "Habeli", "wins": 2, "draws": 3, "losses": 2, "td_for": 6, "td_against": 6, "td_delta": 0, "cas_for": 18, "cas_against": 14, "cas_delta": 4, "points": 9},
+    {"position": 5, "team_id": 1165992, "team_name": "Blood Kiss United", "coach_name": "puccios", "wins": 2, "draws": 2, "losses": 3, "td_for": 6, "td_against": 5, "td_delta": 1, "cas_for": 9, "cas_against": 12, "cas_delta": -3, "points": 8},
+    {"position": 6, "team_id": 1020358, "team_name": "Corpse Run Nightmares", "coach_name": "DaCoach", "wins": 2, "draws": 2, "losses": 3, "td_for": 7, "td_against": 10, "td_delta": -3, "cas_for": 11, "cas_against": 11, "cas_delta": 0, "points": 8},
+    {"position": 7, "team_id": 1090677, "team_name": "King's Shadow Ballers", "coach_name": "Xelron", "wins": 1, "draws": 3, "losses": 3, "td_for": 5, "td_against": 9, "td_delta": -4, "cas_for": 13, "cas_against": 16, "cas_delta": -3, "points": 6},
+    {"position": 8, "team_id": 1010017, "team_name": "Yennla Eternals", "coach_name": "kaznaladak", "wins": 1, "draws": 1, "losses": 5, "td_for": 9, "td_against": 13, "td_delta": -4, "cas_for": 9, "cas_against": 23, "cas_delta": -14, "points": 4}
+    
+  ]
+}

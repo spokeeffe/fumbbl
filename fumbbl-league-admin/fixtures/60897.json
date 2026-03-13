@@ -1,0 +1,3126 @@
+{
+  "tournament_id": 60897,
+  "tournament_name": "CIBBL - Y11, Autumn - Gold Division",
+  "season": "11",
+  "schedule": [
+    {
+      "position": 0,
+      "round": 1,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2023-11-30 13:01:48",
+      "result": {
+        "id": 4504672,
+        "status": "played",
+        "replayId": 1673262,
+        "winner": 910344,
+        "teams": [
+          {
+            "id": 910344,
+            "score": 1
+          },
+          {
+            "id": 988453,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 910344,
+          "name": "Vlad's Vampheroes"
+        },
+        {
+          "id": 988453,
+          "name": "Stones Forgers"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 1,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2023-12-03 10:50:18",
+      "result": {
+        "id": 4505319,
+        "status": "played",
+        "replayId": 1674006,
+        "winner": 874966,
+        "teams": [
+          {
+            "id": 874966,
+            "score": 2
+          },
+          {
+            "id": 1026688,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 874966,
+          "name": "Modryn's Midnight Meddlers"
+        },
+        {
+          "id": 1026688,
+          "name": "Tempelhof Wolves"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 1,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2023-11-30 22:54:02",
+      "result": {
+        "id": 4504800,
+        "status": "played",
+        "replayId": 1673423,
+        "winner": 874317,
+        "teams": [
+          {
+            "id": 874317,
+            "score": 1
+          },
+          {
+            "id": 867862,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 874317,
+          "name": "Misty Isle Gators"
+        },
+        {
+          "id": 867862,
+          "name": "Everlasting Vultures of Settra"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 1,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2023-12-03 22:07:41",
+      "result": {
+        "id": 4505471,
+        "status": "played",
+        "replayId": 1674198,
+        "winner": 1002197,
+        "teams": [
+          {
+            "id": 1009427,
+            "score": 1
+          },
+          {
+            "id": 1002197,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1009427,
+          "name": "Dark Room Delights"
+        },
+        {
+          "id": 1002197,
+          "name": "Matrons of Malice"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 2,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2023-12-19 14:40:48",
+      "result": {
+        "id": 4509231,
+        "status": "played",
+        "replayId": 1678547,
+        "winner": 910344,
+        "teams": [
+          {
+            "id": 910344,
+            "score": 1
+          },
+          {
+            "id": 1009427,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 910344,
+          "name": "Vlad's Vampheroes"
+        },
+        {
+          "id": 1009427,
+          "name": "Dark Room Delights"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 2,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2023-12-05 18:16:38",
+      "result": {
+        "id": 4505924,
+        "status": "played",
+        "replayId": 1674715,
+        "winner": 874317,
+        "teams": [
+          {
+            "id": 874966,
+            "score": 1
+          },
+          {
+            "id": 874317,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 874966,
+          "name": "Modryn's Midnight Meddlers"
+        },
+        {
+          "id": 874317,
+          "name": "Misty Isle Gators"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 2,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2023-12-17 21:08:18",
+      "result": {
+        "id": 4508847,
+        "status": "played",
+        "replayId": 1678102,
+        "winner": 1026688,
+        "teams": [
+          {
+            "id": 1026688,
+            "score": 2
+          },
+          {
+            "id": 867862,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1026688,
+          "name": "Tempelhof Wolves"
+        },
+        {
+          "id": 867862,
+          "name": "Everlasting Vultures of Settra"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 2,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2023-12-17 16:33:12",
+      "result": {
+        "id": 4508788,
+        "status": "played",
+        "replayId": 1678030,
+        "winner": 1002197,
+        "teams": [
+          {
+            "id": 988453,
+            "score": 0
+          },
+          {
+            "id": 1002197,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 988453,
+          "name": "Stones Forgers"
+        },
+        {
+          "id": 1002197,
+          "name": "Matrons of Malice"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 3,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-01-13 08:48:49",
+      "result": {
+        "id": 0,
+        "status": "forfeit",
+        "replayId": 0,
+        "winner": 910344,
+        "teams": [
+          {
+            "id": 910344,
+            "score": 0
+          },
+          {
+            "id": 1026688,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 910344,
+          "name": "Vlad's Vampheroes"
+        },
+        {
+          "id": 1026688,
+          "name": "Tempelhof Wolves"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 3,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-01-10 20:34:23",
+      "result": {
+        "id": 4514375,
+        "status": "played",
+        "replayId": 1684349,
+        "winner": 988453,
+        "teams": [
+          {
+            "id": 874966,
+            "score": 1
+          },
+          {
+            "id": 988453,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 874966,
+          "name": "Modryn's Midnight Meddlers"
+        },
+        {
+          "id": 988453,
+          "name": "Stones Forgers"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 3,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2023-12-31 17:18:39",
+      "result": {
+        "id": 4511792,
+        "status": "played",
+        "replayId": 1681456,
+        "winner": 874317,
+        "teams": [
+          {
+            "id": 874317,
+            "score": 1
+          },
+          {
+            "id": 1002197,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 874317,
+          "name": "Misty Isle Gators"
+        },
+        {
+          "id": 1002197,
+          "name": "Matrons of Malice"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 3,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-01-07 21:39:04",
+      "result": {
+        "id": 4513629,
+        "status": "played",
+        "replayId": 1683516,
+        "winner": 867862,
+        "teams": [
+          {
+            "id": 1009427,
+            "score": 0
+          },
+          {
+            "id": 867862,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1009427,
+          "name": "Dark Room Delights"
+        },
+        {
+          "id": 867862,
+          "name": "Everlasting Vultures of Settra"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 4,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-01-19 18:06:09",
+      "result": {
+        "id": 4516675,
+        "status": "played",
+        "replayId": 1686963,
+        "winner": 874966,
+        "teams": [
+          {
+            "id": 910344,
+            "score": 1
+          },
+          {
+            "id": 874966,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 910344,
+          "name": "Vlad's Vampheroes"
+        },
+        {
+          "id": 874966,
+          "name": "Modryn's Midnight Meddlers"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 4,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-01-21 21:51:39",
+      "result": {
+        "id": 4517158,
+        "status": "played",
+        "replayId": 1687534,
+        "winner": 1026688,
+        "teams": [
+          {
+            "id": 1026688,
+            "score": 1
+          },
+          {
+            "id": 988453,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1026688,
+          "name": "Tempelhof Wolves"
+        },
+        {
+          "id": 988453,
+          "name": "Stones Forgers"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 4,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-01-16 22:07:24",
+      "result": {
+        "id": 4515987,
+        "status": "played",
+        "replayId": 1686180,
+        "winner": 1009427,
+        "teams": [
+          {
+            "id": 874317,
+            "score": 1
+          },
+          {
+            "id": 1009427,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 874317,
+          "name": "Misty Isle Gators"
+        },
+        {
+          "id": 1009427,
+          "name": "Dark Room Delights"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 4,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-01-20 21:02:16",
+      "result": {
+        "id": 4516942,
+        "status": "played",
+        "replayId": 1687287,
+        "winner": 1002197,
+        "teams": [
+          {
+            "id": 1002197,
+            "score": 1
+          },
+          {
+            "id": 867862,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1002197,
+          "name": "Matrons of Malice"
+        },
+        {
+          "id": 867862,
+          "name": "Everlasting Vultures of Settra"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 5,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-01-31 11:55:03",
+      "result": {
+        "id": 4519517,
+        "status": "played",
+        "replayId": 1690319,
+        "winner": 874317,
+        "teams": [
+          {
+            "id": 910344,
+            "score": 0
+          },
+          {
+            "id": 874317,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 910344,
+          "name": "Vlad's Vampheroes"
+        },
+        {
+          "id": 874317,
+          "name": "Misty Isle Gators"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 5,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-01-23 18:40:18",
+      "result": {
+        "id": 4517603,
+        "status": "played",
+        "replayId": 1688026,
+        "winner": 1009427,
+        "teams": [
+          {
+            "id": 874966,
+            "score": 1
+          },
+          {
+            "id": 1009427,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 874966,
+          "name": "Modryn's Midnight Meddlers"
+        },
+        {
+          "id": 1009427,
+          "name": "Dark Room Delights"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 5,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-02-02 23:55:21",
+      "result": {
+        "id": 4520254,
+        "status": "played",
+        "replayId": 1691182,
+        "winner": 1002197,
+        "teams": [
+          {
+            "id": 1026688,
+            "score": 1
+          },
+          {
+            "id": 1002197,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1026688,
+          "name": "Tempelhof Wolves"
+        },
+        {
+          "id": 1002197,
+          "name": "Matrons of Malice"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 5,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-01-31 22:06:23",
+      "result": {
+        "id": 4519671,
+        "status": "played",
+        "replayId": 1690496,
+        "winner": 867862,
+        "teams": [
+          {
+            "id": 988453,
+            "score": 1
+          },
+          {
+            "id": 867862,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 988453,
+          "name": "Stones Forgers"
+        },
+        {
+          "id": 867862,
+          "name": "Everlasting Vultures of Settra"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 6,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-02-13 17:51:54",
+      "result": {
+        "id": 0,
+        "status": "forfeit",
+        "replayId": 0,
+        "winner": 910344,
+        "teams": [
+          {
+            "id": 910344,
+            "score": 0
+          },
+          {
+            "id": 1002197,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 910344,
+          "name": "Vlad's Vampheroes"
+        },
+        {
+          "id": 1002197,
+          "name": "Matrons of Malice"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 6,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-02-10 17:36:07",
+      "result": {
+        "id": 4522266,
+        "status": "played",
+        "replayId": 1693505,
+        "winner": 867862,
+        "teams": [
+          {
+            "id": 874966,
+            "score": 2
+          },
+          {
+            "id": 867862,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 874966,
+          "name": "Modryn's Midnight Meddlers"
+        },
+        {
+          "id": 867862,
+          "name": "Everlasting Vultures of Settra"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 6,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-02-09 23:30:08",
+      "result": {
+        "id": 4522120,
+        "status": "played",
+        "replayId": 1693351,
+        "winner": 1026688,
+        "teams": [
+          {
+            "id": 1026688,
+            "score": 1
+          },
+          {
+            "id": 874317,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1026688,
+          "name": "Tempelhof Wolves"
+        },
+        {
+          "id": 874317,
+          "name": "Misty Isle Gators"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 6,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-02-16 10:02:43",
+      "result": {
+        "id": 4523783,
+        "status": "played",
+        "replayId": 1695287,
+        "winner": 988453,
+        "teams": [
+          {
+            "id": 988453,
+            "score": 1
+          },
+          {
+            "id": 1009427,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 988453,
+          "name": "Stones Forgers"
+        },
+        {
+          "id": 1009427,
+          "name": "Dark Room Delights"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 7,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-02-16 17:33:28",
+      "result": {
+        "id": 4523847,
+        "status": "played",
+        "replayId": 1695366,
+        "winner": 867862,
+        "teams": [
+          {
+            "id": 910344,
+            "score": 0
+          },
+          {
+            "id": 867862,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 910344,
+          "name": "Vlad's Vampheroes"
+        },
+        {
+          "id": 867862,
+          "name": "Everlasting Vultures of Settra"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 7,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-02-24 15:32:28",
+      "result": {
+        "id": 4526099,
+        "status": "played",
+        "replayId": 1697959,
+        "winner": 1002197,
+        "teams": [
+          {
+            "id": 874966,
+            "score": 2
+          },
+          {
+            "id": 1002197,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 874966,
+          "name": "Modryn's Midnight Meddlers"
+        },
+        {
+          "id": 1002197,
+          "name": "Matrons of Malice"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 7,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-02-22 22:26:37",
+      "result": {
+        "id": 4525676,
+        "status": "played",
+        "replayId": 1697451,
+        "winner": 1009427,
+        "teams": [
+          {
+            "id": 1026688,
+            "score": 1
+          },
+          {
+            "id": 1009427,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1026688,
+          "name": "Tempelhof Wolves"
+        },
+        {
+          "id": 1009427,
+          "name": "Dark Room Delights"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 7,
+      "created": "2023-11-22 22:27:44",
+      "modified": "2024-02-20 21:54:19",
+      "result": {
+        "id": 4525100,
+        "status": "played",
+        "replayId": 1696768,
+        "winner": 988453,
+        "teams": [
+          {
+            "id": 874317,
+            "score": 1
+          },
+          {
+            "id": 988453,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 874317,
+          "name": "Misty Isle Gators"
+        },
+        {
+          "id": 988453,
+          "name": "Stones Forgers"
+        }
+      ]
+    }
+  ],
+  "matches": {
+    "4504672": {
+      "id": 4504672,
+      "replayId": 1673262,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2023-11-30",
+      "time": "13:01:48",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 910344,
+        "name": "Vlad's Vampheroes",
+        "roster": {
+          "id": 932,
+          "name": "Von Carstein (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1750000,
+        "currentTeamValue": 1750000,
+        "coach": {
+          "id": 220974,
+          "name": "The_Demon",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 95000,
+        "gate": 0,
+        "tournamentWeight": "1580k"
+      },
+      "team2": {
+        "id": 988453,
+        "name": "Stones Forgers",
+        "roster": {
+          "id": 3992,
+          "name": "Norse Dwarf (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 5,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2350000,
+        "currentTeamValue": 2350000,
+        "coach": {
+          "id": 22895,
+          "name": "puccios",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 95000,
+        "gate": 0,
+        "tournamentWeight": "2370k"
+      }
+    },
+    "4505319": {
+      "id": 4505319,
+      "replayId": 1674006,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2023-12-03",
+      "time": "10:50:18",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 874966,
+        "name": "Modryn's Midnight Meddlers",
+        "roster": {
+          "id": 878,
+          "name": "Wood Elf (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 2360000,
+        "currentTeamValue": 2360000,
+        "coach": {
+          "id": 57243,
+          "name": "Bram",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 100000,
+        "gate": 0,
+        "tournamentWeight": "2630k"
+      },
+      "team2": {
+        "id": 1026688,
+        "name": "Tempelhof Wolves",
+        "roster": {
+          "id": 870,
+          "name": "Necromantic (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 0,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2070000,
+        "currentTeamValue": 2070000,
+        "coach": {
+          "id": 229214,
+          "name": "Arturidas",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 100000,
+        "gate": 0,
+        "tournamentWeight": "2040k"
+      }
+    },
+    "4504800": {
+      "id": 4504800,
+      "replayId": 1673423,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2023-11-30",
+      "time": "22:54:02",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 867862,
+        "name": "Everlasting Vultures of Settra",
+        "roster": {
+          "id": 905,
+          "name": "Zandri (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 1,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 2160000,
+        "currentTeamValue": 2160000,
+        "coach": {
+          "id": 101359,
+          "name": "DatMonsta",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "2340k"
+      },
+      "team2": {
+        "id": 874317,
+        "name": "Misty Isle Gators",
+        "roster": {
+          "id": 946,
+          "name": "Fimir (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2160000,
+        "currentTeamValue": 2160000,
+        "coach": {
+          "id": 79842,
+          "name": "Araznaroth",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 90000,
+        "gate": 0,
+        "tournamentWeight": "2060k"
+      }
+    },
+    "4505471": {
+      "id": 4505471,
+      "replayId": 1674198,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2023-12-03",
+      "time": "22:07:41",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1009427,
+        "name": "Dark Room Delights",
+        "roster": {
+          "id": 5129,
+          "name": "Slaanesh (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 2080000,
+        "currentTeamValue": 2080000,
+        "coach": {
+          "id": 238362,
+          "name": "flashman1234",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 105000,
+        "gate": 0,
+        "tournamentWeight": "2160k"
+      },
+      "team2": {
+        "id": 1002197,
+        "name": "Matrons of Malice",
+        "roster": {
+          "id": 5067,
+          "name": "Sisters of Sigmar (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 2430000,
+        "currentTeamValue": 2430000,
+        "coach": {
+          "id": 73347,
+          "name": "T_Witch",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 115000,
+        "gate": 0,
+        "tournamentWeight": "2210k"
+      }
+    },
+    "4509231": {
+      "id": 4509231,
+      "replayId": 1678547,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2023-12-19",
+      "time": "14:40:48",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1009427,
+        "name": "Dark Room Delights",
+        "roster": {
+          "id": 5129,
+          "name": "Slaanesh (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 4,
+          "si": 1,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 1910000,
+        "currentTeamValue": 1910000,
+        "coach": {
+          "id": 238362,
+          "name": "flashman1234",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "2160k"
+      },
+      "team2": {
+        "id": 910344,
+        "name": "Vlad's Vampheroes",
+        "roster": {
+          "id": 932,
+          "name": "Von Carstein (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 2,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1720000,
+        "currentTeamValue": 1720000,
+        "coach": {
+          "id": 220974,
+          "name": "The_Demon",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "1580k"
+      }
+    },
+    "4505924": {
+      "id": 4505924,
+      "replayId": 1674715,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2023-12-05",
+      "time": "18:16:38",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 874966,
+        "name": "Modryn's Midnight Meddlers",
+        "roster": {
+          "id": 878,
+          "name": "Wood Elf (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 2,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 2520000,
+        "currentTeamValue": 2520000,
+        "coach": {
+          "id": 57243,
+          "name": "Bram",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2630k"
+      },
+      "team2": {
+        "id": 874317,
+        "name": "Misty Isle Gators",
+        "roster": {
+          "id": 946,
+          "name": "Fimir (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 2,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2120000,
+        "currentTeamValue": 2120000,
+        "coach": {
+          "id": 79842,
+          "name": "Araznaroth",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 95000,
+        "gate": 0,
+        "tournamentWeight": "2060k"
+      }
+    },
+    "4508847": {
+      "id": 4508847,
+      "replayId": 1678102,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2023-12-17",
+      "time": "21:08:18",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 867862,
+        "name": "Everlasting Vultures of Settra",
+        "roster": {
+          "id": 905,
+          "name": "Zandri (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 1
+        },
+        "fanfactor": -1,
+        "teamValue": 2190000,
+        "currentTeamValue": 2190000,
+        "coach": {
+          "id": 101359,
+          "name": "DatMonsta",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "2340k"
+      },
+      "team2": {
+        "id": 1026688,
+        "name": "Tempelhof Wolves",
+        "roster": {
+          "id": 870,
+          "name": "Necromantic (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2050000,
+        "currentTeamValue": 2050000,
+        "coach": {
+          "id": 229214,
+          "name": "Arturidas",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2040k"
+      }
+    },
+    "4508788": {
+      "id": 4508788,
+      "replayId": 1678030,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2023-12-17",
+      "time": "16:33:12",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1002197,
+        "name": "Matrons of Malice",
+        "roster": {
+          "id": 5067,
+          "name": "Sisters of Sigmar (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 2,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2450000,
+        "currentTeamValue": 2450000,
+        "coach": {
+          "id": 73347,
+          "name": "T_Witch",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2210k"
+      },
+      "team2": {
+        "id": 988453,
+        "name": "Stones Forgers",
+        "roster": {
+          "id": 3992,
+          "name": "Norse Dwarf (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2350000,
+        "currentTeamValue": 2350000,
+        "coach": {
+          "id": 22895,
+          "name": "puccios",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "2370k"
+      }
+    },
+    "4514375": {
+      "id": 4514375,
+      "replayId": 1684349,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-01-10",
+      "time": "20:34:23",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 988453,
+        "name": "Stones Forgers",
+        "roster": {
+          "id": 3992,
+          "name": "Norse Dwarf (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 0,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 2370000,
+        "currentTeamValue": 2370000,
+        "coach": {
+          "id": 22895,
+          "name": "puccios",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2370k"
+      },
+      "team2": {
+        "id": 874966,
+        "name": "Modryn's Midnight Meddlers",
+        "roster": {
+          "id": 878,
+          "name": "Wood Elf (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 2490000,
+        "currentTeamValue": 2490000,
+        "coach": {
+          "id": 57243,
+          "name": "Bram",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "2630k"
+      }
+    },
+    "4511792": {
+      "id": 4511792,
+      "replayId": 1681456,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2023-12-31",
+      "time": "17:18:39",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "true",
+      "team1": {
+        "id": 1002197,
+        "name": "Matrons of Malice",
+        "roster": {
+          "id": 5067,
+          "name": "Sisters of Sigmar (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 2,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 2450000,
+        "currentTeamValue": 2450000,
+        "coach": {
+          "id": 73347,
+          "name": "T_Witch",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "2210k"
+      },
+      "team2": {
+        "id": 874317,
+        "name": "Misty Isle Gators",
+        "roster": {
+          "id": 946,
+          "name": "Fimir (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 5,
+          "si": 1,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 1910000,
+        "currentTeamValue": 1910000,
+        "coach": {
+          "id": 79842,
+          "name": "Araznaroth",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 90000,
+        "gate": 0,
+        "tournamentWeight": "2060k"
+      }
+    },
+    "4513629": {
+      "id": 4513629,
+      "replayId": 1683516,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-01-07",
+      "time": "21:39:04",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 867862,
+        "name": "Everlasting Vultures of Settra",
+        "roster": {
+          "id": 905,
+          "name": "Zandri (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 2210000,
+        "currentTeamValue": 2210000,
+        "coach": {
+          "id": 101359,
+          "name": "DatMonsta",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2340k"
+      },
+      "team2": {
+        "id": 1009427,
+        "name": "Dark Room Delights",
+        "roster": {
+          "id": 5129,
+          "name": "Slaanesh (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 2260000,
+        "currentTeamValue": 2260000,
+        "coach": {
+          "id": 238362,
+          "name": "flashman1234",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "2160k"
+      }
+    },
+    "4516675": {
+      "id": 4516675,
+      "replayId": 1686963,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-01-19",
+      "time": "18:06:08",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 910344,
+        "name": "Vlad's Vampheroes",
+        "roster": {
+          "id": 932,
+          "name": "Von Carstein (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1710000,
+        "currentTeamValue": 1710000,
+        "coach": {
+          "id": 220974,
+          "name": "The_Demon",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "1580k"
+      },
+      "team2": {
+        "id": 874966,
+        "name": "Modryn's Midnight Meddlers",
+        "roster": {
+          "id": 878,
+          "name": "Wood Elf (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2240000,
+        "currentTeamValue": 2240000,
+        "coach": {
+          "id": 57243,
+          "name": "Bram",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "2630k"
+      }
+    },
+    "4517158": {
+      "id": 4517158,
+      "replayId": 1687534,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-01-21",
+      "time": "21:51:39",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 988453,
+        "name": "Stones Forgers",
+        "roster": {
+          "id": 3992,
+          "name": "Norse Dwarf (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 2110000,
+        "currentTeamValue": 2110000,
+        "coach": {
+          "id": 22895,
+          "name": "puccios",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "2370k"
+      },
+      "team2": {
+        "id": 1026688,
+        "name": "Tempelhof Wolves",
+        "roster": {
+          "id": 870,
+          "name": "Necromantic (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 2,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1860000,
+        "currentTeamValue": 1860000,
+        "coach": {
+          "id": 229214,
+          "name": "Arturidas",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "2040k"
+      }
+    },
+    "4515987": {
+      "id": 4515987,
+      "replayId": 1686180,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-01-16",
+      "time": "22:07:24",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1009427,
+        "name": "Dark Room Delights",
+        "roster": {
+          "id": 5129,
+          "name": "Slaanesh (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2080000,
+        "currentTeamValue": 2080000,
+        "coach": {
+          "id": 238362,
+          "name": "flashman1234",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2160k"
+      },
+      "team2": {
+        "id": 874317,
+        "name": "Misty Isle Gators",
+        "roster": {
+          "id": 946,
+          "name": "Fimir (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 2,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2180000,
+        "currentTeamValue": 2180000,
+        "coach": {
+          "id": 79842,
+          "name": "Araznaroth",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2060k"
+      }
+    },
+    "4516942": {
+      "id": 4516942,
+      "replayId": 1687287,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-01-20",
+      "time": "21:02:16",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1002197,
+        "name": "Matrons of Malice",
+        "roster": {
+          "id": 5067,
+          "name": "Sisters of Sigmar (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 2150000,
+        "currentTeamValue": 2150000,
+        "coach": {
+          "id": 73347,
+          "name": "T_Witch",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2210k"
+      },
+      "team2": {
+        "id": 867862,
+        "name": "Everlasting Vultures of Settra",
+        "roster": {
+          "id": 905,
+          "name": "Zandri (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2230000,
+        "currentTeamValue": 2230000,
+        "coach": {
+          "id": 101359,
+          "name": "DatMonsta",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2340k"
+      }
+    },
+    "4519517": {
+      "id": 4519517,
+      "replayId": 1690319,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-01-31",
+      "time": "11:55:03",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "true",
+      "team1": {
+        "id": 910344,
+        "name": "Vlad's Vampheroes",
+        "roster": {
+          "id": 932,
+          "name": "Von Carstein (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 1710000,
+        "currentTeamValue": 1710000,
+        "coach": {
+          "id": 220974,
+          "name": "The_Demon",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "1580k"
+      },
+      "team2": {
+        "id": 874317,
+        "name": "Misty Isle Gators",
+        "roster": {
+          "id": 946,
+          "name": "Fimir (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 3,
+          "si": 3,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2080000,
+        "currentTeamValue": 2080000,
+        "coach": {
+          "id": 79842,
+          "name": "Araznaroth",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 95000,
+        "gate": 0,
+        "tournamentWeight": "2060k"
+      }
+    },
+    "4517603": {
+      "id": 4517603,
+      "replayId": 1688026,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-01-23",
+      "time": "18:40:18",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "true",
+      "team1": {
+        "id": 874966,
+        "name": "Modryn's Midnight Meddlers",
+        "roster": {
+          "id": 878,
+          "name": "Wood Elf (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 2770000,
+        "currentTeamValue": 2770000,
+        "coach": {
+          "id": 57243,
+          "name": "Bram",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2630k"
+      },
+      "team2": {
+        "id": 1009427,
+        "name": "Dark Room Delights",
+        "roster": {
+          "id": 5129,
+          "name": "Slaanesh (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 0,
+          "si": 3,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 2420000,
+        "currentTeamValue": 2420000,
+        "coach": {
+          "id": 238362,
+          "name": "flashman1234",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 95000,
+        "gate": 0,
+        "tournamentWeight": "2160k"
+      }
+    },
+    "4520254": {
+      "id": 4520254,
+      "replayId": 1691182,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-02-02",
+      "time": "23:55:21",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1002197,
+        "name": "Matrons of Malice",
+        "roster": {
+          "id": 5067,
+          "name": "Sisters of Sigmar (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 4,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2350000,
+        "currentTeamValue": 2350000,
+        "coach": {
+          "id": 73347,
+          "name": "T_Witch",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "2210k"
+      },
+      "team2": {
+        "id": 1026688,
+        "name": "Tempelhof Wolves",
+        "roster": {
+          "id": 870,
+          "name": "Necromantic (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 2120000,
+        "currentTeamValue": 2120000,
+        "coach": {
+          "id": 229214,
+          "name": "Arturidas",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "2040k"
+      }
+    },
+    "4519671": {
+      "id": 4519671,
+      "replayId": 1690496,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-01-31",
+      "time": "22:06:23",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 988453,
+        "name": "Stones Forgers",
+        "roster": {
+          "id": 3992,
+          "name": "Norse Dwarf (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 3,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 2060000,
+        "currentTeamValue": 2060000,
+        "coach": {
+          "id": 22895,
+          "name": "puccios",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "2370k"
+      },
+      "team2": {
+        "id": 867862,
+        "name": "Everlasting Vultures of Settra",
+        "roster": {
+          "id": 905,
+          "name": "Zandri (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2100000,
+        "currentTeamValue": 2100000,
+        "coach": {
+          "id": 101359,
+          "name": "DatMonsta",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "2340k"
+      }
+    },
+    "4522266": {
+      "id": 4522266,
+      "replayId": 1693505,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-02-10",
+      "time": "17:36:07",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 867862,
+        "name": "Everlasting Vultures of Settra",
+        "roster": {
+          "id": 905,
+          "name": "Zandri (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 3,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1990000,
+        "currentTeamValue": 1990000,
+        "coach": {
+          "id": 101359,
+          "name": "DatMonsta",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2340k"
+      },
+      "team2": {
+        "id": 874966,
+        "name": "Modryn's Midnight Meddlers",
+        "roster": {
+          "id": 878,
+          "name": "Wood Elf (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2090000,
+        "currentTeamValue": 2090000,
+        "coach": {
+          "id": 57243,
+          "name": "Bram",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2630k"
+      }
+    },
+    "4522120": {
+      "id": 4522120,
+      "replayId": 1693351,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-02-09",
+      "time": "23:30:08",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1026688,
+        "name": "Tempelhof Wolves",
+        "roster": {
+          "id": 870,
+          "name": "Necromantic (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 2,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1970000,
+        "currentTeamValue": 1970000,
+        "coach": {
+          "id": 229214,
+          "name": "Arturidas",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "2040k"
+      },
+      "team2": {
+        "id": 874317,
+        "name": "Misty Isle Gators",
+        "roster": {
+          "id": 946,
+          "name": "Fimir (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 2240000,
+        "currentTeamValue": 2240000,
+        "coach": {
+          "id": 79842,
+          "name": "Araznaroth",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 65000,
+        "gate": 0,
+        "tournamentWeight": "2060k"
+      }
+    },
+    "4523783": {
+      "id": 4523783,
+      "replayId": 1695287,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-02-16",
+      "time": "10:02:43",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 988453,
+        "name": "Stones Forgers",
+        "roster": {
+          "id": 3992,
+          "name": "Norse Dwarf (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 2,
+          "si": 0,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 2130000,
+        "currentTeamValue": 2130000,
+        "coach": {
+          "id": 22895,
+          "name": "puccios",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "2370k"
+      },
+      "team2": {
+        "id": 1009427,
+        "name": "Dark Room Delights",
+        "roster": {
+          "id": 5129,
+          "name": "Slaanesh (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2550000,
+        "currentTeamValue": 2550000,
+        "coach": {
+          "id": 238362,
+          "name": "flashman1234",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "2160k"
+      }
+    },
+    "4523847": {
+      "id": 4523847,
+      "replayId": 1695366,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-02-16",
+      "time": "17:33:28",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 910344,
+        "name": "Vlad's Vampheroes",
+        "roster": {
+          "id": 932,
+          "name": "Von Carstein (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 0,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 1730000,
+        "currentTeamValue": 1730000,
+        "coach": {
+          "id": 220974,
+          "name": "The_Demon",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 65000,
+        "gate": 0,
+        "tournamentWeight": "1580k"
+      },
+      "team2": {
+        "id": 867862,
+        "name": "Everlasting Vultures of Settra",
+        "roster": {
+          "id": 905,
+          "name": "Zandri (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 4,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 2120000,
+        "currentTeamValue": 2120000,
+        "coach": {
+          "id": 101359,
+          "name": "DatMonsta",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "2340k"
+      }
+    },
+    "4526099": {
+      "id": 4526099,
+      "replayId": 1697959,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-02-24",
+      "time": "15:32:28",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "true",
+      "team1": {
+        "id": 1002197,
+        "name": "Matrons of Malice",
+        "roster": {
+          "id": 5067,
+          "name": "Sisters of Sigmar (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 5,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1950000,
+        "currentTeamValue": 1950000,
+        "coach": {
+          "id": 73347,
+          "name": "T_Witch",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 90000,
+        "gate": 0,
+        "tournamentWeight": "2210k"
+      },
+      "team2": {
+        "id": 874966,
+        "name": "Modryn's Midnight Meddlers",
+        "roster": {
+          "id": 878,
+          "name": "Wood Elf (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2470000,
+        "currentTeamValue": 2470000,
+        "coach": {
+          "id": 57243,
+          "name": "Bram",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 90000,
+        "gate": 0,
+        "tournamentWeight": "2630k"
+      }
+    },
+    "4525676": {
+      "id": 4525676,
+      "replayId": 1697451,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-02-22",
+      "time": "22:26:37",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1009427,
+        "name": "Dark Room Delights",
+        "roster": {
+          "id": 5129,
+          "name": "Slaanesh (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 2,
+          "rip": 2
+        },
+        "fanfactor": 0,
+        "teamValue": 2290000,
+        "currentTeamValue": 2290000,
+        "coach": {
+          "id": 238362,
+          "name": "flashman1234",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 95000,
+        "gate": 0,
+        "tournamentWeight": "2160k"
+      },
+      "team2": {
+        "id": 1026688,
+        "name": "Tempelhof Wolves",
+        "roster": {
+          "id": 870,
+          "name": "Necromantic (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2160000,
+        "currentTeamValue": 2160000,
+        "coach": {
+          "id": 229214,
+          "name": "Arturidas",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2040k"
+      }
+    },
+    "4525100": {
+      "id": 4525100,
+      "replayId": 1696768,
+      "tournamentId": 60897,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2024-02-20",
+      "time": "21:54:19",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 988453,
+        "name": "Stones Forgers",
+        "roster": {
+          "id": 3992,
+          "name": "Norse Dwarf (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 3,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 2230000,
+        "currentTeamValue": 2230000,
+        "coach": {
+          "id": 22895,
+          "name": "puccios",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 90000,
+        "gate": 0,
+        "tournamentWeight": "2370k"
+      },
+      "team2": {
+        "id": 874317,
+        "name": "Misty Isle Gators",
+        "roster": {
+          "id": 946,
+          "name": "Fimir (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 2,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 1790000,
+        "currentTeamValue": 1790000,
+        "coach": {
+          "id": 79842,
+          "name": "Araznaroth",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "2060k"
+      }
+    }
+  },
+  "expected_standings": [
+    
+    {"position": 1, "team_id": 874317, "team_name": "Misty Isle Gators", "coach_name": "Araznaroth", "wins": 4, "draws": 1, "losses": 2, "td_for": 8, "td_against": 5, "td_delta": 3, "cas_for": 28, "cas_against": 17, "cas_delta": 11, "points": 13},
+    {"position": 2, "team_id": 1026688, "team_name": "Tempelhof Wolves", "coach_name": "Arturidas", "wins": 3, "draws": 2, "losses": 2, "td_for": 8, "td_against": 6, "td_delta": 2, "cas_for": 13, "cas_against": 15, "cas_delta": -2, "points": 11},
+    {"position": 3, "team_id": 867862, "team_name": "Everlasting Vultures of Settra", "coach_name": "DatMonsta", "wins": 2, "draws": 3, "losses": 2, "td_for": 7, "td_against": 7, "td_delta": 0, "cas_for": 18, "cas_against": 14, "cas_delta": 4, "points": 9},
+    {"position": 4, "team_id": 1002197, "team_name": "Matrons of Malice", "coach_name": "T_Witch", "wins": 2, "draws": 3, "losses": 2, "td_for": 7, "td_against": 6, "td_delta": 1, "cas_for": 19, "cas_against": 13, "cas_delta": 6, "points": 9},
+    {"position": 5, "team_id": 910344, "team_name": "Vlad's Vampheroes", "coach_name": "The_Demon", "wins": 2, "draws": 3, "losses": 2, "td_for": 3, "td_against": 6, "td_delta": -3, "cas_for": 9, "cas_against": 25, "cas_delta": -16, "points": 9},
+    {"position": 6, "team_id": 988453, "team_name": "Stones Forgers", "coach_name": "puccios", "wins": 2, "draws": 3, "losses": 2, "td_for": 7, "td_against": 7, "td_delta": 0, "cas_for": 22, "cas_against": 15, "cas_delta": 7, "points": 9},
+    {"position": 7, "team_id": 1009427, "team_name": "Dark Room Delights", "coach_name": "flashman1234", "wins": 2, "draws": 3, "losses": 2, "td_for": 8, "td_against": 8, "td_delta": 0, "cas_for": 19, "cas_against": 17, "cas_delta": 2, "points": 9},
+    {"position": 8, "team_id": 874966, "team_name": "Modryn's Midnight Meddlers", "coach_name": "Bram", "wins": 0, "draws": 4, "losses": 3, "td_for": 10, "td_against": 13, "td_delta": -3, "cas_for": 10, "cas_against": 22, "cas_delta": -12, "points": 4}
+  ]
+}

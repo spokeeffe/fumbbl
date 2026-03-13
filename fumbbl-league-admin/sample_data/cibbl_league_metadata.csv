@@ -1,0 +1,151 @@
+season,tournament_name,prestige_1st,prestige_2nd,prestige_3rd,prestige_4th,summer_year,tournament_image_id,player_award_name,player_award_id
+Winter,High,0,0,0,0,,600525,Child of Winter,504663
+Winter,Mid-High,0,0,0,0,,600525,Child of Winter,504663
+Winter,Mid,0,0,0,0,,600525,Child of Winter,504663
+Winter,Low-Mid,0,0,0,0,,600525,Child of Winter,504663
+Winter,Low,0,0,0,0,,600525,Child of Winter,504663
+Spring,Albion and Norsca,70,50,30,10,,519563,Northern Prowess,521972
+Spring,Athel Loren,70,50,30,10,,519568,Verdant Vibes,521973
+Spring,Cathay and Nippon,70,50,30,10,,519558,Oriental Aesthetics,505817
+Spring,Eastern Steppes and Mountains of Mourn,70,50,30,10,,519588,Spill Blood and Rage On!,567996
+Spring,Haunted Hills,70,50,30,10,,519585,Horrific,568086
+Spring,"Kingdoms Of Ind, Lumbria & the Hinterlands of Khuresh",70,50,30,10,,519586,Snake Charmer,507557
+Spring,Lands of the Dead,70,50,30,10,,519554,Timeless Display,521982
+Spring,Lustria,70,50,30,10,,519557,With Love From Lustria,593505
+Spring,Skavenblight,70,50,30,10,,519553,Greatest of Vile Vermin,522166
+Spring,Sylvania,70,50,30,10,,519561,Blood for the Bloodline,518474
+Spring,The Chaos Wastelands,70,50,30,10,,519580,Wasteland Warrior,505822
+Spring,The Dark Lands,70,50,30,10,,519570,Bull's Eye,549583
+Spring,The Deep Caverns,70,50,30,10,,519572,Cavern Climber,521979
+Spring,The Empire,70,50,30,10,,519578,Empire’s Fame/Infamy,521963
+Spring,The Great Ocean,70,50,30,10,,519571,Wave Rider,511914
+Spring,The Old World,70,50,30,10,,519582,Old World Values,505820
+Spring,The Realms of Chaos,70,50,30,10,,519584,Devastation From Beyond,544454
+Spring,The Southlands and Araby,70,50,30,10,,519579,Southland Salvation,505818
+Spring,Ulthuan and Naggaroth,70,50,30,10,,519575,Turn It Up To El(e)ven,544878
+Spring,World's Edge Mountains,70,50,30,10,,519577,Bugman's Finest,522167
+Spring,Chaos Wastes (1),70,50,30,10,,713599,Wasteland's Champion,715178
+Spring,Chaos Wastes (2),70,50,30,10,,713599,Wasteland's Champion,715178
+Spring,Chaos Wastes (3),70,50,30,10,,713599,Wasteland's Champion,715178
+Spring,Fabled Territories (1),70,50,30,10,,713965,Lore Master,715180
+Spring,Fabled Territories (2),70,50,30,10,,713965,Lore Master,715180
+Spring,Fabled Territories (3),70,50,30,10,,713965,Lore Master,715180
+Spring,Far East (1),70,50,30,10,,713916,Eastern Excellence,715179
+Spring,Far East (2),70,50,30,10,,713916,Eastern Excellence,715179
+Spring,Far East (3),70,50,30,10,,713916,Eastern Excellence,715179
+Spring,Imperial Dominion (1),70,50,30,10,,713964,Empire's Finest,715181
+Spring,Imperial Dominion (2),70,50,30,10,,713964,Empire's Finest,715181
+Spring,Imperial Dominion (3),70,50,30,10,,713964,Empire's Finest,715181
+Spring,Scorched Lands (1),70,50,30,10,,713675,Sundrenched Supremo,715182
+Spring,Scorched Lands (2),70,50,30,10,,713675,Sundrenched Supremo,715182
+Spring,Scorched Lands (3),70,50,30,10,,713675,Sundrenched Supremo,715182
+Spring,Subterranean Paths (1),70,50,30,10,,713917,Subterranean Superstar,715183
+Spring,Subterranean Paths (2),70,50,30,10,,713917,Subterranean Superstar,715183
+Spring,Subterranean Paths (3),70,50,30,10,,713917,Subterranean Superstar,715183
+Spring,Western Isles (1),70,50,30,10,,713920,Prime Ancient,715184
+Spring,Western Isles (2),70,50,30,10,,713920,Prime Ancient,715184
+Spring,Western Isles (3),70,50,30,10,,713920,Prime Ancient,715184
+Spring,Youngbloods XXX,50,30,20,10,,538864,Youthful Vibrance,518472
+Spring,Youngbloods XXXI,50,30,20,10,,538864,Youthful Vibrance,518472
+Spring,Youngbloods XXXIII,50,30,20,10,,538864,Youthful Vibrance,518472
+Spring,Youngbloods XXXV,50,30,20,10,,538864,Youthful Vibrance,518472
+Spring,Youngbloods XXXVI,50,30,20,10,,538864,Youthful Vibrance,518472
+Autumn,Gold,100,70,50,30,,519221,Gold Excellence,518603
+Autumn,Silver,80,60,40,20,,519280,Silver Excellence,518613
+Autumn,Bronze,70,50,30,10,,519279,Bronze Excellence,518610
+Autumn,Copper,60,40,20,10,,530113,Copper Excellence,518607
+Autumn,Tin,60,40,20,10,,530114,Terrific Might of Tin,539486
+Autumn,Marble,50,30,20,10,,532253,Refined Excellence,539457
+Autumn,Granite,50,30,20,10,,533918,Solid Foundation,539452
+Autumn,Clay,50,30,20,10,,530118,Clay Excellence,561168
+Autumn,Wood,50,30,20,10,,530116,Whisperer in the Woods,561135
+Autumn,Cloth,50,30,20,10,,532255,Cloth Excellence,561112
+Autumn,Paper,50,30,20,10,,646014,Excellent on Paper,646056
+Autumn,Leather,50,30,20,10,,646013,Leather Rebel,646059
+Autumn,Mud,50,30,20,10,,646012,Stick in the Mud,646054
+Autumn,Dust,50,30,20,10,,646011,Dust Devil,646046
+Autumn,The Pit,50,30,20,10,,669054,The Pit Excellence,669070
+Autumn,Youngblood XXXIV,50,30,20,10,Y10,538864,Youthful Vibrance,518472
+Summer,Lashweaver's Lineup,50,30,20,10,Y9,691359,Grudjmaker's Greatest,691371
+Summer,Ibhib Nightcrawler Memorial Division,50,30,20,10,Y9,691356,Grudjmaker's Greatest,691371
+Summer,Redbone's Rumble,50,30,20,10,Y9,691361,Grudjmaker's Greatest,691371
+Summer,S.Sang's Sensational Series,50,30,20,10,Y9,691363,Grudjmaker's Greatest,691371
+Summer,Nightmaster Skirshakk's Nightmare,50,30,20,10,Y9,691364,Grudjmaker's Greatest,691371
+Summer,"Rosetta ""Rose Thorn""s Rampage",50,30,20,10,Y9,691362,Grudjmaker's Greatest,691371
+Summer,Sinthoras Bloodflame's Battle,50,30,20,10,Y9,691355,Grudjmaker's Greatest,691371
+Summer,Chola's Cup,50,30,20,10,Y9,691357,Grudjmaker's Greatest,691371
+Summer,Modena's Memorial Trophy,50,30,20,10,Y9,691360,Grudjmaker's Greatest,691371
+Summer,Tabaldin's Two Time Tourney,50,30,20,10,Y9,691365,Grudjmaker's Greatest,691371
+Summer,Youngbloods XXXII,50,30,20,10,Y9,538864,Youthful Vibrance,518472
+Summer,Greenskins vs. da Dedd,50,30,20,10,Y8,675418,Gangreen Gladiator,675387
+Summer,Greenskins vs. da Spiky Boyz,50,30,20,10,Y8,675417,Cunning Cabalist,675385
+Summer,Greenskins vs. da Humies,50,30,20,10,Y8,675414,Old Habits Die Hard,677788
+Summer,Greenskins vs. da Pointyears,50,30,20,10,Y8,675413,Got the Point!,677787
+Summer,CIBBL Super League,50,30,20,10,Y8,675411,Superleague Superstar,677789
+Summer,Vima Taktu's Career Celebration,50,30,20,10,Y8,675412,Baron of the Boot,675386
+Summer,The Conspiracy Cup,50,30,20,10,Y8,675410,Cloaked in Shadow,675388
+Summer,Bloodweiser Official Distribution Invitational,50,30,20,10,Y8,675408,Tipsy Talent,675389
+Summer,Cabalvision Tech Support Invitational,50,30,20,10,Y8,675407,On Call and On the Ball,675392
+Summer,Sanctioned Wizards Syndicate Invitational,50,30,20,10,Y8,675405,Sports Sage,675390
+Summer,Ghorst Brothers Graveyard Invitational,50,30,20,10,Y8,675409,Dead and Loving It,675391
+Summer,Athel Loren's Wild Hunt Trophy,50,30,20,10,Y8,675406,King of the Forest,675398
+Summer,Sartosa's Big Fish Derby,50,30,20,10,Y8,675403,One That Got Away,675377
+Summer,Middenheim Rumble - Second Siege of Middenheim,50,30,20,10,Y8,675404,Over the Wall,675399
+Summer,Trantio's Excellence Challenge,50,30,20,10,Y8,675402,Trantio's Triumphant,675395
+Summer,The Moot's Meat Pie Festival,50,30,20,10,Y8,675401,Potluck Phenomenon,675396
+Summer,Warpgate's Everchosen Competition,50,30,20,10,Y8,675400,Be'lakor's Vanguard,675397
+Summer,Cabalvision Late Show - Mannslieb Division,50,30,20,10,Y8,675416,Waxing Strong,675393
+Summer,Cabalvision Late Show - Morrslieb Division,50,30,20,10,Y8,675415,Never Waning,675394
+Summer,Montetriste Noblemen,50,30,20,10,Y10,701703,Anniversary Accolade,707894
+Summer,Grand Celestial Delegate,50,30,20,10,Y10,701713,Anniversary Accolade,707894
+Summer,Secret Cult of Shiamoto,50,30,20,10,Y10,701714,Anniversary Accolade,707894
+Summer,Lords of the Silent Death,50,30,20,10,Y10,701709,Anniversary Accolade,707894
+Summer,Ninja Warriors,50,30,20,10,Y10,701711,Anniversary Accolade,707894
+Summer,Southland Scuttlers,50,30,20,10,Y10,701712,Anniversary Accolade,707894
+Summer,Seven Samples of Decay,50,30,20,10,Y10,701705,Anniversary Accolade,707894
+Summer,Spartak Bolgasgrad,50,30,20,10,Y10,701707,Anniversary Accolade,707894
+Summer,Pleasure Principle,50,30,20,10,Y10,701751,Anniversary Accolade,707894
+Summer,Carcassonne Knights,50,30,20,10,Y10,701710,Anniversary Accolade,707894
+Summer,0001 The Forseen,50,30,20,10,Y11,718884,Binary Bester,721708
+Summer,0010 The Forseen,50,30,20,10,Y11,718886,Binary Bester,721708
+Summer,0011 The Forseen,50,30,20,10,Y11,718885,Binary Bester,721708
+Summer,0100 The Trivialised,50,30,20,10,Y11,718887,Binary Bester,721708
+Summer,0101 The Trivialised,50,30,20,10,Y11,718888,Binary Bester,721708
+Summer,0110 The Trivialised,50,30,20,10,Y11,718889,Binary Bester,721708
+Summer,0111 The Trivialised,50,30,20,10,Y11,718890,Binary Bester,721708
+Summer,1000 The Amplified,50,30,20,10,Y11,718891,Binary Bester,721708
+Summer,1001 The Amplified,50,30,20,10,Y11,718892,Binary Bester,721708
+Summer,1010 The Amplified,50,30,20,10,Y11,718893,Binary Bester,721708
+Summer,1011 The Amplified,50,30,20,10,Y11,718894,Binary Bester,721708
+Summer,Boxing,50,30,20,10,Y12,738076,Gold Medallist,738092
+Summer,Breaking,50,30,20,10,Y12,738074,Gold Medallist,738092
+Summer,Fencing,50,30,20,10,Y12,738075,Gold Medallist,738092
+Summer,Gymnastics,50,30,20,10,Y12,738077,Gold Medallist,738092
+Summer,Javelin,50,30,20,10,Y12,738078,Gold Medallist,738092
+Summer,Martial Arts,50,30,20,10,Y12,738079,Gold Medallist,738092
+Summer,Race Walk,50,30,20,10,Y12,738080,Gold Medallist,738092
+Summer,Sprinting,50,30,20,10,Y12,738081,Gold Medallist,738092
+Summer,Weightlifting,50,30,20,10,Y12,738082,Gold Medallist,738092
+Summer,Wrestling,50,30,20,10,Y12,738083,Gold Medallist,738092
+Summer,Youth Olympics,50,30,20,10,Y12,738084,Gold Medallist,738092
+Summer,(1) Lord Kritislik,50,30,20,10,Y13,753817,Council Approval,756818
+Summer,(2) Lord Gnawdell,50,30,20,10,Y13,753817,Council Approval,756818
+Summer,(3) Lord Kratch Doomclaw,50,30,20,10,Y13,753817,Council Approval,756818
+Summer,(4) Lord Paskrit,50,30,20,10,Y13,753817,Council Approval,756818
+Summer,(5) Lord Nurglitch,50,30,20,10,Y13,753817,Council Approval,756818
+Summer,(6) Lord Griznekt Mancarver,50,30,20,10,Y13,753817,Council Approval,756818
+Summer,(7) Lord Sneek,50,30,20,10,Y13,753817,Council Approval,756818
+Summer,(8) Lord Sitch,50,30,20,10,Y13,753817,Council Approval,756818
+Summer,(9) Lord Morskitter,50,30,20,10,Y13,753817,Council Approval,756818
+Summer,(10) Lord Hesh Vrakspine,50,30,20,10,Y13,753817,Council Approval,756818
+Summer,(11) Lord Viskit Ironscratch,50,30,20,10,Y13,753817,Council Approval,756818
+Summer,(12) Lord Verminkin,50,30,20,10,Y13,753817,Council Approval,756818
+Summer,SCRIBBL Cup Invitational,50,30,20,10,Y14,771228,SCRIBBL’s Outstanding Performance Achievement,573405
+Summer,Jester Chalice Invitational,50,30,20,10,Y14,771225,Fated Favourably,771037
+Summer,Giant's Bloodway Challenge,50,30,20,10,Y14,771227,Standing on the Shoulders of Giants,771034
+Summer,Youngblood Scramble,50,30,20,10,Y14,528205,Promise of Greatness,533591
+Summer,Cup of Change (Pink),50,30,20,10,Y14,771195,Just As Planned!,771033
+Summer,Cup of Change (Blue),50,30,20,10,Y14,771195,Just As Planned!,771033
+Summer,Styles Clash (A),50,30,20,10,Y14,534793,Style Points,553667
+Summer,Styles Clash (B),50,30,20,10,Y14,534793,Style Points,553667
+Summer,Styles Clash (R6),0,0,0,0,Y14,534793,Style Points,553667

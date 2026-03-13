@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FUMBBL League Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">⚔</span>
+        <div>
+          <div class="logo-title">FUMBBL</div>
+          <div class="logo-sub">League Admin Tool</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    {% if success %}
+    <div class="alert alert-success">
+      <span class="alert-icon">✓</span> {{ success }}
+    </div>
+    {% endif %}
+    {% if error %}
+    <div class="alert alert-error">
+      <span class="alert-icon">✗</span> {{ error }}
+    </div>
+    {% endif %}
+
+    <div class="layout">
+
+      <!-- Add League Panel -->
+      <section class="panel panel-form">
+        <div class="panel-header">
+          <h2>Add League</h2>
+          <p class="panel-desc">Enter the Group ID and Ruleset ID to register a league. The league name will be fetched automatically from FUMBBL.</p>
+        </div>
+
+        <form action="/leagues/add" method="post" class="add-form" id="addForm">
+          <div class="field">
+            <label for="group_id">Group ID</label>
+            <input
+              type="number"
+              id="group_id"
+              name="group_id"
+              min="1"
+              step="1"
+              placeholder="e.g. 2299"
+              required
+              autocomplete="off"
+            >
+            <span class="field-hint">The unique FUMBBL group identifier</span>
+          </div>
+
+          <div class="field">
+            <label for="ruleset_id">Ruleset ID</label>
+            <input
+              type="number"
+              id="ruleset_id"
+              name="ruleset_id"
+              min="1"
+              step="1"
+              placeholder="e.g. 303"
+              required
+              autocomplete="off"
+            >
+            <span class="field-hint">The ruleset used in this league</span>
+          </div>
+
+          <button type="submit" class="btn-primary" id="submitBtn">
+            <span class="btn-text">Add League</span>
+            <span class="btn-icon">→</span>
+          </button>
+        </form>
+      </section>
+
+      <!-- Leagues List -->
+      <section class="panel panel-list">
+        <div class="panel-header">
+          <h2>Leagues <span class="count-badge">{{ leagues | length }}</span></h2>
+          <p class="panel-desc">Click on a league name to view its tournaments and details.</p>
+        </div>
+
+        {% if leagues %}
+        <div class="leagues-table-wrap">
+          <table class="leagues-table">
+            <thead>
+              <tr>
+                <th>League Name</th>
+                <th>Group ID</th>
+                <th>Ruleset ID</th>
+                <th>Added</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for league in leagues %}
+              <tr class="league-row">
+                <td class="td-name">
+                  <a href="/leagues/{{ league.id }}" class="league-link">{{ league.league_name }}</a>
+                </td>
+                <td class="td-mono">{{ league.group_id }}</td>
+                <td class="td-mono">{{ league.ruleset_id }}</td>
+                <td class="td-date">{{ league.created_at[:10] }}</td>
+                <td class="td-actions">
+                  <form action="/leagues/delete/{{ league.id }}" method="post"
+                        onsubmit="return confirm('Remove {{ league.league_name }}?')">
+                    <button type="submit" class="btn-delete" title="Remove league">✕</button>
+                  </form>
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% else %}
+        <div class="empty-state">
+          <div class="empty-icon">🏟</div>
+          <p>No leagues added yet.<br>Add your first league using the form.</p>
+        </div>
+        {% endif %}
+      </section>
+
+    </div>
+  </main>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:fumbbl.com)",
+      "Bash(curl -s \"https://fumbbl.com/api/match/get/4087298?verbose=1\")"
+    ]
+  }
+}
