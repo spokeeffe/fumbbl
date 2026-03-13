@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ league.league_name }} — FUMBBL Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/main.css?v=2">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">⚔</span>
+        <div>
+          <div class="logo-title">FUMBBL</div>
+          <div class="logo-sub">League Admin Tool</div>
+        </div>
+      </div>
+      <a href="/" class="back-link">← All Leagues</a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    {% if success %}
+    <div class="alert alert-success">
+      <span class="alert-icon">✓</span> {{ success }}
+    </div>
+    {% endif %}
+    {% if error %}
+    <div class="alert alert-error">
+      <span class="alert-icon">✗</span> {{ error }}
+    </div>
+    {% endif %}
+
+    <div class="league-detail-header">
+      <h1 class="league-detail-title">{{ league.league_name }}</h1>
+      <div class="league-meta-chips">
+        <span class="chip">Group <strong>{{ league.group_id }}</strong></span>
+        <span class="chip">Ruleset <strong>{{ league.ruleset_id }}</strong></span>
+        <span class="chip chip-muted">Added {{ league.created_at[:10] }}</span>
+      </div>
+    </div>
+
+    <div class="panel tabs-container">
+
+      <!-- Tab bar -->
+      <nav class="tab-bar">
+        <button type="button" class="tab-btn" data-tab="metadata">
+          Metadata
+          {% if metadata_total > 0 %}
+          <span class="count-badge">{{ metadata_total }}</span>
+          {% endif %}
+        </button>
+        <button type="button" class="tab-btn tab-active" data-tab="tournaments">
+          Tournaments
+          {% if not tournaments_error %}
+          <span class="count-badge">{{ tournaments | length }}</span>
+          {% endif %}
+        </button>
+        <button type="button" class="tab-btn {% if not standings_results %}tab-btn-locked{% endif %}" data-tab="standings">
+          Standings
+          {% if standings_results %}
+          <span class="count-badge">{{ standings_results | length }}</span>
+          {% endif %}
+        </button>
+        <button type="button" class="tab-btn {% if not player_stats_results %}tab-btn-locked{% endif %}" data-tab="player-stats">
+          Player Stats
+          {% if player_stats_results %}
+          <span class="count-badge">{{ player_stats_results | length }}</span>
+          {% endif %}
+        </button>
+        <button type="button" class="tab-btn {% if not achievements_results %}tab-btn-locked{% endif %}" data-tab="achievements">
+          Achievements
+          {% if achievements_results %}
+          <span class="count-badge">{{ achievements_results | length }}</span>
+          {% endif %}
+        </button>
+      </nav>
+
+      <!-- Tournaments tab -->
+      <div class="tab-content" id="tab-tournaments">
+        {% if tournaments_error %}
+        <div class="alert alert-error" style="margin: 1.25rem 1.5rem;">
+          <span class="alert-icon">✗</span> {{ tournaments_error }}
+        </div>
+        {% elif tournaments %}
+        <form method="post" id="tournamentsForm">
+          <div class="tab-toolbar">
+            <div class="season-filter">
+              <a href="/leagues/{{ league.id }}"
+                 class="season-btn {% if selected_season is none %}season-btn-active{% endif %}">
+                All
+              </a>
+              {% for s in seasons %}
+              <a href="/leagues/{{ league.id }}?season={{ s }}"
+                 class="season-btn {% if selected_season == s %}season-btn-active{% endif %}">
+                S{{ s }}
+              </a>
+              {% endfor %}
+            </div>
+            <div class="toolbar-actions">
+              <button type="submit" class="btn-action" id="standingsBtn"
+                      formaction="/leagues/{{ league.id }}/standings">
+                <span class="btn-text">Standings</span>
+                <span class="btn-icon">→</span>
+              </button>
+              <button type="submit" class="btn-action" id="playerStatsBtn"
+                      formaction="/leagues/{{ league.id }}/player_stats">
+                <span class="btn-text">Player Stats</span>
+                <span class="btn-icon">→</span>
+              </button>
+              <button type="submit" class="btn-action btn-action-soon" disabled title="Coming soon">
+                <span class="btn-text">Achievements</span>
+                <span class="btn-icon">→</span>
+              </button>
+            </div>
+          </div>
+          <div class="leagues-table-wrap">
+            <table class="leagues-table">
+              <thead>
+                <tr>
+                  <th class="th-check">
+                    <input type="checkbox" id="checkAll" title="Select all">
+                  </th>
+                  <th>Season</th>
+                  <th>Tournament Name</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for t in tournaments %}
+                <tr>
+                  <td class="td-check">
+                    <input type="checkbox" name="tournament_ids" value="{{ t.id }}">
+                  </td>
+                  <td class="td-mono">{{ t.season if t.season is not none else '—' }}</td>
+                  <td class="td-name">{{ t.name }}</td>
+                  <td class="td-status">
+                    <span class="status-chip status-{{ (t.status or 'unknown') | lower }}">
+                      {{ t.status or '—' }}
+                    </span>
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </form>
+        {% else %}
+        <div class="empty-state">
+          <div class="empty-icon">📋</div>
+          <p>No tournaments found{% if selected_season is not none %} for Season {{ selected_season }}{% endif %}.</p>
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- Standings tab -->
+      <div class="tab-content tab-hidden" id="tab-standings">
+        {% if standings_results %}
+        <form method="post" id="standingsPlayerStatsForm">
+          {% for result in standings_results %}
+          <input type="hidden" name="tournament_ids" value="{{ result.tournament_id }}">
+          {% endfor %}
+        </form>
+        <div class="tab-toolbar">
+          <span class="standings-tab-meta">Generated {{ standings_generated_at[:16] }}</span>
+          <div class="toolbar-actions">
+            <button type="submit" class="btn-action" form="standingsPlayerStatsForm"
+                    formaction="/leagues/{{ league.id }}/player_stats">
+              <span class="btn-text">Player Stats</span>
+              <span class="btn-icon">→</span>
+            </button>
+            <a href="/leagues/{{ league.id }}/standings/export" class="btn-action">
+              <span class="btn-text">Export CSV</span>
+              <span class="btn-icon">↓</span>
+            </a>
+          </div>
+        </div>
+        <div class="standings-accordion">
+          {% for result in standings_results %}
+          <details class="standings-block" {% if standings_results | length == 1 %}open{% endif %}>
+            <summary class="standings-summary">
+              <div class="standings-summary-left">
+                <span class="standings-chevron">▶</span>
+                {% if result.season is not none %}
+                <span class="status-chip">S{{ result.season }}</span>
+                {% endif %}
+                <span class="standings-name">{{ result.tournament_name }}</span>
+              </div>
+              <div class="standings-summary-right">
+                <span class="td-mono" style="font-size:0.78rem; color:var(--text-dim)">
+                  {{ result.standings | length }} teams · {{ result.match_count }} matches
+                </span>
+                <button type="button"
+                  class="btn-crushing {% if not result.crushing_victories %}btn-crushing-inactive{% endif %}"
+                  {% if result.crushing_victories %}
+                    onclick="event.stopPropagation(); openCrushingModal(this)"
+                    data-matches='{{ result.crushing_victories | tojson }}'
+                  {% else %}
+                    onclick="event.stopPropagation()"
+                    disabled
+                  {% endif %}>
+                  🏈 Crushing
+                  {% if result.crushing_victories %}
+                  <span class="count-badge count-badge-dark">{{ result.crushing_victories | length }}</span>
+                  {% endif %}
+                </button>
+              </div>
+            </summary>
+            <div class="standings-table-wrap">
+              <table class="standings-table">
+                <thead>
+                  <tr>
+                    <th class="th-pos">Pos</th>
+                    <th>Team</th>
+                    <th>Coach</th>
+                    <th class="th-num">W</th>
+                    <th class="th-num">D</th>
+                    <th class="th-num">L</th>
+                    <th class="th-num">TDF</th>
+                    <th class="th-num">TDA</th>
+                    <th class="th-num">TDD</th>
+                    <th class="th-num">CASF</th>
+                    <th class="th-num">CASA</th>
+                    <th class="th-num">CASD</th>
+                    <th class="th-num th-pts">Pts</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for row in result.standings %}
+                  <tr {% if row.position <= 3 %}class="standing-top"{% endif %}>
+                    <td class="td-pos td-mono">{{ row.position }}</td>
+                    <td class="td-name">{{ row.team_name }}</td>
+                    <td class="td-coach">{{ row.coach_name }}</td>
+                    <td class="td-num td-mono">{{ row.wins }}</td>
+                    <td class="td-num td-mono">{{ row.draws }}</td>
+                    <td class="td-num td-mono">{{ row.losses }}</td>
+                    <td class="td-num td-mono">{{ row.td_for }}</td>
+                    <td class="td-num td-mono">{{ row.td_against }}</td>
+                    <td class="td-num td-mono td-delta {% if row.td_delta > 0 %}delta-pos{% elif row.td_delta < 0 %}delta-neg{% endif %}">
+                      {{ '%+d' % row.td_delta if row.td_delta != 0 else '0' }}
+                    </td>
+                    <td class="td-num td-mono">{{ row.cas_for }}</td>
+                    <td class="td-num td-mono">{{ row.cas_against }}</td>
+                    <td class="td-num td-mono td-delta {% if row.cas_delta > 0 %}delta-pos{% elif row.cas_delta < 0 %}delta-neg{% endif %}">
+                      {{ '%+d' % row.cas_delta if row.cas_delta != 0 else '0' }}
+                    </td>
+                    <td class="td-num td-pts">{{ row.points }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </details>
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-state">
+          <div class="empty-icon">🏆</div>
+          <p>No standings generated yet.<br>Select tournaments and click <strong>Standings →</strong> to generate.</p>
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- Metadata tab -->
+      <div class="tab-content tab-hidden" id="tab-metadata">
+        {% if metadata_rows %}
+        <div class="leagues-table-wrap">
+          <table class="leagues-table">
+            <thead>
+              <tr>
+                <th>Season</th>
+                <th>Tournament Name</th>
+                <th class="th-num">1st</th>
+                <th class="th-num">2nd</th>
+                <th class="th-num">3rd</th>
+                <th class="th-num">4th</th>
+                <th>Summer Year</th>
+                <th class="th-num">Image ID</th>
+                <th>Award Name</th>
+                <th class="th-num">Award ID</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for row in metadata_rows %}
+              <tr>
+                <td class="td-mono">{{ row.season }}</td>
+                <td class="td-name">{{ row.tournament_name }}</td>
+                <td class="td-mono td-num">{{ row.prestige_1st }}</td>
+                <td class="td-mono td-num">{{ row.prestige_2nd }}</td>
+                <td class="td-mono td-num">{{ row.prestige_3rd }}</td>
+                <td class="td-mono td-num">{{ row.prestige_4th }}</td>
+                <td class="td-mono">{{ row.summer_year or '—' }}</td>
+                <td class="td-mono td-num">{{ row.tournament_image_id or '—' }}</td>
+                <td>{{ row.player_award_name or '—' }}</td>
+                <td class="td-mono td-num">{{ row.player_award_id or '—' }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% endif %}
+        <div class="meta-upload-area{% if metadata_rows %} meta-upload-area-sep{% endif %}">
+          {% if metadata_rows %}
+          <p class="meta-upload-label">Upload a new CSV to replace all existing metadata:</p>
+          {% else %}
+          <p class="meta-upload-label">No metadata loaded. Upload a CSV file matching the league metadata format.</p>
+          {% endif %}
+          <form action="/leagues/{{ league.id }}/metadata/upload" method="post"
+                enctype="multipart/form-data" class="meta-upload-form">
+            <div class="file-upload-row">
+              <label class="file-btn" for="csvFile">Choose file</label>
+              <input type="file" id="csvFile" name="csv_file" accept=".csv" required class="file-input-hidden">
+              <span class="file-name" id="fileName">No file chosen</span>
+              <button type="submit" class="btn-primary meta-upload-btn">
+                <span class="btn-text">Upload</span>
+                <span class="btn-icon">↑</span>
+              </button>
+            </div>
+          </form>
+          {% if metadata_rows %}
+          <form action="/leagues/{{ league.id }}/metadata/clear" method="post">
+            <button type="submit" class="btn-danger">Clear Metadata</button>
+          </form>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Player Stats tab -->
+      <div class="tab-content tab-hidden" id="tab-player-stats">
+        {% if player_stats_results %}
+        <form method="post" id="playerStatsAchievementsForm">
+          {% for result in player_stats_results %}
+          <input type="hidden" name="tournament_ids" value="{{ result.tournament_id }}">
+          {% endfor %}
+        </form>
+        <div class="tab-toolbar">
+          <span class="standings-tab-meta">Generated {{ player_stats_generated_at[:16] }}</span>
+          <div class="toolbar-actions">
+            <button type="submit" class="btn-action" form="playerStatsAchievementsForm"
+                    formaction="/leagues/{{ league.id }}/achievements">
+              <span class="btn-text">Achievements</span>
+              <span class="btn-icon">→</span>
+            </button>
+            <a href="/leagues/{{ league.id }}/player_stats/export" class="btn-action">
+              <span class="btn-text">Export CSV</span>
+              <span class="btn-icon">↓</span>
+            </a>
+          </div>
+        </div>
+        <div class="standings-accordion">
+          {% for result in player_stats_results %}
+          <details class="standings-block" {% if player_stats_results | length == 1 %}open{% endif %}>
+            <summary class="standings-summary">
+              <div class="standings-summary-left">
+                <span class="standings-chevron">▶</span>
+                {% if result.season is not none %}
+                <span class="status-chip">S{{ result.season }}</span>
+                {% endif %}
+                <span class="standings-name">{{ result.tournament_name }}</span>
+              </div>
+              <div class="standings-summary-right">
+                <span class="td-mono" style="font-size:0.78rem; color:var(--text-dim)">
+                  {{ result.player_count }} players
+                </span>
+              </div>
+            </summary>
+            <div class="standings-table-wrap">
+              <table class="standings-table">
+                <thead>
+                  <tr>
+                    <th class="th-pos" data-sort-col="index" onclick="sortPlayerTable(this)">#</th>
+                    <th data-sort-col="player_name" onclick="sortPlayerTable(this)">Player</th>
+                    <th data-sort-col="team_name" onclick="sortPlayerTable(this)">Team</th>
+                    <th data-sort-col="player_status" onclick="sortPlayerTable(this)">Status</th>
+                    <th class="th-num" title="Games Played" data-sort-col="games" onclick="sortPlayerTable(this)">GP</th>
+                    <th class="th-num th-pts" title="Star Player Points" data-sort-col="spp" onclick="sortPlayerTable(this)">SPP</th>
+                    <th class="th-num" title="Touchdowns" data-sort-col="td" onclick="sortPlayerTable(this)">TD</th>
+                    <th class="th-num" title="Completions" data-sort-col="comp" onclick="sortPlayerTable(this)">Comp</th>
+                    <th class="th-num" title="Casualties" data-sort-col="cas" onclick="sortPlayerTable(this)">CAS</th>
+                    <th class="th-num" title="Fouls" data-sort-col="fouls" onclick="sortPlayerTable(this)">Fouls</th>
+                    <th class="th-num" title="Interceptions" data-sort-col="int_" onclick="sortPlayerTable(this)">Int</th>
+                    <th class="th-num" title="Blocks" data-sort-col="blocks" onclick="sortPlayerTable(this)">Blk</th>
+                    <th class="th-num" title="Rushing Yards" data-sort-col="rush" onclick="sortPlayerTable(this)">Rush</th>
+                    <th class="th-num" title="Passing Yards" data-sort-col="pass_" onclick="sortPlayerTable(this)">Pass</th>
+                    <th class="th-num" title="Scoring Thrower" data-sort-col="scoring_thrower" onclick="sortPlayerTable(this)">ST</th>
+                    <th class="th-num" title="Blocking Thrower" data-sort-col="blocking_thrower" onclick="sortPlayerTable(this)">BT</th>
+                    <th class="th-num" title="Blocking Scorer" data-sort-col="blocking_scorer" onclick="sortPlayerTable(this)">BS</th>
+                    <th class="th-num" title="Triple" data-sort-col="triple" onclick="sortPlayerTable(this)">TR</th>
+                    <th class="th-num" title="All Rounder" data-sort-col="all_rounder" onclick="sortPlayerTable(this)">AR</th>
+                    <th class="th-num" title="Larson" data-sort-col="larson" onclick="sortPlayerTable(this)">Lars</th>
+                    <th class="th-num" title="Mean Scoring Machine" data-sort-col="mean_scoring_machine" onclick="sortPlayerTable(this)">MSM</th>
+                    <th class="th-num" title="Triple X" data-sort-col="triple_x" onclick="sortPlayerTable(this)">3X</th>
+                    <th class="th-num" title="Aerodynamic Aim" data-sort-col="aerodynamic_aim" onclick="sortPlayerTable(this)">AA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for row in result.players %}
+                  <tr>
+                    <td class="td-pos td-mono">{{ loop.index }}</td>
+                    <td class="td-name">{{ row.player_name }}</td>
+                    <td class="td-coach">{{ row.team_name }}</td>
+                    <td>
+                      <span class="player-status-chip player-status-{{ row.player_status | lower }}">
+                        {{ row.player_status or '—' }}
+                      </span>
+                    </td>
+                    <td class="td-num td-mono">{{ row.games }}</td>
+                    <td class="td-num td-pts">{{ row.spp }}</td>
+                    <td class="td-num td-mono">{{ row.td }}</td>
+                    <td class="td-num td-mono">{{ row.comp }}</td>
+                    <td class="td-num td-mono">{{ row.cas }}</td>
+                    <td class="td-num td-mono">{{ row.fouls }}</td>
+                    <td class="td-num td-mono">{{ row.int_ }}</td>
+                    <td class="td-num td-mono">{{ row.blocks }}</td>
+                    <td class="td-num td-mono">{{ row.rush }}</td>
+                    <td class="td-num td-mono {% if row.pass_ < 0 %}delta-neg{% endif %}">{{ row.pass_ }}</td>
+                    <td class="td-num td-mono">{{ row.scoring_thrower }}</td>
+                    <td class="td-num td-mono">{{ row.blocking_thrower }}</td>
+                    <td class="td-num td-mono">{{ row.blocking_scorer }}</td>
+                    <td class="td-num td-mono">{{ row.triple }}</td>
+                    <td class="td-num td-mono">{{ row.all_rounder }}</td>
+                    <td class="td-num td-mono">{{ row.larson }}</td>
+                    <td class="td-num td-mono">{{ row.mean_scoring_machine }}</td>
+                    <td class="td-num td-mono">{{ row.triple_x }}</td>
+                    <td class="td-num td-mono">{{ row.aerodynamic_aim }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </details>
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-state">
+          <div class="empty-icon">👤</div>
+          <p>No player stats generated yet.<br>Select tournaments and click <strong>Player Stats →</strong> to generate.</p>
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- Achievements tab -->
+      <div class="tab-content tab-hidden" id="tab-achievements">
+        {% if achievements_results %}
+        <div class="tab-toolbar">
+          <span class="standings-tab-meta">Generated {{ achievements_generated_at[:16] }}</span>
+          <a href="/leagues/{{ league.id }}/achievements/export" class="btn-action">
+            <span class="btn-text">Export CSV</span>
+            <span class="btn-icon">↓</span>
+          </a>
+        </div>
+        <div class="standings-accordion">
+          {% for result in achievements_results %}
+          <details class="standings-block" {% if achievements_results | length == 1 %}open{% endif %}>
+            <summary class="standings-summary">
+              <div class="standings-summary-left">
+                <span class="standings-chevron">▶</span>
+                {% if result.season is not none %}
+                <span class="status-chip">S{{ result.season }}</span>
+                {% endif %}
+                <span class="standings-name">{{ result.tournament_name }}</span>
+              </div>
+              <div class="standings-summary-right">
+                <span class="td-mono" style="font-size:0.78rem; color:var(--text-dim)">
+                  {{ result.achievement_count }} award{% if result.achievement_count != 1 %}s{% endif %}
+                </span>
+              </div>
+            </summary>
+            <div class="standings-table-wrap">
+              <table class="standings-table ach-table">
+                <thead>
+                  <tr>
+                    <th>Achievement</th>
+                    <th>Player</th>
+                    <th>Team</th>
+                    <th class="ach-match-col">Match</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for a in result.achievements %}
+                  <tr>
+                    <td>
+                      {% if a.achievement_type == "tournament_award" %}
+                        {% for badge in a.badges %}
+                        <span class="ach-badge ach-type-tournament">{{ badge }}</span>
+                        {% endfor %}
+                      {% elif a.achievement_type == "spp_milestone" %}
+                        <span class="ach-badge ach-type-milestone">{{ a.achievement_name }}</span>
+                      {% else %}
+                        <span class="ach-badge ach-type-per-game">{{ a.achievement_name }}</span>
+                      {% endif %}
+                    </td>
+                    <td class="td-name">{{ a.player_name }}</td>
+                    <td class="td-coach">{{ a.team_name }}</td>
+                    <td class="ach-match-col">
+                      {% if a.match_url %}
+                      <a href="{{ a.match_url }}" target="_blank" rel="noopener" class="ach-match-link">View</a>
+                      {% else %}
+                      <span class="td-mono" style="color:var(--text-dim)">—</span>
+                      {% endif %}
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </details>
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-state">
+          <div class="empty-icon">⭐</div>
+          <p>No achievements generated yet.<br>Generate Player Stats first, then click <strong>Achievements →</strong> on the Player Stats tab.</p>
+        </div>
+        {% endif %}
+      </div>
+
+    </div><!-- .tabs-container -->
+  </main>
+
+  <!-- Crushing Victories modal -->
+  <div id="crushingModal" class="modal-overlay" style="display:none" onclick="if(event.target===this)closeCrushingModal()">
+    <div class="modal-box">
+      <div class="modal-header">
+        <span class="modal-title">🏈 Crushing Victories</span>
+        <button type="button" class="modal-close" onclick="closeCrushingModal()">✕</button>
+      </div>
+      <div class="modal-body" id="crushingModalBody"></div>
+    </div>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+  <script>
+    // Tab switching
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.tab;
+        tabBtns.forEach(b => b.classList.toggle('tab-active', b === btn));
+        tabContents.forEach(c => c.classList.toggle('tab-hidden', c.id !== 'tab-' + target));
+      });
+    });
+    const urlTab = new URLSearchParams(window.location.search).get('tab');
+    if (urlTab) {
+      const targetBtn = document.querySelector(`.tab-btn[data-tab="${urlTab}"]`);
+      if (targetBtn) targetBtn.click();
+    }
+
+    // Crushing Victories modal
+    function openCrushingModal(btn) {
+      const matches = JSON.parse(btn.dataset.matches);
+      const body = document.getElementById('crushingModalBody');
+      body.innerHTML = matches.map(m =>
+        `<a class="crushing-row" href="https://fumbbl.com/p/match?id=${m.match_id}" target="_blank" rel="noopener">
+          <span class="crushing-winner">${m.winner_name}</span>
+          <span class="crushing-score">${m.winner_score} – ${m.loser_score}</span>
+          <span class="crushing-loser">${m.loser_name}</span>
+        </a>`
+      ).join('');
+      document.getElementById('crushingModal').style.display = 'flex';
+    }
+    function closeCrushingModal() {
+      document.getElementById('crushingModal').style.display = 'none';
+    }
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeCrushingModal();
+    });
+
+    // Player Stats table sorting
+    function sortPlayerTable(th) {
+      const table = th.closest('table');
+      const tbody = table.querySelector('tbody');
+      const ths = Array.from(th.closest('tr').querySelectorAll('th'));
+      const colIndex = ths.indexOf(th);
+      const col = th.dataset.sortCol;
+      const isDesc = th.dataset.sortDir !== 'desc';
+      th.dataset.sortDir = isDesc ? 'desc' : 'asc';
+      ths.forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+      th.classList.add(isDesc ? 'sort-desc' : 'sort-asc');
+
+      const rows = Array.from(tbody.querySelectorAll('tr'));
+      const isNumericCol = !['player_name', 'team_name', 'player_status', 'index'].includes(col);
+      rows.sort((a, b) => {
+        const aCell = a.querySelectorAll('td')[colIndex];
+        const bCell = b.querySelectorAll('td')[colIndex];
+        const aVal = aCell ? aCell.textContent.trim() : '';
+        const bVal = bCell ? bCell.textContent.trim() : '';
+        let cmp;
+        if (isNumericCol) {
+          cmp = (parseFloat(aVal) || 0) - (parseFloat(bVal) || 0);
+        } else {
+          cmp = aVal.localeCompare(bVal);
+        }
+        return isDesc ? -cmp : cmp;
+      });
+      rows.forEach(r => tbody.appendChild(r));
+      // Renumber position column (index 0)
+      const posCells = tbody.querySelectorAll('td:first-child');
+      posCells.forEach((td, i) => { td.textContent = i + 1; });
+    }
+
+    // File picker label
+    const csvInput = document.getElementById('csvFile');
+    const fileNameSpan = document.getElementById('fileName');
+    if (csvInput) {
+      csvInput.addEventListener('change', () => {
+        fileNameSpan.textContent = csvInput.files[0]?.name || 'No file chosen';
+      });
+    }
+  </script>
+</body>
+</html>

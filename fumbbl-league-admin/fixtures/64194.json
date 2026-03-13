@@ -1,0 +1,1347 @@
+{
+  "tournament_id": 64194,
+  "tournament_name": "CIBBL - Y13, Summer - (8) Lord Sitch",
+  "season": "13",
+  "schedule": [
+    {
+      "position": 0,
+      "round": 1,
+      "created": "2025-03-24 22:21:22",
+      "modified": "2025-03-26 22:37:58",
+      "result": {
+        "id": 4614984,
+        "status": "played",
+        "replayId": 1801437,
+        "winner": 1206852,
+        "teams": [
+          {
+            "id": 1206852,
+            "score": 2
+          },
+          {
+            "id": 1206564,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1206852,
+          "name": "Crimson Hand Accord Perpetuals"
+        },
+        {
+          "id": 1206564,
+          "name": "Exiled Legion of Infernius"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 1,
+      "created": "2025-03-24 22:21:22",
+      "modified": "2025-03-30 14:32:10",
+      "result": {
+        "id": 0,
+        "status": "forfeit",
+        "replayId": 0,
+        "winner": 1207306,
+        "teams": [
+          {
+            "id": 176907,
+            "score": 0
+          },
+          {
+            "id": 1207306,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 176907,
+          "name": "Filler 8"
+        },
+        {
+          "id": 1207306,
+          "name": "Blood Keep Guardians"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 1,
+      "created": "2025-03-24 22:21:22",
+      "modified": "2025-04-03 20:26:48",
+      "result": {
+        "id": 4616766,
+        "status": "played",
+        "replayId": 1803522,
+        "winner": 1206579,
+        "teams": [
+          {
+            "id": 1206579,
+            "score": 2
+          },
+          {
+            "id": 1184319,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1206579,
+          "name": "Anlec Nightwings"
+        },
+        {
+          "id": 1184319,
+          "name": "Frozen Hole Warriors"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 2,
+      "created": "2025-03-24 22:21:22",
+      "modified": "2025-04-06 22:58:35",
+      "result": {
+        "id": 4617452,
+        "status": "played",
+        "replayId": 1804327,
+        "winner": 1206852,
+        "teams": [
+          {
+            "id": 1206852,
+            "score": 2
+          },
+          {
+            "id": 1207306,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1206852,
+          "name": "Crimson Hand Accord Perpetuals"
+        },
+        {
+          "id": 1207306,
+          "name": "Blood Keep Guardians"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 2,
+      "created": "2025-03-24 22:21:22",
+      "modified": "2025-04-17 15:09:23",
+      "result": {
+        "id": 0,
+        "status": "forfeit",
+        "replayId": 0,
+        "winner": 1206579,
+        "teams": [
+          {
+            "id": 176907,
+            "score": 0
+          },
+          {
+            "id": 1206579,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 176907,
+          "name": "Filler 8"
+        },
+        {
+          "id": 1206579,
+          "name": "Anlec Nightwings"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 2,
+      "created": "2025-03-24 22:21:22",
+      "modified": "2025-04-19 21:19:30",
+      "result": {
+        "id": 4620102,
+        "status": "played",
+        "replayId": 1807435,
+        "winner": 1206564,
+        "teams": [
+          {
+            "id": 1206564,
+            "score": 3
+          },
+          {
+            "id": 1184319,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1206564,
+          "name": "Exiled Legion of Infernius"
+        },
+        {
+          "id": 1184319,
+          "name": "Frozen Hole Warriors"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 3,
+      "created": "2025-03-24 22:21:22",
+      "modified": "2025-04-22 12:30:46",
+      "result": {
+        "id": 0,
+        "status": "forfeit",
+        "replayId": 0,
+        "winner": 1206852,
+        "teams": [
+          {
+            "id": 1206852,
+            "score": 0
+          },
+          {
+            "id": 176907,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1206852,
+          "name": "Crimson Hand Accord Perpetuals"
+        },
+        {
+          "id": 176907,
+          "name": "Filler 8"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 3,
+      "created": "2025-03-24 22:21:22",
+      "modified": "2025-04-20 17:59:14",
+      "result": {
+        "id": 4620225,
+        "status": "played",
+        "replayId": 1807562,
+        "winner": 1206579,
+        "teams": [
+          {
+            "id": 1206564,
+            "score": 0
+          },
+          {
+            "id": 1206579,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1206564,
+          "name": "Exiled Legion of Infernius"
+        },
+        {
+          "id": 1206579,
+          "name": "Anlec Nightwings"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 3,
+      "created": "2025-03-24 22:21:22",
+      "modified": "2025-04-22 22:10:39",
+      "result": {
+        "id": 4620714,
+        "status": "played",
+        "replayId": 1808138,
+        "winner": 1207306,
+        "teams": [
+          {
+            "id": 1184319,
+            "score": 0
+          },
+          {
+            "id": 1207306,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1184319,
+          "name": "Frozen Hole Warriors"
+        },
+        {
+          "id": 1207306,
+          "name": "Blood Keep Guardians"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 4,
+      "created": "2025-03-24 22:21:22",
+      "modified": "2025-04-23 22:49:16",
+      "result": {
+        "id": 4620925,
+        "status": "played",
+        "replayId": 1808389,
+        "winner": 1206579,
+        "teams": [
+          {
+            "id": 1206852,
+            "score": 0
+          },
+          {
+            "id": 1206579,
+            "score": 3
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1206852,
+          "name": "Crimson Hand Accord Perpetuals"
+        },
+        {
+          "id": 1206579,
+          "name": "Anlec Nightwings"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 4,
+      "created": "2025-03-24 22:21:22",
+      "modified": "2025-04-28 12:56:57",
+      "result": {
+        "id": 0,
+        "status": "forfeit",
+        "replayId": 0,
+        "winner": 1184319,
+        "teams": [
+          {
+            "id": 176907,
+            "score": 0
+          },
+          {
+            "id": 1184319,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 176907,
+          "name": "Filler 8"
+        },
+        {
+          "id": 1184319,
+          "name": "Frozen Hole Warriors"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 4,
+      "created": "2025-03-24 22:21:22",
+      "modified": "2025-04-27 17:17:05",
+      "result": {
+        "id": 4621560,
+        "status": "played",
+        "replayId": 1809128,
+        "winner": 1206564,
+        "teams": [
+          {
+            "id": 1206564,
+            "score": 2
+          },
+          {
+            "id": 1207306,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1206564,
+          "name": "Exiled Legion of Infernius"
+        },
+        {
+          "id": 1207306,
+          "name": "Blood Keep Guardians"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 5,
+      "created": "2025-03-24 22:21:22",
+      "modified": "2025-05-10 22:34:09",
+      "result": {
+        "id": 4624192,
+        "status": "played",
+        "replayId": 1812224,
+        "winner": 1206852,
+        "teams": [
+          {
+            "id": 1206852,
+            "score": 2
+          },
+          {
+            "id": 1184319,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1206852,
+          "name": "Crimson Hand Accord Perpetuals"
+        },
+        {
+          "id": 1184319,
+          "name": "Frozen Hole Warriors"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 5,
+      "created": "2025-03-24 22:21:22",
+      "modified": "2025-05-05 22:42:07",
+      "result": {
+        "id": 0,
+        "status": "forfeit",
+        "replayId": 0,
+        "winner": 1206564,
+        "teams": [
+          {
+            "id": 176907,
+            "score": 0
+          },
+          {
+            "id": 1206564,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 176907,
+          "name": "Filler 8"
+        },
+        {
+          "id": 1206564,
+          "name": "Exiled Legion of Infernius"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 5,
+      "created": "2025-03-24 22:21:22",
+      "modified": "2025-04-29 23:05:04",
+      "result": {
+        "id": 4621987,
+        "status": "played",
+        "replayId": 1809627,
+        "winner": 1206579,
+        "teams": [
+          {
+            "id": 1206579,
+            "score": 1
+          },
+          {
+            "id": 1207306,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1206579,
+          "name": "Anlec Nightwings"
+        },
+        {
+          "id": 1207306,
+          "name": "Blood Keep Guardians"
+        }
+      ]
+    }
+  ],
+  "matches": {
+    "4614984": {
+      "id": 4614984,
+      "replayId": 1801437,
+      "tournamentId": 64194,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-03-26",
+      "time": "22:37:58",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "true",
+      "team1": {
+        "id": 1206564,
+        "name": "Exiled Legion of Infernius",
+        "roster": {
+          "id": 3822,
+          "name": "Daemons of Khorne (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 1490000,
+        "currentTeamValue": 1440000,
+        "coach": {
+          "id": 244291,
+          "name": "KhaTazadun",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "1540k"
+      },
+      "team2": {
+        "id": 1206852,
+        "name": "Crimson Hand Accord Perpetuals",
+        "roster": {
+          "id": 903,
+          "name": "Numas (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1360000,
+        "currentTeamValue": 1360000,
+        "coach": {
+          "id": 249962,
+          "name": "C0ddlefish",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 90000,
+        "gate": 0,
+        "tournamentWeight": "1640k"
+      }
+    },
+    "4616766": {
+      "id": 4616766,
+      "replayId": 1803522,
+      "tournamentId": 64194,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-04-03",
+      "time": "20:26:48",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1184319,
+        "name": "Frozen Hole Warriors",
+        "roster": {
+          "id": 3992,
+          "name": "Norse Dwarf (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 2,
+          "si": 0,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 1520000,
+        "currentTeamValue": 1520000,
+        "coach": {
+          "id": 253885,
+          "name": "MiniMorg",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 60000,
+        "gate": 0,
+        "tournamentWeight": "1680k"
+      },
+      "team2": {
+        "id": 1206579,
+        "name": "Anlec Nightwings",
+        "roster": {
+          "id": 7952,
+          "name": "Nagarythe (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 1745000,
+        "currentTeamValue": 1745000,
+        "coach": {
+          "id": 18139,
+          "name": "Rijssiej",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "2070k"
+      }
+    },
+    "4617452": {
+      "id": 4617452,
+      "replayId": 1804327,
+      "tournamentId": 64194,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-04-06",
+      "time": "22:58:35",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1207306,
+        "name": "Blood Keep Guardians",
+        "roster": {
+          "id": 5229,
+          "name": "Blood Dragon (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 2,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1570000,
+        "currentTeamValue": 1570000,
+        "coach": {
+          "id": 48109,
+          "name": "ritzi",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 60000,
+        "gate": 0,
+        "tournamentWeight": "1990k"
+      },
+      "team2": {
+        "id": 1206852,
+        "name": "Crimson Hand Accord Perpetuals",
+        "roster": {
+          "id": 903,
+          "name": "Numas (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1360000,
+        "currentTeamValue": 1360000,
+        "coach": {
+          "id": 249962,
+          "name": "C0ddlefish",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "1640k"
+      }
+    },
+    "4620102": {
+      "id": 4620102,
+      "replayId": 1807435,
+      "tournamentId": 64194,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-04-19",
+      "time": "21:19:30",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "true",
+      "team1": {
+        "id": 1206564,
+        "name": "Exiled Legion of Infernius",
+        "roster": {
+          "id": 3822,
+          "name": "Daemons of Khorne (CIBBL)"
+        },
+        "score": 3,
+        "casualties": {
+          "bh": 3,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 1490000,
+        "currentTeamValue": 1390000,
+        "coach": {
+          "id": 244291,
+          "name": "KhaTazadun",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "1540k"
+      },
+      "team2": {
+        "id": 1184319,
+        "name": "Frozen Hole Warriors",
+        "roster": {
+          "id": 3992,
+          "name": "Norse Dwarf (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1540000,
+        "currentTeamValue": 1285000,
+        "coach": {
+          "id": 253885,
+          "name": "MiniMorg",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 55000,
+        "gate": 0,
+        "tournamentWeight": "1680k"
+      }
+    },
+    "4620225": {
+      "id": 4620225,
+      "replayId": 1807562,
+      "tournamentId": 64194,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-04-20",
+      "time": "17:59:14",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "true",
+      "team1": {
+        "id": 1206579,
+        "name": "Anlec Nightwings",
+        "roster": {
+          "id": 7952,
+          "name": "Nagarythe (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1800000,
+        "currentTeamValue": 1660000,
+        "coach": {
+          "id": 18139,
+          "name": "Rijssiej",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 90000,
+        "gate": 0,
+        "tournamentWeight": "2070k"
+      },
+      "team2": {
+        "id": 1206564,
+        "name": "Exiled Legion of Infernius",
+        "roster": {
+          "id": 3822,
+          "name": "Daemons of Khorne (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 1,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 1470000,
+        "currentTeamValue": 1420000,
+        "coach": {
+          "id": 244291,
+          "name": "KhaTazadun",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "1540k"
+      }
+    },
+    "4620714": {
+      "id": 4620714,
+      "replayId": 1808138,
+      "tournamentId": 64194,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-04-22",
+      "time": "22:10:39",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1207306,
+        "name": "Blood Keep Guardians",
+        "roster": {
+          "id": 5229,
+          "name": "Blood Dragon (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 1590000,
+        "currentTeamValue": 1400000,
+        "coach": {
+          "id": 48109,
+          "name": "ritzi",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 50000,
+        "gate": 0,
+        "tournamentWeight": "1990k"
+      },
+      "team2": {
+        "id": 1184319,
+        "name": "Frozen Hole Warriors",
+        "roster": {
+          "id": 3992,
+          "name": "Norse Dwarf (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1540000,
+        "currentTeamValue": 1540000,
+        "coach": {
+          "id": 253885,
+          "name": "MiniMorg",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 40000,
+        "gate": 0,
+        "tournamentWeight": "1680k"
+      }
+    },
+    "4620925": {
+      "id": 4620925,
+      "replayId": 1808389,
+      "tournamentId": 64194,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-04-23",
+      "time": "22:49:16",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1206852,
+        "name": "Crimson Hand Accord Perpetuals",
+        "roster": {
+          "id": 903,
+          "name": "Numas (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 1360000,
+        "currentTeamValue": 1360000,
+        "coach": {
+          "id": 249962,
+          "name": "C0ddlefish",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "1640k"
+      },
+      "team2": {
+        "id": 1206579,
+        "name": "Anlec Nightwings",
+        "roster": {
+          "id": 7952,
+          "name": "Nagarythe (CIBBL)"
+        },
+        "score": 3,
+        "casualties": {
+          "bh": 3,
+          "si": 3,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 1850000,
+        "currentTeamValue": 1665000,
+        "coach": {
+          "id": 18139,
+          "name": "Rijssiej",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 115000,
+        "gate": 0,
+        "tournamentWeight": "2070k"
+      }
+    },
+    "4621560": {
+      "id": 4621560,
+      "replayId": 1809128,
+      "tournamentId": 64194,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-04-27",
+      "time": "17:17:05",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "true",
+      "team1": {
+        "id": 1206564,
+        "name": "Exiled Legion of Infernius",
+        "roster": {
+          "id": 3822,
+          "name": "Daemons of Khorne (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 1470000,
+        "currentTeamValue": 1380000,
+        "coach": {
+          "id": 244291,
+          "name": "KhaTazadun",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "1540k"
+      },
+      "team2": {
+        "id": 1207306,
+        "name": "Blood Keep Guardians",
+        "roster": {
+          "id": 5229,
+          "name": "Blood Dragon (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 1610000,
+        "currentTeamValue": 1570000,
+        "coach": {
+          "id": 48109,
+          "name": "ritzi",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "1990k"
+      }
+    },
+    "4624192": {
+      "id": 4624192,
+      "replayId": 1812224,
+      "tournamentId": 64194,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-05-10",
+      "time": "22:34:09",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1184319,
+        "name": "Frozen Hole Warriors",
+        "roster": {
+          "id": 3992,
+          "name": "Norse Dwarf (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1540000,
+        "currentTeamValue": 1415000,
+        "coach": {
+          "id": 253885,
+          "name": "MiniMorg",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 60000,
+        "gate": 0,
+        "tournamentWeight": "1680k"
+      },
+      "team2": {
+        "id": 1206852,
+        "name": "Crimson Hand Accord Perpetuals",
+        "roster": {
+          "id": 903,
+          "name": "Numas (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 1400000,
+        "currentTeamValue": 1185000,
+        "coach": {
+          "id": 249962,
+          "name": "C0ddlefish",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "1640k"
+      }
+    },
+    "4621987": {
+      "id": 4621987,
+      "replayId": 1809627,
+      "tournamentId": 64194,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2025-04-29",
+      "time": "23:05:04",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1206579,
+        "name": "Anlec Nightwings",
+        "roster": {
+          "id": 7952,
+          "name": "Nagarythe (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 2,
+          "si": 0,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 1910000,
+        "currentTeamValue": 1820000,
+        "coach": {
+          "id": 18139,
+          "name": "Rijssiej",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "2070k"
+      },
+      "team2": {
+        "id": 1207306,
+        "name": "Blood Keep Guardians",
+        "roster": {
+          "id": 5229,
+          "name": "Blood Dragon (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1630000,
+        "currentTeamValue": 1630000,
+        "coach": {
+          "id": 48109,
+          "name": "ritzi",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "1990k"
+      }
+    }
+  },
+  "expected_standings": [
+    {"position": 1, "team_id": 1206579, "team_name": "Anlec Nightwings", "coach_name": "Rijssiej", "wins": 4, "draws": 0, "losses": 0, "td_for": 8, "td_against": 0, "td_delta": 8, "cas_for": 14, "cas_against": 8, "cas_delta": 6, "points": 12},
+    {"position": 2, "team_id": 1206852, "team_name": "Crimson Hand Accord Perpetuals", "coach_name": "C0ddlefish", "wins": 3, "draws": 0, "losses": 1, "td_for": 6, "td_against": 3, "td_delta": 3, "cas_for": 5, "cas_against": 15, "cas_delta": -10, "points": 9},
+    {"position": 3, "team_id": 1206564, "team_name": "Exiled Legion of Infernius", "coach_name": "KhaTazadun", "wins": 2, "draws": 0, "losses": 2, "td_for": 5, "td_against": 5, "td_delta": 0, "cas_for": 12, "cas_against": 5, "cas_delta": 7, "points": 6},
+    {"position": 4, "team_id": 1207306, "team_name": "Blood Keep Guardians", "coach_name": "ritzi", "wins": 1, "draws": 0, "losses": 3, "td_for": 2, "td_against": 5, "td_delta": -3, "cas_for": 8, "cas_against": 10, "cas_delta": -2, "points": 3},
+    {"position": 5, "team_id": 1184319, "team_name": "Frozen Hole Warriors", "coach_name": "MiniMorg", "wins": 0, "draws": 0, "losses": 4, "td_for": 0, "td_against": 8, "td_delta": -8, "cas_for": 8, "cas_against": 9, "cas_delta": -1, "points": 0}
+    
+  ]
+}
