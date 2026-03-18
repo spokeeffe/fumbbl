@@ -68,7 +68,8 @@ def match_metadata_row(tournament_name: str, season: str, metadata_rows) -> Opti
     return max(matches, key=lambda r: len(r["tournament_name"])) if matches else None
 
 # --- DB setup ---
-DB_PATH = "fumbbl_leagues.db"
+import os
+DB_PATH = "/tmp/fumbbl_leagues.db" if os.environ.get("VERCEL") else "fumbbl_leagues.db"
 
 def get_db():
     conn = sqlite3.connect(DB_PATH)
