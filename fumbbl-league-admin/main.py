@@ -69,7 +69,10 @@ def match_metadata_row(tournament_name: str, season: str, metadata_rows) -> Opti
 
 # --- DB setup ---
 import os
-DB_PATH = "/tmp/fumbbl_leagues.db" if os.environ.get("VERCEL") else "fumbbl_leagues.db"
+import shutil
+_ON_VERCEL = bool(os.environ.get("VERCEL"))
+DB_SEED = "fumbbl_leagues.db"
+DB_PATH = "/tmp/fumbbl_leagues.db" if _ON_VERCEL else "fumbbl_leagues.db"
 
 def get_db():
     conn = sqlite3.connect(DB_PATH)
@@ -77,6 +80,10 @@ def get_db():
     return conn
 
 def init_db():
+    # On Vercel, seed /tmp from the committed DB so leagues/metadata/cache
+    # survive across cold starts even though /tmp itself is ephemeral.
+    if _ON_VERCEL and not os.path.exists(DB_PATH) and os.path.exists(DB_SEED):
+        shutil.copy2(DB_SEED, DB_PATH)
     conn = get_db()
     conn.execute("""
         CREATE TABLE IF NOT EXISTS leagues (
