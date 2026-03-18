@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generating {{ operation }} — FUMBBL Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/main.css?v=2">
+  <style>
+    .log-panels {
+      display: flex;
+      gap: 1.25rem;
+      margin: 1.5rem auto;
+      max-width: 860px;
+    }
+    .log-panel {
+      flex: 1;
+      min-width: 0;
+    }
+    .log-panel-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      opacity: 0.55;
+      margin-bottom: 0.4rem;
+    }
+    .log-entries {
+      max-height: 200px;
+      overflow-y: auto;
+      background: rgba(0,0,0,0.2);
+      border-radius: 4px;
+      padding: 0.5rem 0.75rem;
+      font-family: monospace;
+      font-size: 0.78rem;
+    }
+    .log-entry {
+      display: flex;
+      justify-content: space-between;
+      padding: 1px 0;
+      opacity: 0.75;
+    }
+    .log-entry .name { color: #aac4ff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .log-entry .ms   { color: #ffd580; white-space: nowrap; margin-left: 0.75rem; flex-shrink: 0; }
+
+    .summaries {
+      display: flex;
+      gap: 1.25rem;
+      margin: 1.5rem auto;
+      max-width: 860px;
+    }
+    .summary-panel {
+      flex: 1;
+      min-width: 0;
+    }
+    .summary-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      opacity: 0.55;
+      margin-bottom: 0.5rem;
+    }
+    .summary-panel table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    .summary-panel th {
+      text-align: left;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 0.72rem;
+      opacity: 0.45;
+      padding: 0.2rem 0.4rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .summary-panel th.num, .summary-panel td.num { text-align: right; }
+    .summary-panel td {
+      padding: 0.28rem 0.4rem;
+      font-family: monospace;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .summary-panel td.name-col { color: #aac4ff; }
+  </style>
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">⚔</span>
+        <div>
+          <div class="logo-title">FUMBBL</div>
+          <div class="logo-sub">League Admin Tool</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="progress-page">
+      <div class="progress-label" id="progress-label">Generating {{ operation }}…</div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+      </div>
+      <div class="progress-pct" id="progress-pct">0%</div>
+      <div class="progress-error" id="progress-error" style="display:none"></div>
+    </div>
+
+    <div class="log-panels" id="log-panels" style="display:none">
+      <div class="log-panel">
+        <div class="log-panel-title">API calls</div>
+        <div class="log-entries" id="api-log-entries"></div>
+      </div>
+      <div class="log-panel">
+        <div class="log-panel-title">Function calls</div>
+        <div class="log-entries" id="fn-log-entries"></div>
+      </div>
+    </div>
+
+    <div class="summaries" id="summaries" style="display:none">
+      <div class="summary-panel">
+        <div class="summary-title">API performance</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Endpoint</th>
+              <th class="num">Calls</th>
+              <th class="num">Total (s)</th>
+              <th class="num">Avg (s)</th>
+            </tr>
+          </thead>
+          <tbody id="api-summary-body"></tbody>
+        </table>
+      </div>
+      <div class="summary-panel">
+        <div class="summary-title">Function performance</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Function</th>
+              <th class="num">Calls</th>
+              <th class="num">Total (s)</th>
+              <th class="num">Avg (s)</th>
+            </tr>
+          </thead>
+          <tbody id="fn-summary-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const jobId = "{{ job_id }}";
+    let lastApiCount = 0;
+    let lastFnCount = 0;
+
+    function appendLogEntries(entries, containerId, nameKey, lastCount) {
+      const el = document.getElementById(containerId);
+      const newEntries = entries.slice(lastCount);
+      for (const e of newEntries) {
+        const div = document.createElement("div");
+        div.className = "log-entry";
+        div.innerHTML = `<span class="name">${e[nameKey]}</span><span class="ms">${e.elapsed.toFixed(3)}s</span>`;
+        el.appendChild(div);
+      }
+      el.scrollTop = el.scrollHeight;
+      return entries.length;
+    }
+
+    function buildSummaryTable(tbodyId, rows, nameKey) {
+      const tbody = document.getElementById(tbodyId);
+      tbody.innerHTML = "";
+      for (const row of rows) {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td class="name-col">${row[nameKey]}</td>
+          <td class="num">${row.count}</td>
+          <td class="num">${row.total_elapsed.toFixed(3)}</td>
+          <td class="num">${row.avg_elapsed.toFixed(3)}</td>
+        `;
+        tbody.appendChild(tr);
+      }
+    }
+
+    async function poll() {
+      try {
+        const resp = await fetch("/jobs/" + jobId);
+        if (!resp.ok) { scheduleNext(); return; }
+        const j = await resp.json();
+
+        document.getElementById("progress-fill").style.width = j.percent + "%";
+        document.getElementById("progress-pct").textContent = j.percent + "%";
+
+        const hasLogs = (j.recent_api_calls && j.recent_api_calls.length > 0) ||
+                        (j.recent_fn_calls  && j.recent_fn_calls.length  > 0);
+        if (hasLogs) {
+          document.getElementById("log-panels").style.display = "flex";
+          if (j.recent_api_calls) lastApiCount = appendLogEntries(j.recent_api_calls, "api-log-entries", "endpoint", lastApiCount);
+          if (j.recent_fn_calls)  lastFnCount  = appendLogEntries(j.recent_fn_calls,  "fn-log-entries",  "fn",       lastFnCount);
+        }
+
+        if (j.status === "done") {
+          document.getElementById("progress-label").textContent = "Done!";
+
+          if ((j.api_summary && j.api_summary.length > 0) || (j.fn_summary && j.fn_summary.length > 0)) {
+            buildSummaryTable("api-summary-body", j.api_summary || [], "endpoint");
+            buildSummaryTable("fn-summary-body",  j.fn_summary  || [], "fn");
+            document.getElementById("summaries").style.display = "flex";
+          }
+
+          setTimeout(() => { window.location.href = j.redirect; }, 4000);
+          return;
+        }
+        if (j.status === "error") {
+          document.getElementById("progress-label").textContent = "Something went wrong";
+          const err = document.getElementById("progress-error");
+          err.textContent = j.error || "Unknown error";
+          err.style.display = "block";
+          return;
+        }
+      } catch (e) { /* network blip — keep polling */ }
+      scheduleNext();
+    }
+
+    function scheduleNext() { setTimeout(poll, 500); }
+    poll();
+  </script>
+</body>
+</html>

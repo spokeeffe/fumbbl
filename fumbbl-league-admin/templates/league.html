@@ -167,7 +167,7 @@
           {% endfor %}
         </form>
         <div class="tab-toolbar">
-          <span class="standings-tab-meta">Generated {{ standings_generated_at[:16] }}</span>
+          <span class="standings-tab-meta">Generated {{ standings_generated_at[:16] }}{% if standings_has_perf %} · <a href="/leagues/{{ league.id }}/standings/perf" class="perf-link">Perf</a>{% endif %}</span>
           <div class="toolbar-actions">
             <button type="submit" class="btn-action" form="standingsPlayerStatsForm"
                     formaction="/leagues/{{ league.id }}/player_stats">
@@ -339,7 +339,7 @@
           {% endfor %}
         </form>
         <div class="tab-toolbar">
-          <span class="standings-tab-meta">Generated {{ player_stats_generated_at[:16] }}</span>
+          <span class="standings-tab-meta">Generated {{ player_stats_generated_at[:16] }}{% if player_stats_has_perf %} · <a href="/leagues/{{ league.id }}/player_stats/perf" class="perf-link">Perf</a>{% endif %}</span>
           <div class="toolbar-actions">
             <button type="submit" class="btn-action" form="playerStatsAchievementsForm"
                     formaction="/leagues/{{ league.id }}/achievements">
@@ -448,7 +448,7 @@
       <div class="tab-content tab-hidden" id="tab-achievements">
         {% if achievements_results %}
         <div class="tab-toolbar">
-          <span class="standings-tab-meta">Generated {{ achievements_generated_at[:16] }}</span>
+          <span class="standings-tab-meta">Generated {{ achievements_generated_at[:16] }}{% if achievements_has_perf %} · <a href="/leagues/{{ league.id }}/achievements/perf" class="perf-link">Perf</a>{% endif %}</span>
           <a href="/leagues/{{ league.id }}/achievements/export" class="btn-action">
             <span class="btn-text">Export CSV</span>
             <span class="btn-icon">↓</span>

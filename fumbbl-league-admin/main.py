@@ -7,6 +7,8 @@ import sqlite3
 import time
 import csv
 import io
+import asyncio
+import uuid
 from contextlib import asynccontextmanager
 from typing import Optional, List
 from urllib.parse import quote_plus
@@ -27,6 +29,9 @@ class RateLimiter:
         self.last_call = time.time()
 
 rate_limiter = RateLimiter(calls_per_second=10.0)
+
+# In-memory job store for progress tracking: {job_id: {status, completed, total, redirect, error}}
+jobs: dict = {}
 
 VALID_SEASONS = {"Winter", "Spring", "Autumn", "Summer"}
 
@@ -118,66 +123,158 @@ def init_db():
             generated_at TEXT DEFAULT (datetime('now'))
         )
     """)
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS match_cache (
+            match_id INTEGER PRIMARY KEY,
+            data TEXT NOT NULL
+        )
+    """)
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS player_cache (
+            player_id INTEGER PRIMARY KEY,
+            name TEXT,
+            status TEXT,
+            spp INTEGER DEFAULT 0
+        )
+    """)
+    for tbl in ["standings_cache", "player_stats_cache", "achievements_cache"]:
+        try:
+            conn.execute(f"ALTER TABLE {tbl} ADD COLUMN perf_summary TEXT")
+        except sqlite3.OperationalError:
+            pass  # column already exists
     conn.commit()
     conn.close()
 
 # --- FUMBBL API client ---
 FUMBBL_BASE = "https://fumbbl.com/api"
 
-async def fetch_group(group_id: int) -> dict:
+def _log_api_call(job_id: Optional[str], endpoint: str, elapsed: float):
+    if job_id and job_id in jobs:
+        jobs[job_id]["api_log"].append({"endpoint": endpoint, "elapsed": round(elapsed, 3)})
+
+def _log_fn_call(job_id: Optional[str], fn_name: str, elapsed: float):
+    if job_id and job_id in jobs:
+        jobs[job_id]["fn_log"].append({"fn": fn_name, "elapsed": round(elapsed, 3)})
+
+def _compute_perf_summary(j: dict) -> dict:
+    api_agg: dict = {}
+    for entry in j.get("api_log", []):
+        ep = entry["endpoint"]
+        if ep not in api_agg:
+            api_agg[ep] = {"endpoint": ep, "count": 0, "total_elapsed": 0.0}
+        api_agg[ep]["count"] += 1
+        api_agg[ep]["total_elapsed"] += entry["elapsed"]
+
+    fn_agg: dict = {}
+    for entry in j.get("fn_log", []):
+        fn = entry["fn"]
+        if fn not in fn_agg:
+            fn_agg[fn] = {"fn": fn, "count": 0, "total_elapsed": 0.0}
+        fn_agg[fn]["count"] += 1
+        fn_agg[fn]["total_elapsed"] += entry["elapsed"]
+
+    return {
+        "api_summary": [
+            {"endpoint": v["endpoint"], "count": v["count"],
+             "total_elapsed": round(v["total_elapsed"], 3),
+             "avg_elapsed": round(v["total_elapsed"] / v["count"], 3)}
+            for v in sorted(api_agg.values(), key=lambda x: -x["total_elapsed"])
+        ],
+        "fn_summary": [
+            {"fn": v["fn"], "count": v["count"],
+             "total_elapsed": round(v["total_elapsed"], 3),
+             "avg_elapsed": round(v["total_elapsed"] / v["count"], 3)}
+            for v in sorted(fn_agg.values(), key=lambda x: -x["total_elapsed"])
+        ],
+    }
+
+async def fetch_group(group_id: int, job_id: Optional[str] = None) -> dict:
     rate_limiter.wait()
     url = f"{FUMBBL_BASE}/group/get/{group_id}"
+    t0 = time.time()
     async with httpx.AsyncClient(timeout=10.0) as client:
         resp = await client.get(url)
         resp.raise_for_status()
+        _log_api_call(job_id, "group/get", time.time() - t0)
         return resp.json()
 
-async def fetch_tournaments(group_id: int) -> list:
+async def fetch_tournaments(group_id: int, job_id: Optional[str] = None) -> list:
     rate_limiter.wait()
     url = f"{FUMBBL_BASE}/group/tournaments/{group_id}"
+    t0 = time.time()
     async with httpx.AsyncClient(timeout=10.0) as client:
         resp = await client.get(url)
         resp.raise_for_status()
         data = resp.json()
+        _log_api_call(job_id, "group/tournaments", time.time() - t0)
         return data if isinstance(data, list) else []
 
-async def fetch_tournament_info(tournament_id: int) -> dict:
+async def fetch_tournament_info(tournament_id: int, job_id: Optional[str] = None) -> dict:
     rate_limiter.wait()
     url = f"{FUMBBL_BASE}/tournament/get/{tournament_id}"
+    t0 = time.time()
     async with httpx.AsyncClient(timeout=10.0) as client:
         resp = await client.get(url)
         resp.raise_for_status()
         data = resp.json()
+        _log_api_call(job_id, "tournament/get", time.time() - t0)
         if isinstance(data, list) and data:
             return data[0]
         if isinstance(data, dict):
             return data
         return {"name": f"Tournament {tournament_id}", "season": None}
 
-async def fetch_tournament_schedule(tournament_id: int) -> list:
+async def fetch_tournament_schedule(tournament_id: int, job_id: Optional[str] = None) -> list:
     rate_limiter.wait()
     url = f"{FUMBBL_BASE}/tournament/schedule/{tournament_id}"
+    t0 = time.time()
     async with httpx.AsyncClient(timeout=10.0) as client:
         resp = await client.get(url)
         resp.raise_for_status()
         data = resp.json()
+        _log_api_call(job_id, "tournament/schedule", time.time() - t0)
         return data if isinstance(data, list) else []
 
-async def fetch_match(match_id: int) -> dict:
+async def fetch_match(match_id: int, job_id: Optional[str] = None) -> dict:
+    conn = get_db()
+    cached = conn.execute("SELECT data FROM match_cache WHERE match_id = ?", (match_id,)).fetchone()
+    conn.close()
+    if cached:
+        return json.loads(cached["data"])
     rate_limiter.wait()
     url = f"{FUMBBL_BASE}/match/get/{match_id}?verbose=1"
+    t0 = time.time()
     async with httpx.AsyncClient(timeout=10.0) as client:
         resp = await client.get(url)
         resp.raise_for_status()
-        return resp.json()
+        data = resp.json()
+        _log_api_call(job_id, "match/get", time.time() - t0)
+        conn = get_db()
+        conn.execute("INSERT OR REPLACE INTO match_cache (match_id, data) VALUES (?, ?)", (match_id, json.dumps(data)))
+        conn.commit()
+        conn.close()
+        return data
 
-async def fetch_player(player_id: int) -> dict:
+async def fetch_player(player_id: int, job_id: Optional[str] = None) -> dict:
     rate_limiter.wait()
     url = f"{FUMBBL_BASE}/player/get/{player_id}"
+    t0 = time.time()
     async with httpx.AsyncClient(timeout=10.0) as client:
         resp = await client.get(url)
         resp.raise_for_status()
+        _log_api_call(job_id, "player/get", time.time() - t0)
         return resp.json()
+
+async def fetch_team(team_id: int, job_id: Optional[str] = None) -> dict:
+    rate_limiter.wait()
+    url = f"{FUMBBL_BASE}/team/get/{team_id}"
+    t0 = time.time()
+    async with httpx.AsyncClient(timeout=10.0) as client:
+        resp = await client.get(url)
+        resp.raise_for_status()
+        data = resp.json()
+        _log_api_call(job_id, "team/get", time.time() - t0)
+        return data
 
 def _cas_total(t: dict) -> int:
     c = t.get("casualties") or {}
@@ -597,28 +694,46 @@ async def delete_league(league_id: int):
     conn.close()
     return RedirectResponse(url="/?success=League+removed.", status_code=303)
 
-@app.post("/leagues/{league_id}/standings", response_class=HTMLResponse)
-async def generate_standings(
-    request: Request,
-    league_id: int,
-    tournament_ids: Optional[List[int]] = Form(default=None),
-):
-    conn = get_db()
-    league = conn.execute("SELECT * FROM leagues WHERE id = ?", (league_id,)).fetchone()
-    conn.close()
-    if not league:
-        raise HTTPException(status_code=404, detail="League not found")
+@app.get("/jobs/{job_id}")
+async def job_status(job_id: str):
+    j = jobs.get(job_id)
+    if not j:
+        raise HTTPException(status_code=404, detail="Job not found")
+    total = j["total"]
+    completed = j["completed"]
+    if j["status"] == "done":
+        pct = 100
+    elif total > 0:
+        pct = min(99, int(completed / total * 100))
+    else:
+        pct = 0
 
-    if not tournament_ids:
-        return RedirectResponse(url=f"/leagues/{league_id}", status_code=303)
+    perf = _compute_perf_summary(j)
+    api_log = j.get("api_log", [])
+    fn_log = j.get("fn_log", [])
 
-    results = []
-    fetch_error = None
+    return {
+        "status": j["status"],
+        "percent": pct,
+        "redirect": j["redirect"],
+        "error": j["error"],
+        "recent_api_calls": api_log[-50:],
+        "recent_fn_calls": fn_log[-50:],
+        "api_summary": perf["api_summary"],
+        "fn_summary": perf["fn_summary"],
+    }
 
+
+async def _work_standings(league_id: int, tournament_ids: list, job_id: str):
+    j = jobs[job_id]
     try:
+        results = []
         for tid in tournament_ids:
-            info = await fetch_tournament_info(tid)
-            schedule = await fetch_tournament_schedule(tid)
+            info = await fetch_tournament_info(tid, job_id=job_id)
+            j["completed"] += 1
+            schedule = await fetch_tournament_schedule(tid, job_id=job_id)
+            j["completed"] += 1
+            j["total"] += sum(1 for m in schedule if (m.get("result") or {}).get("id"))
 
             match_records = []
             crushing_victories = []
@@ -627,7 +742,6 @@ async def generate_standings(
                 winner_id = result.get("winner")
                 match_id = result.get("id")
 
-                # Skip unplayed matches: no game and no awarded winner
                 if not match_id and not winner_id:
                     continue
 
@@ -648,14 +762,13 @@ async def generate_standings(
                     "t2_score": (result_teams.get(t2_id) or {}).get("score") or 0,
                     "t2_cas": 0,
                     "t2_coach": "",
-                    # For forfeits (no match played), trust result.winner.
-                    # For played matches, we override below using actual scores.
                     "winner_id": winner_id,
                     "match_id": match_id,
                 }
 
                 if match_id:
-                    match_data = await fetch_match(match_id)
+                    match_data = await fetch_match(match_id, job_id=job_id)
+                    j["completed"] += 1
                     for side in ["team1", "team2"]:
                         t = match_data.get(side) or {}
                         team_id = t.get("id")
@@ -668,16 +781,13 @@ async def generate_standings(
                             rec["t2_cas"] = _cas_total(t)
                             rec["t2_coach"] = (t.get("coach") or {}).get("name", "")
 
-                    # FUMBBL always sets result.winner even for draws, so derive
-                    # W/D/L from the actual scores rather than trusting that field.
                     if rec["t1_score"] > rec["t2_score"]:
                         rec["winner_id"] = t1_id
                     elif rec["t2_score"] > rec["t1_score"]:
                         rec["winner_id"] = t2_id
                     else:
-                        rec["winner_id"] = 0  # genuine draw
+                        rec["winner_id"] = 0
 
-                    # Crushing victory: one team scores 4+ while opponent scores 0
                     hi, lo = sorted(
                         [(rec["t1_name"], rec["t1_score"]), (rec["t2_name"], rec["t2_score"])],
                         key=lambda x: -x[1],
@@ -693,9 +803,7 @@ async def generate_standings(
 
                 match_records.append(rec)
 
-            # Exclude filler teams (name contains "Filler") that lost every match.
-            # Their matches are dropped entirely so they don't affect standings.
-            filler_non_losses: dict = {}  # team_id -> count of wins+draws
+            filler_non_losses: dict = {}
             for rec in match_records:
                 for team_id, name in [(rec["t1_id"], rec["t1_name"]), (rec["t2_id"], rec["t2_name"])]:
                     if "Filler" in name:
@@ -704,7 +812,7 @@ async def generate_standings(
                         if rec["winner_id"] == team_id or rec["winner_id"] == 0:
                             filler_non_losses[team_id] += 1
 
-            filler_exclude = {tid for tid, non_losses in filler_non_losses.items() if non_losses == 0}
+            filler_exclude = {fid for fid, non_losses in filler_non_losses.items() if non_losses == 0}
             if filler_exclude:
                 removed_match_ids = {
                     rec["match_id"] for rec in match_records
@@ -719,7 +827,9 @@ async def generate_standings(
                     if cv["match_id"] not in removed_match_ids
                 ]
 
+            t0 = time.time()
             standings = compute_standings(match_records)
+            _log_fn_call(job_id, "compute_standings", time.time() - t0)
             results.append({
                 "tournament_id": tid,
                 "tournament_name": info.get("name", f"Tournament {tid}"),
@@ -728,30 +838,30 @@ async def generate_standings(
                 "standings": standings,
                 "crushing_victories": crushing_victories,
             })
-    except httpx.HTTPStatusError as e:
-        fetch_error = f"FUMBBL API error (HTTP {e.response.status_code})."
-    except httpx.RequestError:
-        fetch_error = "Could not reach FUMBBL API. Check your connection."
-    except Exception:
-        fetch_error = "Unexpected error fetching match data."
 
-    if fetch_error:
-        return RedirectResponse(
-            url=f"/leagues/{league_id}?tab=standings&error={quote_plus(fetch_error)}",
-            status_code=303,
+        perf_summary = _compute_perf_summary(j)
+        conn = get_db()
+        conn.execute(
+            "INSERT OR REPLACE INTO standings_cache (league_id, data, generated_at, perf_summary) VALUES (?, ?, datetime('now'), ?)",
+            (league_id, json.dumps(results), json.dumps(perf_summary)),
         )
+        conn.commit()
+        conn.close()
+        j["redirect"] = f"/leagues/{league_id}?tab=standings"
+        j["status"] = "done"
+    except httpx.HTTPStatusError as e:
+        j["status"] = "error"
+        j["error"] = f"FUMBBL API error (HTTP {e.response.status_code})."
+    except httpx.RequestError:
+        j["status"] = "error"
+        j["error"] = "Could not reach FUMBBL API. Check your connection."
+    except Exception:
+        j["status"] = "error"
+        j["error"] = "Unexpected error fetching match data."
 
-    conn = get_db()
-    conn.execute(
-        "INSERT OR REPLACE INTO standings_cache (league_id, data, generated_at) VALUES (?, ?, datetime('now'))",
-        (league_id, json.dumps(results)),
-    )
-    conn.commit()
-    conn.close()
-    return RedirectResponse(url=f"/leagues/{league_id}?tab=standings", status_code=303)
 
-@app.post("/leagues/{league_id}/player_stats", response_class=HTMLResponse)
-async def generate_player_stats(
+@app.post("/leagues/{league_id}/standings", response_class=HTMLResponse)
+async def generate_standings(
     request: Request,
     league_id: int,
     tournament_ids: Optional[List[int]] = Form(default=None),
@@ -761,20 +871,108 @@ async def generate_player_stats(
     conn.close()
     if not league:
         raise HTTPException(status_code=404, detail="League not found")
-
     if not tournament_ids:
         return RedirectResponse(url=f"/leagues/{league_id}", status_code=303)
 
-    results = []
-    fetch_error = None
+    job_id = str(uuid.uuid4())
+    jobs[job_id] = {"status": "running", "completed": 0, "total": len(tournament_ids) * 2, "redirect": None, "error": None, "api_log": [], "fn_log": []}
+    asyncio.create_task(_work_standings(league_id, tournament_ids, job_id))
+    return templates.TemplateResponse("progress.html", {"request": request, "job_id": job_id, "operation": "Standings"})
 
+async def _gather_player_info(
+    match_perf_records: list, job_id: str, need_spp: bool = False
+) -> tuple[dict, dict]:
+    """
+    Build player_info {pid -> {name, status}} and player_career_spp {pid -> int}.
+
+    Priority order (cheapest first):
+      1. team/get for each unique team  — marks current roster players as Active
+      2. player_cache SQLite table      — avoids re-fetching known players
+      3. player/get API                 — only for players not yet seen; result is cached
+    """
+    j = jobs[job_id]
+    unique_pids: set = {p["player_id"] for p in match_perf_records}
+    unique_team_ids: set = {p["team_id"] for p in match_perf_records}
+    player_info: dict = {}
+    player_career_spp: dict = {}
+
+    # 1. Fetch team rosters — one call per team covers all currently active players
+    j["total"] += len(unique_team_ids)
+    for team_id in unique_team_ids:
+        try:
+            team_data = await fetch_team(team_id, job_id=job_id)
+            for p in (team_data.get("players") or []):
+                pid = p.get("id")
+                if pid in unique_pids:
+                    player_info[pid] = {"name": p.get("name", f"Player {pid}"), "status": "Active"}
+                    if need_spp:
+                        player_career_spp[pid] = int(p.get("spp") or 0)
+        except Exception:
+            pass
+        j["completed"] += 1
+
+    # 2. Check SQLite cache for players not found in any team roster
+    still_missing = unique_pids - set(player_info)
+    if still_missing:
+        conn = get_db()
+        found_in_cache = []
+        for pid in still_missing:
+            row = conn.execute(
+                "SELECT name, status, spp FROM player_cache WHERE player_id = ?", (pid,)
+            ).fetchone()
+            if row:
+                player_info[pid] = {"name": row["name"] or f"Player {pid}", "status": row["status"] or ""}
+                if need_spp:
+                    player_career_spp[pid] = row["spp"] or 0
+                found_in_cache.append(pid)
+        conn.close()
+        still_missing -= set(found_in_cache)
+
+    # 3. API calls only for players not in team roster or cache; results stored in cache
+    j["total"] += len(still_missing)
+    for pid in still_missing:
+        try:
+            pdata = await fetch_player(pid, job_id=job_id)
+            name = pdata.get("name", f"Player {pid}")
+            status = pdata.get("status", "")
+            spp = int(pdata.get("spp") or 0)
+            player_info[pid] = {"name": name, "status": status}
+            if need_spp:
+                player_career_spp[pid] = spp
+            conn = get_db()
+            conn.execute(
+                "INSERT OR REPLACE INTO player_cache (player_id, name, status, spp) VALUES (?, ?, ?, ?)",
+                (pid, name, status, spp),
+            )
+            conn.commit()
+            conn.close()
+        except Exception:
+            player_info[pid] = {"name": f"Player {pid}", "status": ""}
+            if need_spp:
+                player_career_spp[pid] = 0
+        j["completed"] += 1
+
+    for pid in unique_pids:
+        player_info.setdefault(pid, {"name": f"Player {pid}", "status": ""})
+        if need_spp:
+            player_career_spp.setdefault(pid, 0)
+
+    return player_info, player_career_spp
+
+
+async def _work_player_stats(league_id: int, tournament_ids: list, job_id: str):
+    j = jobs[job_id]
     try:
+        results = []
         for tid in tournament_ids:
-            info = await fetch_tournament_info(tid)
-            schedule = await fetch_tournament_schedule(tid)
+            info = await fetch_tournament_info(tid, job_id=job_id)
+            j["completed"] += 1
+            schedule = await fetch_tournament_schedule(tid, job_id=job_id)
+            j["completed"] += 1
+            j["total"] += sum(1 for m in schedule if (m.get("result") or {}).get("id"))
 
-            match_records = []      # for filler detection (same structure as standings)
-            match_perf_records = [] # per-player per-match performance rows
+            match_records = []
+            match_perf_records = []
 
             for scheduled_match in schedule:
                 result_block = scheduled_match.get("result") or {}
@@ -785,7 +983,6 @@ async def generate_player_stats(
                     continue
 
                 sched_teams = {t["id"]: t for t in (scheduled_match.get("teams") or []) if t.get("id")}
-                result_teams = {t["id"]: t for t in (result_block.get("teams") or []) if t.get("id")}
                 if len(sched_teams) < 2:
                     continue
 
@@ -801,7 +998,8 @@ async def generate_player_stats(
                 }
 
                 if match_id:
-                    match_data = await fetch_match(match_id)
+                    match_data = await fetch_match(match_id, job_id=job_id)
+                    j["completed"] += 1
                     t1_score = t2_score = 0
                     for side in ["team1", "team2"]:
                         t = match_data.get(side) or {}
@@ -846,7 +1044,6 @@ async def generate_player_stats(
 
                 match_records.append(rec)
 
-            # Filler exclusion — same logic as standings
             filler_non_losses: dict = {}
             for rec in match_records:
                 for team_id, name in [(rec["t1_id"], rec["t1_name"]), (rec["t2_id"], rec["t2_name"])]:
@@ -867,20 +1064,16 @@ async def generate_player_stats(
                     if p["match_id"] not in removed_match_ids
                 ]
 
-            # Fetch player info for all unique players in this tournament
-            unique_pids = list({p["player_id"] for p in match_perf_records})
-            player_info: dict = {}
-            for pid in unique_pids:
-                try:
-                    pdata = await fetch_player(pid)
-                    player_info[pid] = {
-                        "name":   pdata.get("name", f"Player {pid}"),
-                        "status": pdata.get("status", ""),
-                    }
-                except Exception:
-                    player_info[pid] = {"name": f"Player {pid}", "status": ""}
+            pid_spp: dict = {}
+            for rec in match_perf_records:
+                pid_spp[rec["player_id"]] = pid_spp.get(rec["player_id"], 0) + rec["td"] * 3 + rec["comp"] + rec["cas"] * 2 + rec["int_"] * 2 + rec["mvp"] * 4
+            match_perf_records = [r for r in match_perf_records if pid_spp.get(r["player_id"], 0) > 0]
 
+            player_info, _ = await _gather_player_info(match_perf_records, job_id, need_spp=False)
+
+            t0 = time.time()
             players = compute_player_stats(match_perf_records, player_info)
+            _log_fn_call(job_id, "compute_player_stats", time.time() - t0)
             results.append({
                 "tournament_id":   tid,
                 "tournament_name": info.get("name", f"Tournament {tid}"),
@@ -889,27 +1082,90 @@ async def generate_player_stats(
                 "players":         players,
             })
 
-    except httpx.HTTPStatusError as e:
-        fetch_error = f"FUMBBL API error (HTTP {e.response.status_code})."
-    except httpx.RequestError:
-        fetch_error = "Could not reach FUMBBL API. Check your connection."
-    except Exception:
-        fetch_error = "Unexpected error fetching player data."
-
-    if fetch_error:
-        return RedirectResponse(
-            url=f"/leagues/{league_id}?tab=player-stats&error={quote_plus(fetch_error)}",
-            status_code=303,
+        perf_summary = _compute_perf_summary(j)
+        conn = get_db()
+        conn.execute(
+            "INSERT OR REPLACE INTO player_stats_cache (league_id, data, generated_at, perf_summary) VALUES (?, ?, datetime('now'), ?)",
+            (league_id, json.dumps(results), json.dumps(perf_summary)),
         )
+        conn.commit()
+        conn.close()
+        j["redirect"] = f"/leagues/{league_id}?tab=player-stats"
+        j["status"] = "done"
+    except httpx.HTTPStatusError as e:
+        j["status"] = "error"
+        j["error"] = f"FUMBBL API error (HTTP {e.response.status_code})."
+    except httpx.RequestError:
+        j["status"] = "error"
+        j["error"] = "Could not reach FUMBBL API. Check your connection."
+    except Exception:
+        j["status"] = "error"
+        j["error"] = "Unexpected error fetching player data."
 
+
+@app.post("/leagues/{league_id}/player_stats", response_class=HTMLResponse)
+async def generate_player_stats(
+    request: Request,
+    league_id: int,
+    tournament_ids: Optional[List[int]] = Form(default=None),
+):
     conn = get_db()
-    conn.execute(
-        "INSERT OR REPLACE INTO player_stats_cache (league_id, data, generated_at) VALUES (?, ?, datetime('now'))",
-        (league_id, json.dumps(results)),
-    )
-    conn.commit()
+    league = conn.execute("SELECT * FROM leagues WHERE id = ?", (league_id,)).fetchone()
     conn.close()
-    return RedirectResponse(url=f"/leagues/{league_id}?tab=player-stats", status_code=303)
+    if not league:
+        raise HTTPException(status_code=404, detail="League not found")
+    if not tournament_ids:
+        return RedirectResponse(url=f"/leagues/{league_id}", status_code=303)
+
+    job_id = str(uuid.uuid4())
+    jobs[job_id] = {"status": "running", "completed": 0, "total": len(tournament_ids) * 2, "redirect": None, "error": None, "api_log": [], "fn_log": []}
+    asyncio.create_task(_work_player_stats(league_id, tournament_ids, job_id))
+    return templates.TemplateResponse("progress.html", {"request": request, "job_id": job_id, "operation": "Player Stats"})
+
+
+@app.get("/leagues/{league_id}/standings/perf", response_class=HTMLResponse)
+async def standings_perf(request: Request, league_id: int):
+    conn = get_db()
+    league = conn.execute("SELECT * FROM leagues WHERE id = ?", (league_id,)).fetchone()
+    row = conn.execute("SELECT perf_summary FROM standings_cache WHERE league_id = ?", (league_id,)).fetchone()
+    conn.close()
+    if not league or not row or not row["perf_summary"]:
+        raise HTTPException(status_code=404, detail="No performance data available")
+    perf = json.loads(row["perf_summary"])
+    return templates.TemplateResponse("perf.html", {
+        "request": request, "league": league, "tab_name": "Standings",
+        "api_summary": perf.get("api_summary", []), "fn_summary": perf.get("fn_summary", []),
+    })
+
+
+@app.get("/leagues/{league_id}/player_stats/perf", response_class=HTMLResponse)
+async def player_stats_perf(request: Request, league_id: int):
+    conn = get_db()
+    league = conn.execute("SELECT * FROM leagues WHERE id = ?", (league_id,)).fetchone()
+    row = conn.execute("SELECT perf_summary FROM player_stats_cache WHERE league_id = ?", (league_id,)).fetchone()
+    conn.close()
+    if not league or not row or not row["perf_summary"]:
+        raise HTTPException(status_code=404, detail="No performance data available")
+    perf = json.loads(row["perf_summary"])
+    return templates.TemplateResponse("perf.html", {
+        "request": request, "league": league, "tab_name": "Player Stats",
+        "api_summary": perf.get("api_summary", []), "fn_summary": perf.get("fn_summary", []),
+    })
+
+
+@app.get("/leagues/{league_id}/achievements/perf", response_class=HTMLResponse)
+async def achievements_perf(request: Request, league_id: int):
+    conn = get_db()
+    league = conn.execute("SELECT * FROM leagues WHERE id = ?", (league_id,)).fetchone()
+    row = conn.execute("SELECT perf_summary FROM achievements_cache WHERE league_id = ?", (league_id,)).fetchone()
+    conn.close()
+    if not league or not row or not row["perf_summary"]:
+        raise HTTPException(status_code=404, detail="No performance data available")
+    perf = json.loads(row["perf_summary"])
+    return templates.TemplateResponse("perf.html", {
+        "request": request, "league": league, "tab_name": "Achievements",
+        "api_summary": perf.get("api_summary", []), "fn_summary": perf.get("fn_summary", []),
+    })
 
 
 @app.get("/leagues/{league_id}/standings/export")
@@ -1020,27 +1276,16 @@ async def export_player_stats(league_id: int):
     )
 
 
-@app.post("/leagues/{league_id}/achievements", response_class=HTMLResponse)
-async def generate_achievements(
-    league_id: int,
-    tournament_ids: Optional[List[int]] = Form(default=None),
-):
-    conn = get_db()
-    league = conn.execute("SELECT * FROM leagues WHERE id = ?", (league_id,)).fetchone()
-    conn.close()
-    if not league:
-        raise HTTPException(status_code=404, detail="League not found")
-
-    if not tournament_ids:
-        return RedirectResponse(url=f"/leagues/{league_id}", status_code=303)
-
-    per_tournament_data = []
-    fetch_error = None
-
+async def _work_achievements(league_id: int, tournament_ids: list, job_id: str):
+    j = jobs[job_id]
     try:
+        per_tournament_data = []
         for tid in tournament_ids:
-            info     = await fetch_tournament_info(tid)
-            schedule = await fetch_tournament_schedule(tid)
+            info     = await fetch_tournament_info(tid, job_id=job_id)
+            j["completed"] += 1
+            schedule = await fetch_tournament_schedule(tid, job_id=job_id)
+            j["completed"] += 1
+            j["total"] += sum(1 for m in schedule if (m.get("result") or {}).get("id"))
 
             match_records: list = []
             match_perf_records: list = []
@@ -1068,7 +1313,8 @@ async def generate_achievements(
                 }
 
                 if match_id:
-                    match_data = await fetch_match(match_id)
+                    match_data = await fetch_match(match_id, job_id=job_id)
+                    j["completed"] += 1
                     t1_score = t2_score = 0
                     for side in ["team1", "team2"]:
                         t       = match_data.get(side) or {}
@@ -1113,7 +1359,6 @@ async def generate_achievements(
 
                 match_records.append(rec)
 
-            # Filler exclusion
             filler_non_losses: dict = {}
             for rec in match_records:
                 for team_id, name in [(rec["t1_id"], rec["t1_name"]), (rec["t2_id"], rec["t2_name"])]:
@@ -1131,57 +1376,68 @@ async def generate_achievements(
                 }
                 match_perf_records = [p for p in match_perf_records if p["match_id"] not in removed_match_ids]
 
-            # Fetch player info (name, status, career SPP)
-            unique_pids = list({p["player_id"] for p in match_perf_records})
-            player_info: dict = {}
-            player_career_spp: dict = {}
-            for pid in unique_pids:
-                try:
-                    pdata = await fetch_player(pid)
-                    player_info[pid] = {
-                        "name":   pdata.get("name", f"Player {pid}"),
-                        "status": pdata.get("status", ""),
-                    }
-                    player_career_spp[pid] = int(pdata.get("spp") or 0)
-                except Exception:
-                    player_info[pid]      = {"name": f"Player {pid}", "status": ""}
-                    player_career_spp[pid] = 0
+            pid_spp: dict = {}
+            for rec in match_perf_records:
+                pid_spp[rec["player_id"]] = pid_spp.get(rec["player_id"], 0) + rec["td"] * 3 + rec["comp"] + rec["cas"] * 2 + rec["int_"] * 2 + rec["mvp"] * 4
+            match_perf_records = [r for r in match_perf_records if pid_spp.get(r["player_id"], 0) > 0]
 
+            player_info, player_career_spp = await _gather_player_info(match_perf_records, job_id, need_spp=True)
+
+            t0 = time.time()
             players = compute_player_stats(match_perf_records, player_info)
-
+            _log_fn_call(job_id, "compute_player_stats", time.time() - t0)
             per_tournament_data.append({
-                "tournament_id":    tid,
-                "tournament_name":  info.get("name", f"Tournament {tid}"),
-                "season":           info.get("season"),
+                "tournament_id":      tid,
+                "tournament_name":    info.get("name", f"Tournament {tid}"),
+                "season":             info.get("season"),
                 "match_perf_records": match_perf_records,
-                "players":          players,
-                "player_info":      player_info,
-                "player_career_spp": player_career_spp,
+                "players":            players,
+                "player_info":        player_info,
+                "player_career_spp":  player_career_spp,
             })
 
-    except httpx.HTTPStatusError as e:
-        fetch_error = f"FUMBBL API error (HTTP {e.response.status_code})."
-    except httpx.RequestError:
-        fetch_error = "Could not reach FUMBBL API. Check your connection."
-    except Exception:
-        fetch_error = "Unexpected error fetching data for achievements."
-
-    if fetch_error:
-        return RedirectResponse(
-            url=f"/leagues/{league_id}?tab=achievements&error={quote_plus(fetch_error)}",
-            status_code=303,
+        t0 = time.time()
+        results = compute_achievements(per_tournament_data)
+        _log_fn_call(job_id, "compute_achievements", time.time() - t0)
+        perf_summary = _compute_perf_summary(j)
+        conn = get_db()
+        conn.execute(
+            "INSERT OR REPLACE INTO achievements_cache (league_id, data, generated_at, perf_summary) VALUES (?, ?, datetime('now'), ?)",
+            (league_id, json.dumps(results), json.dumps(perf_summary)),
         )
+        conn.commit()
+        conn.close()
+        j["redirect"] = f"/leagues/{league_id}?tab=achievements"
+        j["status"] = "done"
+    except httpx.HTTPStatusError as e:
+        j["status"] = "error"
+        j["error"] = f"FUMBBL API error (HTTP {e.response.status_code})."
+    except httpx.RequestError:
+        j["status"] = "error"
+        j["error"] = "Could not reach FUMBBL API. Check your connection."
+    except Exception:
+        j["status"] = "error"
+        j["error"] = "Unexpected error fetching data for achievements."
 
-    results = compute_achievements(per_tournament_data)
 
+@app.post("/leagues/{league_id}/achievements", response_class=HTMLResponse)
+async def generate_achievements(
+    request: Request,
+    league_id: int,
+    tournament_ids: Optional[List[int]] = Form(default=None),
+):
     conn = get_db()
-    conn.execute(
-        "INSERT OR REPLACE INTO achievements_cache (league_id, data, generated_at) VALUES (?, ?, datetime('now'))",
-        (league_id, json.dumps(results)),
-    )
-    conn.commit()
+    league = conn.execute("SELECT * FROM leagues WHERE id = ?", (league_id,)).fetchone()
     conn.close()
-    return RedirectResponse(url=f"/leagues/{league_id}?tab=achievements", status_code=303)
+    if not league:
+        raise HTTPException(status_code=404, detail="League not found")
+    if not tournament_ids:
+        return RedirectResponse(url=f"/leagues/{league_id}", status_code=303)
+
+    job_id = str(uuid.uuid4())
+    jobs[job_id] = {"status": "running", "completed": 0, "total": len(tournament_ids) * 2, "redirect": None, "error": None, "api_log": [], "fn_log": []}
+    asyncio.create_task(_work_achievements(league_id, tournament_ids, job_id))
+    return templates.TemplateResponse("progress.html", {"request": request, "job_id": job_id, "operation": "Achievements"})
 
 
 @app.get("/leagues/{league_id}/achievements/export")
@@ -1255,22 +1511,25 @@ async def league_detail(
     metadata_total = len(metadata_rows)
 
     standings_row = conn.execute(
-        "SELECT data, generated_at FROM standings_cache WHERE league_id = ?", (league_id,)
+        "SELECT data, generated_at, perf_summary FROM standings_cache WHERE league_id = ?", (league_id,)
     ).fetchone()
     standings_results = json.loads(standings_row["data"]) if standings_row else None
     standings_generated_at = standings_row["generated_at"] if standings_row else None
+    standings_has_perf = bool(standings_row and standings_row["perf_summary"]) if standings_row else False
 
     player_stats_row = conn.execute(
-        "SELECT data, generated_at FROM player_stats_cache WHERE league_id = ?", (league_id,)
+        "SELECT data, generated_at, perf_summary FROM player_stats_cache WHERE league_id = ?", (league_id,)
     ).fetchone()
     player_stats_results = json.loads(player_stats_row["data"]) if player_stats_row else None
     player_stats_generated_at = player_stats_row["generated_at"] if player_stats_row else None
+    player_stats_has_perf = bool(player_stats_row and player_stats_row["perf_summary"]) if player_stats_row else False
 
     achievements_row = conn.execute(
-        "SELECT data, generated_at FROM achievements_cache WHERE league_id = ?", (league_id,)
+        "SELECT data, generated_at, perf_summary FROM achievements_cache WHERE league_id = ?", (league_id,)
     ).fetchone()
     achievements_results    = json.loads(achievements_row["data"]) if achievements_row else None
     achievements_generated_at = achievements_row["generated_at"] if achievements_row else None
+    achievements_has_perf = bool(achievements_row and achievements_row["perf_summary"]) if achievements_row else False
     conn.close()
 
     all_tournaments = []
@@ -1299,10 +1558,13 @@ async def league_detail(
         "metadata_total": metadata_total,
         "standings_results": standings_results,
         "standings_generated_at": standings_generated_at,
+        "standings_has_perf": standings_has_perf,
         "player_stats_results": player_stats_results,
         "player_stats_generated_at": player_stats_generated_at,
+        "player_stats_has_perf": player_stats_has_perf,
         "achievements_results": achievements_results,
         "achievements_generated_at": achievements_generated_at,
+        "achievements_has_perf": achievements_has_perf,
         "success": success,
         "error": error,
     })
