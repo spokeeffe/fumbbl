@@ -9,6 +9,7 @@ import csv
 import io
 import asyncio
 import uuid
+import traceback
 from contextlib import asynccontextmanager
 from typing import Optional, List
 from urllib.parse import quote_plus
@@ -607,6 +608,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/", StaticFiles(directory="favicon"), name="favicon-root")
 templates = Jinja2Templates(directory="templates")
 
 # --- Input validation ---
@@ -855,9 +857,9 @@ async def _work_standings(league_id: int, tournament_ids: list, job_id: str):
     except httpx.RequestError:
         j["status"] = "error"
         j["error"] = "Could not reach FUMBBL API. Check your connection."
-    except Exception:
+    except Exception as e:
         j["status"] = "error"
-        j["error"] = "Unexpected error fetching match data."
+        j["error"] = f"{type(e).__name__}: {e}\n\n{traceback.format_exc()}"
 
 
 @app.post("/leagues/{league_id}/standings", response_class=HTMLResponse)
@@ -1098,9 +1100,9 @@ async def _work_player_stats(league_id: int, tournament_ids: list, job_id: str):
     except httpx.RequestError:
         j["status"] = "error"
         j["error"] = "Could not reach FUMBBL API. Check your connection."
-    except Exception:
+    except Exception as e:
         j["status"] = "error"
-        j["error"] = "Unexpected error fetching player data."
+        j["error"] = f"{type(e).__name__}: {e}\n\n{traceback.format_exc()}"
 
 
 @app.post("/leagues/{league_id}/player_stats", response_class=HTMLResponse)
@@ -1415,9 +1417,9 @@ async def _work_achievements(league_id: int, tournament_ids: list, job_id: str):
     except httpx.RequestError:
         j["status"] = "error"
         j["error"] = "Could not reach FUMBBL API. Check your connection."
-    except Exception:
+    except Exception as e:
         j["status"] = "error"
-        j["error"] = "Unexpected error fetching data for achievements."
+        j["error"] = f"{type(e).__name__}: {e}\n\n{traceback.format_exc()}"
 
 
 @app.post("/leagues/{league_id}/achievements", response_class=HTMLResponse)
