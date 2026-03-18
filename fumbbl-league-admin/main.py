@@ -608,7 +608,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 app.mount("/static", StaticFiles(directory="static"), name="static")
-app.mount("/", StaticFiles(directory="favicon"), name="favicon-root")
+app.mount("/favicon", StaticFiles(directory="favicon"), name="favicon")
 templates = Jinja2Templates(directory="templates")
 
 # --- Input validation ---
