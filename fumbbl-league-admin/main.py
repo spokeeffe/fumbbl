@@ -916,7 +916,7 @@ async def _gather_player_info(
                 if pid in unique_pids:
                     player_info[pid] = {"name": p.get("name", f"Player {pid}"), "status": "Active"}
                     if need_spp:
-                        player_career_spp[pid] = int(p.get("spp") or 0)
+                        player_career_spp[pid] = int((p.get("record") or {}).get("spp") or 0)
         except Exception:
             pass
         j["completed"] += 1
@@ -945,7 +945,7 @@ async def _gather_player_info(
             pdata = await fetch_player(pid, job_id=job_id)
             name = pdata.get("name", f"Player {pid}")
             status = pdata.get("status", "")
-            spp = int(pdata.get("spp") or 0)
+            spp = int((pdata.get("statistics") or {}).get("spp") or 0)
             player_info[pid] = {"name": name, "status": status}
             if need_spp:
                 player_career_spp[pid] = spp

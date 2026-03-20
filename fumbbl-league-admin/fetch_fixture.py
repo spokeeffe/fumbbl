@@ -4,9 +4,9 @@ Fetch real FUMBBL data for a tournament and save it as a test fixture.
 Usage:
     python fetch_fixture.py <tournament_id>
 
-The script will write fixtures/<tournament_id>.json with the raw schedule
-and all match data. You then manually add "expected_standings" by looking
-up the actual standings on the FUMBBL website.
+The script will write fixtures/<tournament_id>.json with the raw schedule,
+all match data (verbose, with player performances), and player info/career SPP.
+You then manually add "expected_standings" and "expected_achievements".
 """
 
 import sys
@@ -54,8 +54,35 @@ def fetch_fixture(tournament_id: int) -> dict:
 
     matches = {}
     for i, mid in enumerate(match_ids, 1):
-        print(f"  Fetching match {i}/{len(match_ids)} (id={mid})...")
-        matches[str(mid)] = _get(f"{FUMBBL_BASE}/match/get/{mid}")
+        print(f"  Fetching match {i}/{len(match_ids)} (id={mid}, verbose)...")
+        matches[str(mid)] = _get(f"{FUMBBL_BASE}/match/get/{mid}?verbose=1")
+
+    # Collect unique player IDs from performances
+    unique_pids: set = set()
+    for md in matches.values():
+        for side in ["team1", "team2"]:
+            for pid_str in (md.get(side) or {}).get("performances", {}).keys():
+                try:
+                    unique_pids.add(int(pid_str))
+                except (ValueError, TypeError):
+                    pass
+
+    print(f"Fetching player info for {len(unique_pids)} unique players...")
+    player_info: dict = {}
+    player_career_spp: dict = {}
+    for i, pid in enumerate(sorted(unique_pids), 1):
+        print(f"  Player {i}/{len(unique_pids)} (id={pid})...")
+        try:
+            pdata = _get(f"{FUMBBL_BASE}/player/get/{pid}")
+            player_info[str(pid)] = {
+                "name":   pdata.get("name", f"Player {pid}"),
+                "status": pdata.get("status", ""),
+            }
+            player_career_spp[str(pid)] = int((pdata.get("statistics") or {}).get("spp") or 0)
+        except Exception as e:
+            print(f"    Warning: could not fetch player {pid}: {e}")
+            player_info[str(pid)] = {"name": f"Player {pid}", "status": ""}
+            player_career_spp[str(pid)] = 0
 
     return {
         "tournament_id": tournament_id,
@@ -63,6 +90,8 @@ def fetch_fixture(tournament_id: int) -> dict:
         "season": info.get("season"),
         "schedule": schedule,
         "matches": matches,
+        "player_info": player_info,
+        "player_career_spp": player_career_spp,
         "expected_standings": [
             # Fill this in manually from the FUMBBL standings page.
             # Each entry should match the output of compute_standings():
@@ -76,6 +105,16 @@ def fetch_fixture(tournament_id: int) -> dict:
             #   "cas_for": 0, "cas_against": 0, "cas_delta": 0,
             #   "points": 0
             # }
+        ],
+        "expected_achievements": [
+            # Fill this in manually from the FUMBBL website / your own knowledge.
+            # Each entry should match the output of compute_achievements() per achievement:
+            # Tournament award:
+            #   {"achievement_type": "tournament_award", "badges": ["SPP"], "player_name": "", "team_name": ""}
+            # SPP milestone:
+            #   {"achievement_type": "spp_milestone", "achievement_name": "Super Star", "player_name": "", "team_name": ""}
+            # Per-game:
+            #   {"achievement_type": "per_game", "achievement_name": "Triple X", "player_name": "", "team_name": ""}
         ]
     }
 
@@ -93,5 +132,8 @@ if __name__ == "__main__":
     out_path.write_text(json.dumps(fixture, indent=2))
 
     print(f"\nSaved to {out_path}")
-    print(f"Next: fill in 'expected_standings' in {out_path} using the FUMBBL standings page,")
-    print(f"then run: python test_standings.py")
+    print(f"Next steps:")
+    print(f"  1. Fill in 'expected_standings' from the FUMBBL standings page.")
+    print(f"  2. Fill in 'expected_achievements' from the FUMBBL website.")
+    print(f"  3. Run: python test_standings.py {tid}")
+    print(f"  4. Run: python test_achievements.py {tid}")
