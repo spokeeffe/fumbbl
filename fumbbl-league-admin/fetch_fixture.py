@@ -115,6 +115,10 @@ def fetch_fixture(tournament_id: int) -> dict:
             #   {"achievement_type": "spp_milestone", "achievement_name": "Super Star", "player_name": "", "team_name": ""}
             # Per-game:
             #   {"achievement_type": "per_game", "achievement_name": "Triple X", "player_name": "", "team_name": ""}
+        ],
+        "expected_dead_players": [
+            # Fill this in manually. Each entry needs player_name, team_name, and match_id:
+            #   {"player_name": "Grung Hammerfist", "team_name": "Khazak Ironbacks", "match_id": 4674494}
         ]
     }
 

@@ -43,11 +43,13 @@ def build_perf_records(fixture: dict) -> list:
             if not team_id:
                 continue
             team_name = team_names.get(team_id, t.get("name", f"Team {team_id}"))
+            injuries = t.get("injuries") or {}
             for pid_str, perf in (t.get("performances") or {}).items():
                 try:
                     pid = int(pid_str)
                 except (ValueError, TypeError):
                     continue
+                player_injuries = injuries.get(pid_str) or []
                 perf_records.append({
                     "player_id": pid,
                     "team_id":   team_id,
@@ -63,6 +65,7 @@ def build_perf_records(fixture: dict) -> list:
                     "blocks": int(perf.get("blocks") or 0),
                     "fouls":  int(perf.get("fouls")  or 0),
                     "turns":  int(perf.get("turns")  or 0),
+                    "died":   any(inj.get("injury") == "d" for inj in player_injuries),
                 })
     return perf_records
 
@@ -138,10 +141,63 @@ def compare_achievements(actual: list, expected: list) -> list[str]:
     return failures
 
 
+def compute_dead_players(tournament_data: list) -> list:
+    """Mirrors the dead_players computation in _work_achievements."""
+    dead = []
+    for td in tournament_data:
+        pinfo      = td["player_info"]
+        career_spp = td["player_career_spp"]
+        for rec in td["match_perf_records"]:
+            if rec.get("died"):
+                pid = rec["player_id"]
+                dead.append({
+                    "player_name":     (pinfo.get(pid) or {}).get("name", f"Player {pid}"),
+                    "team_name":       rec["team_name"],
+                    "career_spp":      career_spp.get(pid, 0),
+                    "match_id":        rec["match_id"],
+                    "tournament_name": td["tournament_name"],
+                })
+    return dead
+
+
+def compare_dead_players(actual: list, expected: list) -> list[str]:
+    """Return failure messages (empty = pass). Compares player_name + team_name + match_id."""
+    def key(d: dict) -> tuple:
+        return (d.get("player_name", ""), d.get("team_name", ""), d.get("match_id", 0))
+
+    def normalise(d: dict) -> dict:
+        return {
+            "player_name": d.get("player_name", ""),
+            "team_name":   d.get("team_name", ""),
+            "match_id":    d.get("match_id", 0),
+        }
+
+    actual_norm   = sorted([normalise(d) for d in actual],   key=key)
+    expected_norm = sorted([normalise(d) for d in expected], key=key)
+
+    failures = []
+    if len(actual_norm) != len(expected_norm):
+        failures.append(f"  dead player count: got {len(actual_norm)}, expected {len(expected_norm)}")
+        actual_set   = {json.dumps(d, sort_keys=True) for d in actual_norm}
+        expected_set = {json.dumps(d, sort_keys=True) for d in expected_norm}
+        for x in sorted(actual_set - expected_set):
+            failures.append(f"  EXTRA:   {x}")
+        for x in sorted(expected_set - actual_set):
+            failures.append(f"  MISSING: {x}")
+        return failures
+
+    for i, (a, e) in enumerate(zip(actual_norm, expected_norm)):
+        if a != e:
+            failures.append(f"  dead[{i}]: got {a!r}")
+            failures.append(f"            expected {e!r}")
+    return failures
+
+
 def run_fixture(path: pathlib.Path) -> bool:
     fixture  = json.loads(path.read_text())
     name     = fixture.get("tournament_name", path.stem)
-    expected = fixture.get("expected_achievements")
+    expected_ach  = fixture.get("expected_achievements")
+    expected_dead = fixture.get("expected_dead_players")
 
     # Build inputs
     match_records = build_records(fixture)
@@ -156,7 +212,8 @@ def run_fixture(path: pathlib.Path) -> bool:
             + rec["td"] * 3 + rec["comp"] + rec["cas"] * 2
             + rec["int_"] * 2 + rec["mvp"] * 4
         )
-    perf_records = [r for r in perf_records if pid_spp.get(r["player_id"], 0) > 0]
+    # Keep players with SPP > 0, or who died (they may have 0 SPP)
+    perf_records = [r for r in perf_records if pid_spp.get(r["player_id"], 0) > 0 or r.get("died")]
 
     # Load player_info and player_career_spp from fixture (keys are str pids in JSON)
     player_info: dict = {
@@ -176,21 +233,24 @@ def run_fixture(path: pathlib.Path) -> bool:
     players = compute_player_stats(perf_records, player_info)
 
     tournament_data = [{
-        "tournament_id":     fixture["tournament_id"],
-        "tournament_name":   fixture.get("tournament_name", ""),
-        "season":            fixture.get("season"),
+        "tournament_id":      fixture["tournament_id"],
+        "tournament_name":    fixture.get("tournament_name", ""),
+        "season":             fixture.get("season"),
         "match_perf_records": perf_records,
-        "players":           players,
-        "player_info":       player_info,
-        "player_career_spp": player_career_spp,
+        "players":            players,
+        "player_info":        player_info,
+        "player_career_spp":  player_career_spp,
     }]
 
     results = compute_achievements(tournament_data)
-    # results is newest-first list of tournament dicts; we only have one tournament
     actual_achievements = results[0]["achievements"] if results else []
+    actual_dead         = compute_dead_players(tournament_data)
 
-    if not expected:
-        print(f"[SKIP] {name}  (no expected_achievements — add them to enable validation)")
+    passed = True
+
+    # --- Achievements ---
+    if not expected_ach:
+        print(f"[SKIP] {name}  (no expected_achievements)")
         print(f"       Computed {len(actual_achievements)} achievements:")
         for a in sorted(actual_achievements, key=ach_key):
             if a.get("achievement_type") == "tournament_award":
@@ -199,17 +259,33 @@ def run_fixture(path: pathlib.Path) -> bool:
                 print(f"         [milestone] {a['achievement_name']} — {a['player_name']} ({a['team_name']})")
             else:
                 print(f"         [per_game]  {a['achievement_name']} — {a['player_name']} ({a['team_name']})")
-        return True
-
-    failures = compare_achievements(actual_achievements, expected)
-    if failures:
-        print(f"[FAIL] {name}")
-        for msg in failures:
-            print(msg)
-        return False
     else:
-        print(f"[PASS] {name}  ({len(actual_achievements)} achievements)")
-        return True
+        failures = compare_achievements(actual_achievements, expected_ach)
+        if failures:
+            print(f"[FAIL] {name}  achievements")
+            for msg in failures:
+                print(msg)
+            passed = False
+        else:
+            print(f"[PASS] {name}  ({len(actual_achievements)} achievements)")
+
+    # --- Dead players ---
+    if not expected_dead:
+        print(f"[SKIP] {name}  (no expected_dead_players)")
+        print(f"       Computed {len(actual_dead)} dead player(s):")
+        for d in sorted(actual_dead, key=lambda d: d["player_name"]):
+            print(f"         {d['player_name']} ({d['team_name']})  career_spp={d['career_spp']}  match={d['match_id']}")
+    else:
+        failures = compare_dead_players(actual_dead, expected_dead)
+        if failures:
+            print(f"[FAIL] {name}  dead players")
+            for msg in failures:
+                print(msg)
+            passed = False
+        else:
+            print(f"[PASS] {name}  ({len(actual_dead)} dead player(s))")
+
+    return passed
 
 
 def main():

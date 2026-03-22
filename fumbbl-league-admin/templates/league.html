@@ -84,6 +84,12 @@
           <span class="count-badge">{{ achievements_results | length }}</span>
           {% endif %}
         </button>
+        <button type="button" class="tab-btn {% if not dead_players_results %}tab-btn-locked{% endif %}" data-tab="dead-retired">
+          Dead/Retired
+          {% if dead_players_results %}
+          <span class="count-badge">{{ dead_players_results | length }}</span>
+          {% endif %}
+        </button>
       </nav>
 
       <!-- Tournaments tab -->
@@ -454,10 +460,18 @@
         {% if achievements_results %}
         <div class="tab-toolbar">
           <span class="standings-tab-meta">Generated {{ achievements_generated_at[:16] }}{% if achievements_has_perf %} · <a href="/leagues/{{ league.id }}/achievements/perf" class="perf-link">Perf</a>{% endif %}</span>
-          <a href="/leagues/{{ league.id }}/achievements/export" class="btn-action">
-            <span class="btn-text">Export CSV</span>
-            <span class="btn-icon">↓</span>
-          </a>
+          <div style="display:flex;gap:0.5rem">
+            <form method="post" action="/leagues/{{ league.id }}/achievements/regenerate" style="display:contents">
+              <button type="submit" class="btn-action">
+                <span class="btn-text">Generate Dead/Retired</span>
+                <span class="btn-icon">→</span>
+              </button>
+            </form>
+            <a href="/leagues/{{ league.id }}/achievements/export" class="btn-action">
+              <span class="btn-text">Export CSV</span>
+              <span class="btn-icon">↓</span>
+            </a>
+          </div>
         </div>
         <div class="standings-accordion">
           {% for result in achievements_results %}
@@ -521,6 +535,54 @@
         <div class="empty-state">
           <div class="empty-icon">⭐</div>
           <p>No achievements generated yet.<br>Generate Player Stats first, then click <strong>Achievements →</strong> on the Player Stats tab.</p>
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- Dead/Retired tab -->
+      <div class="tab-content tab-hidden" id="tab-dead-retired">
+        {% if dead_players_results %}
+        <div class="tab-toolbar">
+          <div class="season-filter" style="align-items:center;gap:0.75rem">
+            <label style="display:flex;align-items:center;gap:0.5rem;font-size:0.85rem;color:var(--text-dim)">
+              Min SPP
+              <input type="range" id="sppSlider" min="0" max="200" value="0" step="1" style="width:120px">
+              <span id="sppSliderVal" class="td-mono" style="min-width:2ch">0</span>
+            </label>
+          </div>
+          <a href="/leagues/{{ league.id }}/dead-players/export" class="btn-action">
+            <span class="btn-text">Export CSV</span>
+            <span class="btn-icon">↓</span>
+          </a>
+        </div>
+        <div class="standings-table-wrap">
+          <table class="standings-table" id="deadPlayersTable">
+            <thead>
+              <tr>
+                <th>Player</th>
+                <th>Team</th>
+                <th class="th-num">Career SPP</th>
+                <th>Match</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for p in dead_players_results %}
+              <tr data-spp="{{ p.career_spp }}">
+                <td class="td-name">{{ p.player_name }}</td>
+                <td class="td-coach">{{ p.team_name }}</td>
+                <td class="td-num td-pts">{{ p.career_spp }}</td>
+                <td>
+                  <a href="https://fumbbl.com/p/match?id={{ p.match_id }}" target="_blank" rel="noopener" class="ach-match-link">{{ p.match_id }}</a>
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% else %}
+        <div class="empty-state">
+          <div class="empty-icon">💀</div>
+          <p>No dead/retired data yet.<br>Generate Achievements to populate this tab.</p>
         </div>
         {% endif %}
       </div>
@@ -608,6 +670,18 @@
       // Renumber position column (index 0)
       const posCells = tbody.querySelectorAll('td:first-child');
       posCells.forEach((td, i) => { td.textContent = i + 1; });
+    }
+
+    // Dead/Retired SPP slider
+    const sppSlider = document.getElementById('sppSlider');
+    if (sppSlider) {
+      sppSlider.addEventListener('input', () => {
+        const min = parseInt(sppSlider.value);
+        document.getElementById('sppSliderVal').textContent = min;
+        document.querySelectorAll('#deadPlayersTable tbody tr').forEach(row => {
+          row.style.display = parseInt(row.dataset.spp || 0) >= min ? '' : 'none';
+        });
+      });
     }
 
     // File picker label

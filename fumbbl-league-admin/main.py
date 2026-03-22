@@ -151,6 +151,18 @@ def init_db():
             conn.execute(f"ALTER TABLE {tbl} ADD COLUMN perf_summary TEXT")
         except sqlite3.OperationalError:
             pass  # column already exists
+    try:
+        conn.execute("ALTER TABLE achievements_cache ADD COLUMN dead_players TEXT")
+    except sqlite3.OperationalError:
+        pass  # column already exists
+    try:
+        conn.execute("ALTER TABLE achievements_cache ADD COLUMN tournament_ids TEXT")
+    except sqlite3.OperationalError:
+        pass  # column already exists
+    # One-time cleanup: remove player_cache entries with spp=0, which were cached before
+    # the API field path bug fix (spp was read from the wrong key and always returned 0).
+    # Affected players will be re-fetched from the API on the next achievements run.
+    conn.execute("DELETE FROM player_cache WHERE spp = 0")
     conn.commit()
     conn.close()
 
@@ -411,6 +423,7 @@ def compute_player_stats(match_perf_records: list, player_info: dict) -> list:
                 "games": 0,
                 "td": 0, "comp": 0, "cas": 0, "int_": 0, "mvp": 0,
                 "pass_": 0, "rush": 0, "blocks": 0, "fouls": 0,
+                "died": False,
                 "larson": 0, "mean_scoring_machine": 0,
                 "triple_x": 0, "aerodynamic_aim": 0,
             }
@@ -433,6 +446,8 @@ def compute_player_stats(match_perf_records: list, player_info: dict) -> list:
         p["rush"]   += rec["rush"]
         p["blocks"] += rec["blocks"]
         p["fouls"]  += rec["fouls"]
+        if rec.get("died"):
+            p["died"] = True
 
         # Per-match enrichments (summed across all qualifying matches)
         if td >= 1 and cas >= 1 and comp >= 1 and int_ >= 1:
@@ -1023,11 +1038,13 @@ async def _work_player_stats(league_id: int, tournament_ids: list, job_id: str):
                         else:
                             continue
 
+                        injuries = t.get("injuries") or {}
                         for pid_str, perf in (t.get("performances") or {}).items():
                             try:
                                 pid = int(pid_str)
                             except (ValueError, TypeError):
                                 continue
+                            player_injuries = injuries.get(pid_str) or []
                             match_perf_records.append({
                                 "player_id": pid,
                                 "team_id":   team_id,
@@ -1043,6 +1060,7 @@ async def _work_player_stats(league_id: int, tournament_ids: list, job_id: str):
                                 "blocks": int(perf.get("blocks") or 0),
                                 "fouls":  int(perf.get("fouls")  or 0),
                                 "turns":  int(perf.get("turns")  or 0),
+                                "died":   any(inj.get("injury") == "d" for inj in player_injuries),
                             })
 
                     if t1_score > t2_score:
@@ -1286,7 +1304,7 @@ async def export_player_stats(league_id: int):
     )
 
 
-async def _work_achievements(league_id: int, tournament_ids: list, job_id: str):
+async def _work_achievements(league_id: int, tournament_ids: list, job_id: str, redirect_tab: str = "achievements"):
     j = jobs[job_id]
     try:
         per_tournament_data = []
@@ -1338,11 +1356,13 @@ async def _work_achievements(league_id: int, tournament_ids: list, job_id: str):
                         else:
                             continue
 
+                        injuries = t.get("injuries") or {}
                         for pid_str, perf in (t.get("performances") or {}).items():
                             try:
                                 pid = int(pid_str)
                             except (ValueError, TypeError):
                                 continue
+                            player_injuries = injuries.get(pid_str) or []
                             match_perf_records.append({
                                 "player_id": pid,
                                 "team_id":   team_id,
@@ -1358,6 +1378,7 @@ async def _work_achievements(league_id: int, tournament_ids: list, job_id: str):
                                 "blocks": int(perf.get("blocks") or 0),
                                 "fouls":  int(perf.get("fouls")  or 0),
                                 "turns":  int(perf.get("turns")  or 0),
+                                "died":   any(inj.get("injury") == "d" for inj in player_injuries),
                             })
 
                     if t1_score > t2_score:
@@ -1389,7 +1410,8 @@ async def _work_achievements(league_id: int, tournament_ids: list, job_id: str):
             pid_spp: dict = {}
             for rec in match_perf_records:
                 pid_spp[rec["player_id"]] = pid_spp.get(rec["player_id"], 0) + rec["td"] * 3 + rec["comp"] + rec["cas"] * 2 + rec["int_"] * 2 + rec["mvp"] * 4
-            match_perf_records = [r for r in match_perf_records if pid_spp.get(r["player_id"], 0) > 0]
+            # Keep players with SPP > 0, or who died (they may have 0 SPP)
+            match_perf_records = [r for r in match_perf_records if pid_spp.get(r["player_id"], 0) > 0 or r.get("died")]
 
             player_info, player_career_spp = await _gather_player_info(match_perf_records, job_id, need_spp=True)
 
@@ -1410,14 +1432,30 @@ async def _work_achievements(league_id: int, tournament_ids: list, job_id: str):
         results = compute_achievements(per_tournament_data)
         _log_fn_call(job_id, "compute_achievements", time.time() - t0)
         perf_summary = _compute_perf_summary(j)
+
+        dead_players = []
+        for td in per_tournament_data:
+            pinfo      = td["player_info"]
+            career_spp = td["player_career_spp"]
+            for rec in td["match_perf_records"]:
+                if rec.get("died"):
+                    pid = rec["player_id"]
+                    dead_players.append({
+                        "player_name":     (pinfo.get(pid) or {}).get("name", f"Player {pid}"),
+                        "team_name":       rec["team_name"],
+                        "career_spp":      career_spp.get(pid, 0),
+                        "match_id":        rec["match_id"],
+                        "tournament_name": td["tournament_name"],
+                    })
+
         conn = get_db()
         conn.execute(
-            "INSERT OR REPLACE INTO achievements_cache (league_id, data, generated_at, perf_summary) VALUES (?, ?, datetime('now'), ?)",
-            (league_id, json.dumps(results), json.dumps(perf_summary)),
+            "INSERT OR REPLACE INTO achievements_cache (league_id, data, generated_at, perf_summary, dead_players, tournament_ids) VALUES (?, ?, datetime('now'), ?, ?, ?)",
+            (league_id, json.dumps(results), json.dumps(perf_summary), json.dumps(dead_players), json.dumps(tournament_ids)),
         )
         conn.commit()
         conn.close()
-        j["redirect"] = f"/leagues/{league_id}?tab=achievements"
+        j["redirect"] = f"/leagues/{league_id}?tab={redirect_tab}"
         j["status"] = "done"
     except httpx.HTTPStatusError as e:
         j["status"] = "error"
@@ -1448,6 +1486,23 @@ async def generate_achievements(
     jobs[job_id] = {"status": "running", "completed": 0, "total": len(tournament_ids) * 2, "redirect": None, "error": None, "api_log": [], "fn_log": []}
     asyncio.create_task(_work_achievements(league_id, tournament_ids, job_id))
     return templates.TemplateResponse("progress.html", {"request": request, "job_id": job_id, "operation": "Achievements"})
+
+
+@app.post("/leagues/{league_id}/achievements/regenerate", response_class=HTMLResponse)
+async def regenerate_achievements(request: Request, league_id: int):
+    conn = get_db()
+    league = conn.execute("SELECT * FROM leagues WHERE id = ?", (league_id,)).fetchone()
+    row = conn.execute("SELECT tournament_ids FROM achievements_cache WHERE league_id = ?", (league_id,)).fetchone()
+    conn.close()
+    if not league:
+        raise HTTPException(status_code=404, detail="League not found")
+    if not row or not row["tournament_ids"]:
+        return RedirectResponse(url=f"/leagues/{league_id}?tab=achievements&error=No+previous+tournament+selection+found.+Please+regenerate+from+the+Tournaments+tab.", status_code=303)
+    tournament_ids = json.loads(row["tournament_ids"])
+    job_id = str(uuid.uuid4())
+    jobs[job_id] = {"status": "running", "completed": 0, "total": len(tournament_ids) * 2, "redirect": None, "error": None, "api_log": [], "fn_log": []}
+    asyncio.create_task(_work_achievements(league_id, tournament_ids, job_id, redirect_tab="dead-retired"))
+    return templates.TemplateResponse("progress.html", {"request": request, "job_id": job_id, "operation": "Dead/Retired"})
 
 
 @app.get("/leagues/{league_id}/achievements/export")
@@ -1495,6 +1550,45 @@ async def export_achievements(league_id: int):
     )
 
 
+@app.get("/leagues/{league_id}/dead-players/export")
+async def export_dead_players(league_id: int):
+    conn = get_db()
+    league = conn.execute("SELECT * FROM leagues WHERE id = ?", (league_id,)).fetchone()
+    row = conn.execute("SELECT dead_players FROM achievements_cache WHERE league_id = ?", (league_id,)).fetchone()
+    conn.close()
+
+    if not league:
+        raise HTTPException(status_code=404, detail="League not found")
+    if not row or not row["dead_players"]:
+        raise HTTPException(status_code=404, detail="No dead players data generated yet")
+
+    dead_players = json.loads(row["dead_players"])
+
+    output = io.StringIO()
+    writer = csv.writer(output)
+    writer.writerow(["Year", "Season", "Tournament", "Achievement", "Player Name", "Team Name", "URL"])
+
+    for p in dead_players:
+        tname = p["tournament_name"]
+        writer.writerow([
+            extract_year(tname),
+            extract_season(tname) or "",
+            extract_event(tname),
+            "Died",
+            p["player_name"],
+            p["team_name"],
+            f"https://fumbbl.com/p/match?id={p['match_id']}",
+        ])
+
+    league_slug = league["league_name"].replace(" ", "_")
+    filename = f"{league_slug}_dead_players_export.csv"
+    return Response(
+        content=output.getvalue(),
+        media_type="text/csv",
+        headers={"Content-Disposition": f'attachment; filename="{filename}"'},
+    )
+
+
 @app.get("/leagues/{league_id}", response_class=HTMLResponse)
 async def league_detail(
     request: Request,
@@ -1535,11 +1629,12 @@ async def league_detail(
     player_stats_has_perf = bool(player_stats_row and player_stats_row["perf_summary"]) if player_stats_row else False
 
     achievements_row = conn.execute(
-        "SELECT data, generated_at, perf_summary FROM achievements_cache WHERE league_id = ?", (league_id,)
+        "SELECT data, generated_at, perf_summary, dead_players FROM achievements_cache WHERE league_id = ?", (league_id,)
     ).fetchone()
-    achievements_results    = json.loads(achievements_row["data"]) if achievements_row else None
+    achievements_results      = json.loads(achievements_row["data"]) if achievements_row else None
     achievements_generated_at = achievements_row["generated_at"] if achievements_row else None
-    achievements_has_perf = bool(achievements_row and achievements_row["perf_summary"]) if achievements_row else False
+    achievements_has_perf     = bool(achievements_row and achievements_row["perf_summary"]) if achievements_row else False
+    dead_players_results      = json.loads(achievements_row["dead_players"]) if achievements_row and achievements_row["dead_players"] else None
     conn.close()
 
     all_tournaments = []
@@ -1575,6 +1670,7 @@ async def league_detail(
         "achievements_results": achievements_results,
         "achievements_generated_at": achievements_generated_at,
         "achievements_has_perf": achievements_has_perf,
+        "dead_players_results": dead_players_results,
         "success": success,
         "error": error,
     })

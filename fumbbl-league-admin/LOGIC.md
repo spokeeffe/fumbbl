@@ -166,6 +166,59 @@ These are summed across all matches at aggregation (count of qualifying matches,
 
 ---
 
+## Achievements
+
+### SPP Milestones
+
+Players are awarded a career milestone when they cross an SPP threshold **during** a tournament.
+The thresholds are:
+
+| Threshold | Award      |
+|-----------|------------|
+| 51 SPP    | Star       |
+| 76 SPP    | Super Star |
+| 126 SPP   | Mega Star  |
+| 176 SPP   | Legend     |
+
+**Algorithm** (implemented in `compute_achievements()` in `main.py`):
+
+1. Sum each player's SPP earned across all selected tournaments (`total_selected_spp`).
+2. Compute a pre-tournament baseline: `running_spp = career_spp_total - total_selected_spp`.
+3. Process tournaments oldest-first. For each tournament, check whether `running_spp` crosses
+   any threshold after adding the player's SPP earned in that tournament:
+
+```python
+spp_before = running_spp[pid]
+spp_after  = spp_before + spp_here
+for threshold, label in SPP_THRESHOLDS:
+    if spp_before < threshold <= spp_after:
+        # award milestone
+```
+
+4. Advance `running_spp[pid] = spp_after` before moving to the next tournament.
+
+A player can earn multiple milestones in the same tournament if they earn enough SPP to cross
+more than one threshold. Each milestone is only ever awarded once (the running total ensures
+a crossed threshold is never re-checked).
+
+### API: Career SPP field paths
+
+Career SPP is **not** available directly in match data and must be fetched separately.
+The two sources used in `_gather_player_info()` have **different** JSON paths:
+
+| Source | Endpoint | SPP field path |
+|--------|----------|----------------|
+| Team roster | `GET /team/get/{teamId}` | `players[].record.spp` |
+| Individual player | `GET /player/get/{playerId}` | `statistics.spp` |
+
+The team roster is fetched first (one call per unique team, covering all active roster members).
+Players not found there fall back to the SQLite `player_cache`, then to individual player API calls.
+
+**Bug history**: an earlier version used `p.get("spp")` and `pdata.get("spp")` (top-level), which
+always returned `None` → 0, silently suppressing all SPP milestone achievements.
+
+---
+
 ## Test Infrastructure
 
 ### Fixtures (`fixtures/<tournament_id>.json`)
@@ -174,18 +227,28 @@ Each fixture captures a snapshot of real FUMBBL data for a tournament:
 
 - `tournament_id` / `tournament_name` / `season` — metadata
 - `schedule` — raw response from `GET /tournament/schedule/{id}`
-- `matches` — map of `match_id → raw response from GET /match/get/{id}` for every played match
+- `matches` — map of `match_id → raw response from GET /match/get/{id}?verbose=1` for every played match (verbose adds `performances` per player)
+- `player_info` — map of `str(player_id) → {name, status}` fetched from `/player/get/{id}`
+- `player_career_spp` — map of `str(player_id) → int` career SPP from `/player/get/{id}` → `statistics.spp`
 - `expected_standings` — manually populated from the FUMBBL website standings page
+- `expected_achievements` — manually populated; each entry is one of:
+  - `{"achievement_type": "spp_milestone", "achievement_name": "Super Star", "player_name": "", "team_name": ""}`
+  - `{"achievement_type": "tournament_award", "badges": ["SPP"], "player_name": "", "team_name": ""}`
+  - `{"achievement_type": "per_game", "achievement_name": "Triple X", "player_name": "", "team_name": ""}`
 
-Use `fetch_fixture.py <tournament_id>` to create a new fixture, then fill in `expected_standings`.
+Use `fetch_fixture.py <tournament_id>` to create a new fixture, then fill in `expected_standings`
+and `expected_achievements`.
 
 ### Running Tests
 
 ```
 python test_standings.py              # all fixtures
 python test_standings.py <id>         # single fixture by tournament id
+
+python test_achievements.py           # all fixtures
+python test_achievements.py <id>      # single fixture by tournament id
 ```
 
-- `[PASS]` — computed standings match expected exactly
-- `[FAIL]` — field-by-field diff shown
-- `[SKIP]` — no `expected_standings` provided; computed standings printed for eyeballing
+- `[PASS]` — computed results match expected exactly
+- `[FAIL]` — field-by-field diff shown (extras and missing listed separately)
+- `[SKIP]` — no expected data provided; computed results printed for eyeballing

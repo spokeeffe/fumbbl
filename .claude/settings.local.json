@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:fumbbl.com)",
-      "Bash(curl -s \"https://fumbbl.com/api/match/get/4087298?verbose=1\")"
+      "Bash(curl -s \"https://fumbbl.com/api/match/get/4087298?verbose=1\")",
+      "Bash(python test_achievements.py 65889)",
+      "Bash(venv/Scripts/python test_achievements.py 65889)"
     ]
   }
 }
