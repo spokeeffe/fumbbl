@@ -6158,5 +6158,12 @@
     {"achievement_name": "Super Star", "achievement_type": "spp_milestone", "player_name": "Alnus the Awakened", "team_name": "True Roots of Khaine"},
     {"achievement_name": "Super Star", "achievement_type": "spp_milestone", "player_name": "Grungi Oakenshield", "team_name": "Karak Kadrin Oathkeepers"},
     {"achievement_name": "Super Star", "achievement_type": "spp_milestone", "player_name": "Klea 'Katcha", "team_name": "Everlasting Vultures of Settra"}
-  ]
+  ],
+  "expected_dead_players": [
+  {"player_name": "Berta Cossmann",                   "team_name": "Brothers of Skoll",          "match_id": 4677097},
+  {"player_name": "Gerald Schock",                    "team_name": "Brothers of Skoll",          "match_id": 4679893},
+  {"player_name": "Grung Hammerfist",                 "team_name": "Karak Kadrin Oathkeepers",   "match_id": 4674494},
+  {"player_name": "Menyanthes of Forgotten Fouls",   "team_name": "True Roots of Khaine",       "match_id": 4679195},
+  {"player_name": "Munko Massacre",                   "team_name": "Wolf Lands Slavers",         "match_id": 4675990}
+]
 }
