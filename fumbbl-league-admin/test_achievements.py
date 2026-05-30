@@ -194,7 +194,7 @@ def compare_dead_players(actual: list, expected: list) -> list[str]:
 
 
 def run_fixture(path: pathlib.Path) -> bool:
-    fixture  = json.loads(path.read_text())
+    fixture  = json.loads(path.read_text(encoding="utf-8"))
     name     = fixture.get("tournament_name", path.stem)
     expected_ach  = fixture.get("expected_achievements")
     expected_dead = fixture.get("expected_dead_players")
@@ -212,8 +212,11 @@ def run_fixture(path: pathlib.Path) -> bool:
             + rec["td"] * 3 + rec["comp"] + rec["cas"] * 2
             + rec["int_"] * 2 + rec["mvp"] * 4
         )
-    # Keep players with SPP > 0, or who died (they may have 0 SPP)
-    perf_records = [r for r in perf_records if pid_spp.get(r["player_id"], 0) > 0 or r.get("died")]
+    # Keep players with SPP > 0, who died, or who played (turns > 0; fouls earn no SPP)
+    perf_records = [
+        r for r in perf_records
+        if pid_spp.get(r["player_id"], 0) > 0 or r.get("died") or r.get("turns", 0) > 0
+    ]
 
     # Load player_info and player_career_spp from fixture (keys are str pids in JSON)
     player_info: dict = {
