@@ -12,7 +12,7 @@ Add expected_standings to a fixture to enable validation.
 import json
 import sys
 import pathlib
-from main import compute_standings, _cas_total
+from main import compute_standings, _cas_total, _schedule_result_counts
 
 
 def build_records(fixture: dict) -> list:
@@ -25,7 +25,7 @@ def build_records(fixture: dict) -> list:
         winner_id = result.get("winner")
         match_id  = result.get("id")
 
-        if not match_id and not winner_id:
+        if not _schedule_result_counts(result):
             continue
 
         sched_teams  = {t["id"]: t for t in (sm.get("teams") or []) if t.get("id")}

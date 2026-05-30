@@ -1,0 +1,8184 @@
+{
+  "tournament_id": 65883,
+  "tournament_name": "CIBBL - Y14, Autumn - Granite Division",
+  "season": "14",
+  "schedule": [
+    {
+      "position": 0,
+      "round": 1,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-02-18 00:24:05",
+      "result": {
+        "id": 4674062,
+        "status": "played",
+        "replayId": 1870615,
+        "winner": 1238201,
+        "teams": [
+          {
+            "id": 1230479,
+            "score": 0
+          },
+          {
+            "id": 1238201,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1230479,
+          "name": "Tor Archare Way Wonderers"
+        },
+        {
+          "id": 1238201,
+          "name": "Obsidian Phalanx"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 1,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-02-16 22:01:47",
+      "result": {
+        "id": 4673781,
+        "status": "played",
+        "replayId": 1870257,
+        "winner": 1060382,
+        "teams": [
+          {
+            "id": 1060382,
+            "score": 2
+          },
+          {
+            "id": 1244936,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1060382,
+          "name": "Da Kombat Skwad"
+        },
+        {
+          "id": 1244936,
+          "name": "Icecastle Vargar"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 1,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-02-24 14:34:31",
+      "result": {
+        "id": 4675492,
+        "status": "played",
+        "replayId": 1872315,
+        "winner": 1238284,
+        "teams": [
+          {
+            "id": 1091073,
+            "score": 0
+          },
+          {
+            "id": 1238284,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1091073,
+          "name": "Larhgoz Luchadores"
+        },
+        {
+          "id": 1238284,
+          "name": "Under-Bridge Four"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 2,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-02-26 20:08:11",
+      "result": {
+        "id": 4676063,
+        "status": "played",
+        "replayId": 1872995,
+        "winner": 1060382,
+        "teams": [
+          {
+            "id": 1230479,
+            "score": 0
+          },
+          {
+            "id": 1060382,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1230479,
+          "name": "Tor Archare Way Wonderers"
+        },
+        {
+          "id": 1060382,
+          "name": "Da Kombat Skwad"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 2,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-03-05 14:58:21",
+      "result": {
+        "id": 4677649,
+        "status": "played",
+        "replayId": 1874783,
+        "winner": 1243980,
+        "teams": [
+          {
+            "id": 1243980,
+            "score": 1
+          },
+          {
+            "id": 1091073,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1243980,
+          "name": "Altdorf Black Roses"
+        },
+        {
+          "id": 1091073,
+          "name": "Larhgoz Luchadores"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 2,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-03-02 22:24:24",
+      "result": {
+        "id": 4677041,
+        "status": "played",
+        "replayId": 1874061,
+        "winner": 1238201,
+        "teams": [
+          {
+            "id": 1244936,
+            "score": 1
+          },
+          {
+            "id": 1238201,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1244936,
+          "name": "Icecastle Vargar"
+        },
+        {
+          "id": 1238201,
+          "name": "Obsidian Phalanx"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 3,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-03-14 19:26:21",
+      "result": {
+        "id": 4679966,
+        "status": "played",
+        "replayId": 1877473,
+        "winner": 1230479,
+        "teams": [
+          {
+            "id": 1230479,
+            "score": 2
+          },
+          {
+            "id": 1238284,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1230479,
+          "name": "Tor Archare Way Wonderers"
+        },
+        {
+          "id": 1238284,
+          "name": "Under-Bridge Four"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 3,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-03-12 14:54:22",
+      "result": {
+        "id": 4679360,
+        "status": "played",
+        "replayId": 1876779,
+        "winner": 1243980,
+        "teams": [
+          {
+            "id": 1243980,
+            "score": 1
+          },
+          {
+            "id": 1244936,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1243980,
+          "name": "Altdorf Black Roses"
+        },
+        {
+          "id": 1244936,
+          "name": "Icecastle Vargar"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 3,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-03-11 14:00:51",
+      "result": {
+        "id": 4679095,
+        "status": "played",
+        "replayId": 1876462,
+        "winner": 1238201,
+        "teams": [
+          {
+            "id": 1091073,
+            "score": 1
+          },
+          {
+            "id": 1238201,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1091073,
+          "name": "Larhgoz Luchadores"
+        },
+        {
+          "id": 1238201,
+          "name": "Obsidian Phalanx"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 4,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-03-29 21:50:49",
+      "result": {
+        "id": 4684050,
+        "status": "played",
+        "replayId": 1882206,
+        "winner": 1091073,
+        "teams": [
+          {
+            "id": 1230479,
+            "score": 1
+          },
+          {
+            "id": 1091073,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1230479,
+          "name": "Tor Archare Way Wonderers"
+        },
+        {
+          "id": 1091073,
+          "name": "Larhgoz Luchadores"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 4,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-03-13 22:25:18",
+      "result": {
+        "id": 4679739,
+        "status": "played",
+        "replayId": 1877204,
+        "winner": 1060382,
+        "teams": [
+          {
+            "id": 1243980,
+            "score": 0
+          },
+          {
+            "id": 1060382,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1243980,
+          "name": "Altdorf Black Roses"
+        },
+        {
+          "id": 1060382,
+          "name": "Da Kombat Skwad"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 4,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-03-19 02:12:21",
+      "result": {
+        "id": 4681134,
+        "status": "played",
+        "replayId": 1878833,
+        "winner": 1238201,
+        "teams": [
+          {
+            "id": 1238284,
+            "score": 0
+          },
+          {
+            "id": 1238201,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1238284,
+          "name": "Under-Bridge Four"
+        },
+        {
+          "id": 1238201,
+          "name": "Obsidian Phalanx"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 5,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-03-31 04:18:54",
+      "result": {
+        "id": 4684413,
+        "status": "played",
+        "replayId": 1882640,
+        "winner": 1243980,
+        "teams": [
+          {
+            "id": 1230479,
+            "score": 1
+          },
+          {
+            "id": 1243980,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1230479,
+          "name": "Tor Archare Way Wonderers"
+        },
+        {
+          "id": 1243980,
+          "name": "Altdorf Black Roses"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 5,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-04-12 22:09:28",
+      "result": {
+        "id": 4689058,
+        "status": "played",
+        "replayId": 1887958,
+        "winner": 1060382,
+        "teams": [
+          {
+            "id": 1060382,
+            "score": 2
+          },
+          {
+            "id": 1091073,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1060382,
+          "name": "Da Kombat Skwad"
+        },
+        {
+          "id": 1091073,
+          "name": "Larhgoz Luchadores"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 5,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-04-18 10:04:14",
+      "result": {
+        "status": "forfeit",
+        "winner": 0
+      },
+      "teams": [
+        {
+          "id": 1244936,
+          "name": "Icecastle Vargar"
+        },
+        {
+          "id": 1238284,
+          "name": "Under-Bridge Four"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 6,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-04-24 21:29:50",
+      "result": {
+        "status": "forfeit",
+        "winner": 0
+      },
+      "teams": [
+        {
+          "id": 1230479,
+          "name": "Tor Archare Way Wonderers"
+        },
+        {
+          "id": 1244936,
+          "name": "Icecastle Vargar"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 6,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-04-24 21:30:13",
+      "result": {
+        "status": "forfeit",
+        "winner": 0
+      },
+      "teams": [
+        {
+          "id": 1243980,
+          "name": "Altdorf Black Roses"
+        },
+        {
+          "id": 1238284,
+          "name": "Under-Bridge Four"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 6,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-04-17 23:10:27",
+      "result": {
+        "id": 4690968,
+        "status": "played",
+        "replayId": 1890136,
+        "winner": 1060382,
+        "teams": [
+          {
+            "id": 1060382,
+            "score": 1
+          },
+          {
+            "id": 1238201,
+            "score": 1
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1060382,
+          "name": "Da Kombat Skwad"
+        },
+        {
+          "id": 1238201,
+          "name": "Obsidian Phalanx"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 7,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-05-06 19:05:58",
+      "result": {
+        "id": 4697552,
+        "status": "played",
+        "replayId": 1897661,
+        "winner": 1238201,
+        "teams": [
+          {
+            "id": 1243980,
+            "score": 1
+          },
+          {
+            "id": 1238201,
+            "score": 2
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1243980,
+          "name": "Altdorf Black Roses"
+        },
+        {
+          "id": 1238201,
+          "name": "Obsidian Phalanx"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 7,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-05-05 13:05:03",
+      "result": {
+        "id": 0,
+        "status": "forfeit",
+        "replayId": 0,
+        "winner": 1060382,
+        "teams": [
+          {
+            "id": 1060382,
+            "score": 0
+          },
+          {
+            "id": 1238284,
+            "score": 0
+          }
+        ]
+      },
+      "teams": [
+        {
+          "id": 1060382,
+          "name": "Da Kombat Skwad"
+        },
+        {
+          "id": 1238284,
+          "name": "Under-Bridge Four"
+        }
+      ]
+    },
+    {
+      "position": 0,
+      "round": 7,
+      "created": "2026-02-13 14:43:34",
+      "modified": "2026-05-05 13:56:12",
+      "result": {
+        "status": "forfeit",
+        "winner": 0
+      },
+      "teams": [
+        {
+          "id": 1244936,
+          "name": "Icecastle Vargar"
+        },
+        {
+          "id": 1091073,
+          "name": "Larhgoz Luchadores"
+        }
+      ]
+    }
+  ],
+  "matches": {
+    "4674062": {
+      "id": 4674062,
+      "replayId": 1870615,
+      "tournamentId": 65883,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2026-02-18",
+      "time": "00:24:05",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1238201,
+        "name": "Obsidian Phalanx",
+        "roster": {
+          "id": 886,
+          "name": "Black Dwarf (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 1620000,
+        "currentTeamValue": 1620000,
+        "coach": {
+          "id": 41255,
+          "name": "Kinks",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "1850k",
+        "performances": {
+          "17290320": {
+            "blocks": "11",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "4",
+            "td": "1",
+            "turns": "17"
+          },
+          "17290321": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "15",
+            "td": "0",
+            "turns": "17"
+          },
+          "17290327": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "1",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "-1",
+            "rush": "2",
+            "td": "0",
+            "turns": "17"
+          },
+          "17483896": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17290323": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "17290322": {
+            "blocks": "8",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "17290325": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "1",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "6"
+          },
+          "17290329": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "17290331": {
+            "blocks": "8",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "17290328": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "17313303": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "17473206": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "1"
+          },
+          "17478461": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "9"
+          }
+        },
+        "injuries": null
+      },
+      "team2": {
+        "id": 1230479,
+        "name": "Tor Archare Way Wonderers",
+        "roster": {
+          "id": 915,
+          "name": "Sea Elf (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1760000,
+        "currentTeamValue": 1650000,
+        "coach": {
+          "id": 268866,
+          "name": "townee",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 60000,
+        "gate": 0,
+        "tournamentWeight": "1850k",
+        "performances": {
+          "17165508": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "2",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "2",
+            "rush": "7",
+            "td": "0",
+            "turns": "17"
+          },
+          "17165503": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "17333294": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "10"
+          },
+          "17165509": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "17165510": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "-6",
+            "td": "0",
+            "turns": "17"
+          },
+          "17210773": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "17501375": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "17165513": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "3"
+          },
+          "17165514": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17165515": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "9"
+          },
+          "17236700": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "2",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "-2",
+            "rush": "8",
+            "td": "0",
+            "turns": "17"
+          },
+          "17352952": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          }
+        },
+        "injuries": {
+          "17165513": [
+            {
+              "injury": "-av",
+              "description": "Head Injury (-AV)"
+            }
+          ]
+        }
+      }
+    },
+    "4673781": {
+      "id": 4673781,
+      "replayId": 1870257,
+      "tournamentId": 65883,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2026-02-16",
+      "time": "22:01:47",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1244936,
+        "name": "Icecastle Vargar",
+        "roster": {
+          "id": 8317,
+          "name": "Wintertooth (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 1070000,
+        "currentTeamValue": 1070000,
+        "coach": {
+          "id": 242043,
+          "name": "datom",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 65000,
+        "gate": 0,
+        "tournamentWeight": "1270k",
+        "performances": {
+          "17399973": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17399975": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "14"
+          },
+          "17401159": {
+            "blocks": "7",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17401158": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17498923": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17401161": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17401177": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "17",
+            "td": "1",
+            "turns": "4"
+          },
+          "17401178": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17401179": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "1"
+          },
+          "17401180": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "1",
+            "fouls": "2",
+            "int": "0",
+            "mvp": "0",
+            "pass": "1",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17536250": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17536249": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17593106": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "6"
+          },
+          "17593107": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17593108": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          }
+        },
+        "injuries": null
+      },
+      "team2": {
+        "id": 1060382,
+        "name": "Da Kombat Skwad",
+        "roster": {
+          "id": 5068,
+          "name": "Orc (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 1980000,
+        "currentTeamValue": 1980000,
+        "coach": {
+          "id": 253774,
+          "name": "Diablange",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "2100k",
+        "performances": {
+          "14837656": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "14597503": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "14597504": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "14661239": {
+            "blocks": "12",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "15225776": {
+            "blocks": "3",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "14818292": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "25",
+            "td": "2",
+            "turns": "15"
+          },
+          "14597510": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "14707957": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "12",
+            "td": "0",
+            "turns": "5"
+          },
+          "17251106": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "17512481": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "2"
+          },
+          "14972737": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "14749640": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          }
+        },
+        "injuries": {
+          "14707957": [
+            {
+              "injury": "-ma",
+              "description": "Smashed Knee (-MA)"
+            }
+          ]
+        }
+      }
+    },
+    "4675492": {
+      "id": 4675492,
+      "replayId": 1872315,
+      "tournamentId": 65883,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2026-02-24",
+      "time": "14:34:31",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1091073,
+        "name": "Larhgoz Luchadores",
+        "roster": {
+          "id": 945,
+          "name": "Estalia (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": -1,
+        "teamValue": 1950000,
+        "currentTeamValue": 1800000,
+        "coach": {
+          "id": 226866,
+          "name": "lanky316",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 50000,
+        "gate": 0,
+        "tournamentWeight": "2240k",
+        "performances": {
+          "15048874": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "2"
+          },
+          "15048879": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "5"
+          },
+          "15048881": {
+            "blocks": "8",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "10"
+          },
+          "15048892": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "11"
+          },
+          "16175632": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "15048896": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "5"
+          },
+          "15048897": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "16997892": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "6"
+          },
+          "15319070": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "15048956": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "2",
+            "td": "0",
+            "turns": "13"
+          },
+          "15341163": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "1"
+          },
+          "15823634": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "1",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "0"
+          },
+          "17448336": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "5"
+          },
+          "16972364": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "1",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          }
+        },
+        "injuries": null
+      },
+      "team2": {
+        "id": 1238284,
+        "name": "Under-Bridge Four",
+        "roster": {
+          "id": 875,
+          "name": "Skaven (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 1270000,
+        "currentTeamValue": 1115000,
+        "coach": {
+          "id": 235162,
+          "name": "Arcayn",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "1350k",
+        "performances": {
+          "17291665": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "7",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "11"
+          },
+          "17404639": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17307590": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17291661": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "32",
+            "td": "2",
+            "turns": "16"
+          },
+          "17368329": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17291657": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "9"
+          },
+          "17497668": {
+            "blocks": "9",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17622352": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17622353": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17622354": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "1",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17622355": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17622536": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17622537": {
+            "blocks": "8",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "1",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "13"
+          },
+          "17622538": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "3",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          }
+        },
+        "injuries": null
+      }
+    },
+    "4676063": {
+      "id": 4676063,
+      "replayId": 1872995,
+      "tournamentId": 65883,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2026-02-26",
+      "time": "20:08:11",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1230479,
+        "name": "Tor Archare Way Wonderers",
+        "roster": {
+          "id": 915,
+          "name": "Sea Elf (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1690000,
+        "currentTeamValue": 1690000,
+        "coach": {
+          "id": 268866,
+          "name": "townee",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 65000,
+        "gate": 0,
+        "tournamentWeight": "1850k",
+        "performances": {
+          "17165508": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "3",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "-1",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17165503": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17333294": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "9"
+          },
+          "17165505": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17165509": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "7"
+          },
+          "17165510": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "12",
+            "td": "0",
+            "turns": "15"
+          },
+          "17210773": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17501375": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "6"
+          },
+          "17165514": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17165515": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "7"
+          },
+          "17236700": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "1",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "-2",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17352952": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          }
+        },
+        "injuries": {
+          "17501375": [
+            {
+              "injury": "n",
+              "description": "Serious Injury (NI)"
+            }
+          ]
+        }
+      },
+      "team2": {
+        "id": 1060382,
+        "name": "Da Kombat Skwad",
+        "roster": {
+          "id": 5068,
+          "name": "Orc (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2020000,
+        "currentTeamValue": 1840000,
+        "coach": {
+          "id": 253774,
+          "name": "Diablange",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2100k",
+        "performances": {
+          "14837656": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "14597503": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "14597504": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "14"
+          },
+          "14597505": {
+            "blocks": "8",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "14661239": {
+            "blocks": "8",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "15225776": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "14818292": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "14597510": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17251106": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "14972737": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "5",
+            "td": "1",
+            "turns": "15"
+          },
+          "14749640": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "29",
+            "td": "1",
+            "turns": "15"
+          }
+        },
+        "injuries": null
+      }
+    },
+    "4677649": {
+      "id": 4677649,
+      "replayId": 1874783,
+      "tournamentId": 65883,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2026-03-05",
+      "time": "14:58:21",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1091073,
+        "name": "Larhgoz Luchadores",
+        "roster": {
+          "id": 945,
+          "name": "Estalia (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2020000,
+        "currentTeamValue": 2020000,
+        "coach": {
+          "id": 226866,
+          "name": "lanky316",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 50000,
+        "gate": 0,
+        "tournamentWeight": "2240k",
+        "performances": {
+          "15048843": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "15048874": {
+            "blocks": "11",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "15048879": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "15048881": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "15048892": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "7",
+            "td": "0",
+            "turns": "11"
+          },
+          "16175632": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "15048896": {
+            "blocks": "11",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "15048897": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "11"
+          },
+          "16997892": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "6"
+          },
+          "15048956": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "7",
+            "td": "0",
+            "turns": "6"
+          },
+          "15341163": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "1"
+          },
+          "15823634": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "4",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17448336": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "16972364": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          }
+        },
+        "injuries": {
+          "16175632": [
+            {
+              "injury": "n",
+              "description": "Serious Injury (NI)"
+            }
+          ]
+        }
+      },
+      "team2": {
+        "id": 1243980,
+        "name": "Altdorf Black Roses",
+        "roster": {
+          "id": 8320,
+          "name": "Cult of Morr (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1240000,
+        "currentTeamValue": 1240000,
+        "coach": {
+          "id": 254569,
+          "name": "Archaon_Everchosen",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 60000,
+        "gate": 0,
+        "tournamentWeight": "1350k",
+        "performances": {
+          "17383718": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17383719": {
+            "blocks": "11",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17483955": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "7"
+          },
+          "17530424": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "3"
+          },
+          "17383722": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "2"
+          },
+          "17383724": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "1",
+            "td": "0",
+            "turns": "16"
+          },
+          "17478496": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "4",
+            "td": "0",
+            "turns": "16"
+          },
+          "17563485": {
+            "blocks": "8",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17383730": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "8",
+            "td": "1",
+            "turns": "8"
+          },
+          "17383726": {
+            "blocks": "2",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17383727": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17383728": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "6"
+          },
+          "17653812": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "2",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "4",
+            "td": "0",
+            "turns": "16"
+          },
+          "17653813": {
+            "blocks": "12",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          }
+        },
+        "injuries": null
+      }
+    },
+    "4677041": {
+      "id": 4677041,
+      "replayId": 1874061,
+      "tournamentId": 65883,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2026-03-02",
+      "time": "22:24:24",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1238201,
+        "name": "Obsidian Phalanx",
+        "roster": {
+          "id": 886,
+          "name": "Black Dwarf (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 4,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 1640000,
+        "currentTeamValue": 1640000,
+        "coach": {
+          "id": 41255,
+          "name": "Kinks",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "1850k",
+        "performances": {
+          "17290320": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "7",
+            "td": "1",
+            "turns": "16"
+          },
+          "17290321": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "32",
+            "td": "1",
+            "turns": "16"
+          },
+          "17290327": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "2",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "-2",
+            "rush": "6",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290323": {
+            "blocks": "6",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290322": {
+            "blocks": "12",
+            "cas": "3",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290325": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "3",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290331": {
+            "blocks": "9",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17313303": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290328": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290329": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17306280": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          }
+        },
+        "injuries": null
+      },
+      "team2": {
+        "id": 1244936,
+        "name": "Icecastle Vargar",
+        "roster": {
+          "id": 8317,
+          "name": "Wintertooth (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1090000,
+        "currentTeamValue": 1090000,
+        "coach": {
+          "id": 242043,
+          "name": "datom",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 60000,
+        "gate": 0,
+        "tournamentWeight": "1270k",
+        "performances": {
+          "17399973": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17399975": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "17401159": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "11"
+          },
+          "17401158": {
+            "blocks": "8",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17498923": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17401161": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "3"
+          },
+          "17401177": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "7"
+          },
+          "17401178": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "9"
+          },
+          "17401179": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "7"
+          },
+          "17401180": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17536250": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "16",
+            "td": "1",
+            "turns": "12"
+          },
+          "17536249": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "17644070": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "1",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17644071": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "13"
+          }
+        },
+        "injuries": {
+          "17401177": [
+            {
+              "injury": "m",
+              "description": "Seriously Hurt (MNG)"
+            }
+          ]
+        }
+      }
+    },
+    "4679966": {
+      "id": 4679966,
+      "replayId": 1877473,
+      "tournamentId": 65883,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2026-03-14",
+      "time": "19:26:21",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1230479,
+        "name": "Tor Archare Way Wonderers",
+        "roster": {
+          "id": 915,
+          "name": "Sea Elf (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 1820000,
+        "currentTeamValue": 1750000,
+        "coach": {
+          "id": 268866,
+          "name": "townee",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "1850k",
+        "performances": {
+          "17165508": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "4",
+            "td": "0",
+            "turns": "6"
+          },
+          "17165503": {
+            "blocks": "8",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17333294": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "3"
+          },
+          "17165505": {
+            "blocks": "9",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17165509": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "10"
+          },
+          "17165510": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "20",
+            "td": "1",
+            "turns": "16"
+          },
+          "17210773": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "13",
+            "td": "1",
+            "turns": "13"
+          },
+          "17630458": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17165514": {
+            "blocks": "7",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17165515": {
+            "blocks": "6",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17236700": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17352952": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          }
+        },
+        "injuries": null
+      },
+      "team2": {
+        "id": 1238284,
+        "name": "Under-Bridge Four",
+        "roster": {
+          "id": 875,
+          "name": "Skaven (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1225000,
+        "currentTeamValue": 1225000,
+        "coach": {
+          "id": 235162,
+          "name": "Arcayn",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "1350k",
+        "performances": {
+          "17291664": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17291665": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "1",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "10"
+          },
+          "17404639": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "3",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "6"
+          },
+          "17424023": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "7"
+          },
+          "17307590": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17291661": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "32",
+            "td": "1",
+            "turns": "16"
+          },
+          "17368329": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17622539": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "1",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "2",
+            "rush": "0",
+            "td": "0",
+            "turns": "5"
+          },
+          "17291657": {
+            "blocks": "11",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17497668": {
+            "blocks": "8",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17622553": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17686845": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17686846": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          }
+        },
+        "injuries": {
+          "17622553": [
+            {
+              "injury": "d",
+              "description": "Dead (RIP)"
+            }
+          ],
+          "17686845": [
+            {
+              "injury": "-av",
+              "description": "Head Injury (-AV)"
+            }
+          ]
+        }
+      }
+    },
+    "4679360": {
+      "id": 4679360,
+      "replayId": 1876779,
+      "tournamentId": 65883,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2026-03-12",
+      "time": "14:54:22",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1244936,
+        "name": "Icecastle Vargar",
+        "roster": {
+          "id": 8317,
+          "name": "Wintertooth (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 2,
+          "si": 2,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 1210000,
+        "currentTeamValue": 1170000,
+        "coach": {
+          "id": 242043,
+          "name": "datom",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 50000,
+        "gate": 0,
+        "tournamentWeight": "1270k",
+        "performances": {
+          "17399973": {
+            "blocks": "6",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17399975": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17401159": {
+            "blocks": "9",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17401158": {
+            "blocks": "7",
+            "cas": "2",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17498923": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17401161": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "17401178": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "5",
+            "td": "0",
+            "turns": "8"
+          },
+          "17401179": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "7"
+          },
+          "17401180": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "10",
+            "td": "0",
+            "turns": "5"
+          },
+          "17536250": {
+            "blocks": "1",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17536249": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17644114": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17678555": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          }
+        },
+        "injuries": {
+          "17498923": [
+            {
+              "injury": "d",
+              "description": "Dead (RIP)"
+            }
+          ],
+          "17401161": [
+            {
+              "injury": "-ag",
+              "description": "Neck Injury (-AG)"
+            }
+          ]
+        }
+      },
+      "team2": {
+        "id": 1243980,
+        "name": "Altdorf Black Roses",
+        "roster": {
+          "id": 8320,
+          "name": "Cult of Morr (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 1
+        },
+        "fanfactor": 0,
+        "teamValue": 1260000,
+        "currentTeamValue": 1260000,
+        "coach": {
+          "id": 254569,
+          "name": "Archaon_Everchosen",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 60000,
+        "gate": 0,
+        "tournamentWeight": "1350k",
+        "performances": {
+          "17383718": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "13"
+          },
+          "17383719": {
+            "blocks": "9",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "13"
+          },
+          "17483955": {
+            "blocks": "9",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "17530424": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17383722": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "15",
+            "td": "1",
+            "turns": "16"
+          },
+          "17383724": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17478496": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "10"
+          },
+          "17563485": {
+            "blocks": "1",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "6"
+          },
+          "17383730": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "1",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "3",
+            "rush": "5",
+            "td": "0",
+            "turns": "16"
+          },
+          "17383726": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17383727": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17383728": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          }
+        },
+        "injuries": {
+          "17383718": [
+            {
+              "injury": "n",
+              "description": "Serious Injury (NI)"
+            }
+          ],
+          "17563485": [
+            {
+              "injury": "-st",
+              "description": "Dislocated Shoulder (-ST)"
+            }
+          ],
+          "17383726": [
+            {
+              "injury": "n",
+              "description": "Serious Injury (NI)"
+            }
+          ],
+          "17383727": [
+            {
+              "injury": "d",
+              "description": "Dead (RIP)"
+            }
+          ]
+        }
+      }
+    },
+    "4679095": {
+      "id": 4679095,
+      "replayId": 1876462,
+      "tournamentId": 65883,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2026-03-11",
+      "time": "14:00:51",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1091073,
+        "name": "Larhgoz Luchadores",
+        "roster": {
+          "id": 945,
+          "name": "Estalia (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2020000,
+        "currentTeamValue": 1920000,
+        "coach": {
+          "id": 226866,
+          "name": "lanky316",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "2240k",
+        "performances": {
+          "15048843": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "1",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "-2",
+            "rush": "-3",
+            "td": "0",
+            "turns": "13"
+          },
+          "15048874": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "15048879": {
+            "blocks": "7",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "14"
+          },
+          "15048881": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "6"
+          },
+          "15048892": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "1",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "21",
+            "td": "0",
+            "turns": "16"
+          },
+          "15048896": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "1"
+          },
+          "15048897": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "16997892": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "15319070": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "16018818": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "1"
+          },
+          "15048956": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "1",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "1",
+            "td": "0",
+            "turns": "6"
+          },
+          "15341163": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "15823634": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "2",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "1"
+          },
+          "17448336": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "6",
+            "td": "1",
+            "turns": "16"
+          },
+          "16972364": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          }
+        },
+        "injuries": {
+          "15048843": [
+            {
+              "injury": "-av",
+              "description": "Head Injury (-AV)"
+            }
+          ]
+        }
+      },
+      "team2": {
+        "id": 1238201,
+        "name": "Obsidian Phalanx",
+        "roster": {
+          "id": 886,
+          "name": "Black Dwarf (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1700000,
+        "currentTeamValue": 1700000,
+        "coach": {
+          "id": 41255,
+          "name": "Kinks",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "1850k",
+        "performances": {
+          "17290320": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "10",
+            "td": "1",
+            "turns": "16"
+          },
+          "17290321": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "11",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290327": {
+            "blocks": "4",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "6",
+            "td": "0",
+            "turns": "11"
+          },
+          "17483896": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17290323": {
+            "blocks": "12",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290322": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17290325": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "1",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "17290331": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17313303": {
+            "blocks": "9",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290328": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290329": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17306280": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17473206": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17478461": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "0"
+          }
+        },
+        "injuries": {
+          "17290331": [
+            {
+              "injury": "m",
+              "description": "Seriously Hurt (MNG)"
+            }
+          ]
+        }
+      }
+    },
+    "4684050": {
+      "id": 4684050,
+      "replayId": 1882206,
+      "tournamentId": 65883,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2026-03-29",
+      "time": "21:50:49",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1230479,
+        "name": "Tor Archare Way Wonderers",
+        "roster": {
+          "id": 915,
+          "name": "Sea Elf (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1680000,
+        "currentTeamValue": 1680000,
+        "coach": {
+          "id": 268866,
+          "name": "townee",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 55000,
+        "gate": 0,
+        "tournamentWeight": "1850k",
+        "performances": {
+          "17165508": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "10"
+          },
+          "17165503": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "14"
+          },
+          "17333294": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17165505": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "13"
+          },
+          "17165509": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "10"
+          },
+          "17165510": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "7",
+            "td": "1",
+            "turns": "14"
+          },
+          "17210773": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "9",
+            "td": "0",
+            "turns": "10"
+          },
+          "17501375": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "13"
+          },
+          "17630458": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "9"
+          },
+          "17165514": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "13"
+          },
+          "17165515": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "2"
+          },
+          "17236700": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "1",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "1",
+            "rush": "2",
+            "td": "0",
+            "turns": "15"
+          },
+          "17352952": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "11"
+          }
+        },
+        "injuries": null
+      },
+      "team2": {
+        "id": 1091073,
+        "name": "Larhgoz Luchadores",
+        "roster": {
+          "id": 945,
+          "name": "Estalia (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 3,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2040000,
+        "currentTeamValue": 1890000,
+        "coach": {
+          "id": 226866,
+          "name": "lanky316",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 55000,
+        "gate": 0,
+        "tournamentWeight": "2240k",
+        "performances": {
+          "15048874": {
+            "blocks": "8",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "15048879": {
+            "blocks": "8",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "15048881": {
+            "blocks": "5",
+            "cas": "2",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "9"
+          },
+          "15048892": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "5"
+          },
+          "16175632": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "5"
+          },
+          "15048896": {
+            "blocks": "9",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "15048897": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "4",
+            "td": "1",
+            "turns": "12"
+          },
+          "16997892": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "11"
+          },
+          "15319070": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "16018818": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "15048956": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "29",
+            "td": "0",
+            "turns": "15"
+          },
+          "15341163": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "15823634": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "3",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17448336": {
+            "blocks": "9",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "16972364": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "7"
+          }
+        },
+        "injuries": null
+      }
+    },
+    "4679739": {
+      "id": 4679739,
+      "replayId": 1877204,
+      "tournamentId": 65883,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2026-03-13",
+      "time": "22:25:18",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1243980,
+        "name": "Altdorf Black Roses",
+        "roster": {
+          "id": 8320,
+          "name": "Cult of Morr (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 0,
+          "si": 1,
+          "rip": 1
+        },
+        "fanfactor": -1,
+        "teamValue": 1310000,
+        "currentTeamValue": 1130000,
+        "coach": {
+          "id": 254569,
+          "name": "Archaon_Everchosen",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "1350k",
+        "performances": {
+          "17383719": {
+            "blocks": "10",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17483955": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17530424": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "13"
+          },
+          "17383722": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "7",
+            "td": "0",
+            "turns": "5"
+          },
+          "17383724": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17478496": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "17678565": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "1",
+            "td": "0",
+            "turns": "4"
+          },
+          "17383730": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17678566": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "1"
+          },
+          "17383728": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17678567": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "1"
+          },
+          "17684285": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17684286": {
+            "blocks": "14",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17684287": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          }
+        },
+        "injuries": {
+          "17383722": [
+            {
+              "injury": "d",
+              "description": "Dead (RIP)"
+            }
+          ],
+          "17478496": [
+            {
+              "injury": "d",
+              "description": "Dead (RIP)"
+            }
+          ]
+        }
+      },
+      "team2": {
+        "id": 1060382,
+        "name": "Da Kombat Skwad",
+        "roster": {
+          "id": 5068,
+          "name": "Orc (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 2
+        },
+        "fanfactor": 0,
+        "teamValue": 2020000,
+        "currentTeamValue": 2020000,
+        "coach": {
+          "id": 253774,
+          "name": "Diablange",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "2100k",
+        "performances": {
+          "14837656": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "13"
+          },
+          "14597503": {
+            "blocks": "8",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "14597504": {
+            "blocks": "9",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "14597505": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "3"
+          },
+          "14661239": {
+            "blocks": "11",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "15225776": {
+            "blocks": "3",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "14818292": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "14597510": {
+            "blocks": "12",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "14707957": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17251106": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17512481": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "14972737": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "14749640": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "17",
+            "td": "1",
+            "turns": "8"
+          }
+        },
+        "injuries": {
+          "14707957": [
+            {
+              "injury": "n",
+              "description": "Serious Injury (NI)"
+            }
+          ]
+        }
+      }
+    },
+    "4681134": {
+      "id": 4681134,
+      "replayId": 1878833,
+      "tournamentId": 65883,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2026-03-19",
+      "time": "02:12:21",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1238201,
+        "name": "Obsidian Phalanx",
+        "roster": {
+          "id": 886,
+          "name": "Black Dwarf (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 1,
+        "teamValue": 1700000,
+        "currentTeamValue": 1600000,
+        "coach": {
+          "id": 41255,
+          "name": "Kinks",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 90000,
+        "gate": 0,
+        "tournamentWeight": "1850k",
+        "performances": {
+          "17290320": {
+            "blocks": "9",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "5",
+            "td": "1",
+            "turns": "16"
+          },
+          "17290321": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "12",
+            "td": "1",
+            "turns": "16"
+          },
+          "17290327": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "1",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "24",
+            "td": "0",
+            "turns": "14"
+          },
+          "17483896": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "3",
+            "td": "0",
+            "turns": "8"
+          },
+          "17290323": {
+            "blocks": "6",
+            "cas": "2",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290322": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290325": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "1",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "3"
+          },
+          "17313303": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290328": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17290329": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17306280": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17473206": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17478461": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          }
+        },
+        "injuries": null
+      },
+      "team2": {
+        "id": 1238284,
+        "name": "Under-Bridge Four",
+        "roster": {
+          "id": 875,
+          "name": "Skaven (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1245000,
+        "currentTeamValue": 1245000,
+        "coach": {
+          "id": 235162,
+          "name": "Arcayn",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 70000,
+        "gate": 0,
+        "tournamentWeight": "1350k",
+        "performances": {
+          "17291664": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17291665": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "1",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "1"
+          },
+          "17404639": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "3"
+          },
+          "17424023": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "1",
+            "td": "0",
+            "turns": "9"
+          },
+          "17307590": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "14"
+          },
+          "17291661": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "1",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "9",
+            "td": "0",
+            "turns": "16"
+          },
+          "17368329": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "11"
+          },
+          "17622539": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "1",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "3",
+            "rush": "7",
+            "td": "0",
+            "turns": "8"
+          },
+          "17291657": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17497668": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "1"
+          },
+          "17700928": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "2"
+          },
+          "17700999": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "7"
+          }
+        },
+        "injuries": {
+          "17404639": [
+            {
+              "injury": "n",
+              "description": "Serious Injury (NI)"
+            }
+          ],
+          "17291657": [
+            {
+              "injury": "n",
+              "description": "Serious Injury (NI)"
+            }
+          ]
+        }
+      }
+    },
+    "4684413": {
+      "id": 4684413,
+      "replayId": 1882640,
+      "tournamentId": 65883,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2026-03-31",
+      "time": "04:18:54",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1230479,
+        "name": "Tor Archare Way Wonderers",
+        "roster": {
+          "id": 915,
+          "name": "Sea Elf (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1710000,
+        "currentTeamValue": 1710000,
+        "coach": {
+          "id": 268866,
+          "name": "townee",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "1850k",
+        "performances": {
+          "17165508": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17165503": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "17333294": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17165505": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17165509": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17165510": {
+            "blocks": "4",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17210773": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "18",
+            "td": "1",
+            "turns": "16"
+          },
+          "17501375": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "2",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "17630458": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17165514": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "6"
+          },
+          "17165515": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "17236700": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "1",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "3",
+            "td": "0",
+            "turns": "16"
+          },
+          "17352952": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "1"
+          }
+        },
+        "injuries": {
+          "17165508": [
+            {
+              "injury": "m",
+              "description": "Seriously Hurt (MNG)"
+            }
+          ],
+          "17352952": [
+            {
+              "injury": "n",
+              "description": "Serious Injury (NI)"
+            }
+          ]
+        }
+      },
+      "team2": {
+        "id": 1243980,
+        "name": "Altdorf Black Roses",
+        "roster": {
+          "id": 8320,
+          "name": "Cult of Morr (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1110000,
+        "currentTeamValue": 1110000,
+        "coach": {
+          "id": 254569,
+          "name": "Archaon_Everchosen",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 85000,
+        "gate": 0,
+        "tournamentWeight": "1350k",
+        "performances": {
+          "17383718": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "13"
+          },
+          "17383719": {
+            "blocks": "8",
+            "cas": "2",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17483955": {
+            "blocks": "8",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17530424": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "13"
+          },
+          "17684294": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "18",
+            "td": "1",
+            "turns": "10"
+          },
+          "17383724": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17678565": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17383730": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "19",
+            "td": "1",
+            "turns": "5"
+          },
+          "17383726": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "7"
+          },
+          "17678566": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "9"
+          },
+          "17383728": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17737629": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "6",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17737630": {
+            "blocks": "14",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          }
+        },
+        "injuries": null
+      }
+    },
+    "4689058": {
+      "id": 4689058,
+      "replayId": 1887958,
+      "tournamentId": 65883,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2026-04-12",
+      "time": "22:09:28",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1091073,
+        "name": "Larhgoz Luchadores",
+        "roster": {
+          "id": 945,
+          "name": "Estalia (CIBBL)"
+        },
+        "score": 0,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2130000,
+        "currentTeamValue": 2130000,
+        "coach": {
+          "id": 226866,
+          "name": "lanky316",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 55000,
+        "gate": 0,
+        "tournamentWeight": "2240k",
+        "performances": {
+          "15048843": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "1",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "-2",
+            "rush": "4",
+            "td": "0",
+            "turns": "15"
+          },
+          "15048874": {
+            "blocks": "6",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "15048879": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "15048881": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "7"
+          },
+          "15048892": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "9"
+          },
+          "16175632": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "6",
+            "td": "0",
+            "turns": "5"
+          },
+          "15048896": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "15048897": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "16997892": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "1",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "6"
+          },
+          "15319070": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "7"
+          },
+          "16018818": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "2"
+          },
+          "15048956": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "1",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "1",
+            "rush": "3",
+            "td": "0",
+            "turns": "17"
+          },
+          "15341163": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "15823634": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "8",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "17448336": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "7"
+          },
+          "16972364": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "3"
+          }
+        },
+        "injuries": null
+      },
+      "team2": {
+        "id": 1060382,
+        "name": "Da Kombat Skwad",
+        "roster": {
+          "id": 5068,
+          "name": "Orc (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2020000,
+        "currentTeamValue": 1840000,
+        "coach": {
+          "id": 253774,
+          "name": "Diablange",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 75000,
+        "gate": 0,
+        "tournamentWeight": "2100k",
+        "performances": {
+          "14837656": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "13"
+          },
+          "14597503": {
+            "blocks": "12",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "14597504": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "14597505": {
+            "blocks": "12",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "14661239": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "15225776": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "14818292": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "14",
+            "td": "1",
+            "turns": "16"
+          },
+          "14597510": {
+            "blocks": "10",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17512481": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "14972737": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "14749640": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "20",
+            "td": "1",
+            "turns": "8"
+          },
+          "17810445": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          }
+        },
+        "injuries": null
+      }
+    },
+    "4690968": {
+      "id": 4690968,
+      "replayId": 1890136,
+      "tournamentId": 65883,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2026-04-17",
+      "time": "23:10:27",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1238201,
+        "name": "Obsidian Phalanx",
+        "roster": {
+          "id": 886,
+          "name": "Black Dwarf (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 2,
+          "si": 5,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1720000,
+        "currentTeamValue": 1720000,
+        "coach": {
+          "id": 41255,
+          "name": "Kinks",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 90000,
+        "gate": 0,
+        "tournamentWeight": "1850k",
+        "performances": {
+          "17290320": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17290321": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "12",
+            "td": "1",
+            "turns": "15"
+          },
+          "17290327": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "6",
+            "td": "0",
+            "turns": "15"
+          },
+          "17483896": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "1",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "3",
+            "rush": "4",
+            "td": "0",
+            "turns": "1"
+          },
+          "17290323": {
+            "blocks": "7",
+            "cas": "2",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17290322": {
+            "blocks": "6",
+            "cas": "2",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17290325": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "3",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17290331": {
+            "blocks": "3",
+            "cas": "2",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "17313303": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "4"
+          },
+          "17290328": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "17290329": {
+            "blocks": "2",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "14"
+          },
+          "17306280": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "11"
+          },
+          "17830341": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          }
+        },
+        "injuries": null
+      },
+      "team2": {
+        "id": 1060382,
+        "name": "Da Kombat Skwad",
+        "roster": {
+          "id": 5068,
+          "name": "Orc (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 0,
+          "si": 0,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 2090000,
+        "currentTeamValue": 2090000,
+        "coach": {
+          "id": 253774,
+          "name": "Diablange",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 90000,
+        "gate": 0,
+        "tournamentWeight": "2100k",
+        "performances": {
+          "14837656": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "13"
+          },
+          "14597503": {
+            "blocks": "12",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "14597504": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "14597505": {
+            "blocks": "9",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "12"
+          },
+          "14661239": {
+            "blocks": "9",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "15"
+          },
+          "15225776": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "14818292": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "7"
+          },
+          "14597510": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "2"
+          },
+          "14707957": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "6"
+          },
+          "17251106": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "0"
+          },
+          "14972737": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "14749640": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "10",
+            "td": "1",
+            "turns": "15"
+          },
+          "17275698": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "0"
+          }
+        },
+        "injuries": {
+          "14597505": [
+            {
+              "injury": "n",
+              "description": "Serious Injury (NI)"
+            }
+          ],
+          "15225776": [
+            {
+              "injury": "-ma",
+              "description": "Smashed Knee (-MA)"
+            }
+          ],
+          "14597510": [
+            {
+              "injury": "n",
+              "description": "Serious Injury (NI)"
+            }
+          ],
+          "14707957": [
+            {
+              "injury": "n",
+              "description": "Serious Injury (NI)"
+            }
+          ],
+          "17251106": [
+            {
+              "injury": "-av",
+              "description": "Head Injury (-AV)"
+            }
+          ],
+          "17275698": [
+            {
+              "injury": "m",
+              "description": "Seriously Hurt (MNG)"
+            }
+          ]
+        }
+      }
+    },
+    "4697552": {
+      "id": 4697552,
+      "replayId": 1897661,
+      "tournamentId": 65883,
+      "divisionId": 5,
+      "division": "League",
+      "scheduler": "None",
+      "date": "2026-05-06",
+      "time": "19:05:58",
+      "gate": 0,
+      "conceded": "None",
+      "hasComments": "false",
+      "team1": {
+        "id": 1238201,
+        "name": "Obsidian Phalanx",
+        "roster": {
+          "id": 886,
+          "name": "Black Dwarf (CIBBL)"
+        },
+        "score": 2,
+        "casualties": {
+          "bh": 1,
+          "si": 2,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1720000,
+        "currentTeamValue": 1720000,
+        "coach": {
+          "id": 41255,
+          "name": "Kinks",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 90000,
+        "gate": 0,
+        "tournamentWeight": "1850k",
+        "performances": {
+          "17290320": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290321": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "7",
+            "td": "1",
+            "turns": "16"
+          },
+          "17290327": {
+            "blocks": "4",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "17",
+            "td": "1",
+            "turns": "16"
+          },
+          "17483896": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "1",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "6",
+            "rush": "14",
+            "td": "0",
+            "turns": "10"
+          },
+          "17290323": {
+            "blocks": "9",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290322": {
+            "blocks": "10",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290325": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "1",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17290331": {
+            "blocks": "13",
+            "cas": "1",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17313303": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "9"
+          },
+          "17290328": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "11"
+          },
+          "17290329": {
+            "blocks": "7",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17473206": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17478461": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "2"
+          }
+        },
+        "injuries": {
+          "17313303": [
+            {
+              "injury": "n",
+              "description": "Serious Injury (NI)"
+            }
+          ]
+        }
+      },
+      "team2": {
+        "id": 1243980,
+        "name": "Altdorf Black Roses",
+        "roster": {
+          "id": 8320,
+          "name": "Cult of Morr (CIBBL)"
+        },
+        "score": 1,
+        "casualties": {
+          "bh": 1,
+          "si": 1,
+          "rip": 0
+        },
+        "fanfactor": 0,
+        "teamValue": 1230000,
+        "currentTeamValue": 1230000,
+        "coach": {
+          "id": 254569,
+          "name": "Archaon_Everchosen",
+          "rating": {
+            "pre": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            },
+            "post": {
+              "r": 0,
+              "cr": 0,
+              "bracket": "Rookie"
+            }
+          }
+        },
+        "winnings": 80000,
+        "gate": 0,
+        "tournamentWeight": "1350k",
+        "performances": {
+          "17383718": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "3"
+          },
+          "17383719": {
+            "blocks": "13",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "17483955": {
+            "blocks": "9",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "17530424": {
+            "blocks": "6",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "1",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "17684294": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "3"
+          },
+          "17383724": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17678565": {
+            "blocks": "3",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "14"
+          },
+          "17737631": {
+            "blocks": "5",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          },
+          "17383730": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "22",
+            "td": "1",
+            "turns": "17"
+          },
+          "17383726": {
+            "blocks": "2",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "8"
+          },
+          "17678566": {
+            "blocks": "0",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "9"
+          },
+          "17383728": {
+            "blocks": "1",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "17"
+          },
+          "17903418": {
+            "blocks": "12",
+            "cas": "0",
+            "comp": "0",
+            "fouls": "0",
+            "int": "0",
+            "mvp": "0",
+            "pass": "0",
+            "rush": "0",
+            "td": "0",
+            "turns": "16"
+          }
+        },
+        "injuries": {
+          "17383718": [
+            {
+              "injury": "m",
+              "description": "Seriously Hurt (MNG)"
+            }
+          ],
+          "17383724": [
+            {
+              "injury": "m",
+              "description": "Seriously Hurt (MNG)"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "player_info": {
+    "14597503": {
+      "name": "Grilnash Laughingblood",
+      "status": "Active"
+    },
+    "14597504": {
+      "name": "Coth Doombreath",
+      "status": "Active"
+    },
+    "14597505": {
+      "name": "Grugtun Cruelheart",
+      "status": "Active"
+    },
+    "14597510": {
+      "name": "Gren Thunder",
+      "status": "Active"
+    },
+    "14661239": {
+      "name": "Crag Giantbones",
+      "status": "Active"
+    },
+    "14707957": {
+      "name": "Glorn Firestorm",
+      "status": "Retired"
+    },
+    "14749640": {
+      "name": "Bomba Jim",
+      "status": "Active"
+    },
+    "14818292": {
+      "name": "Gareth Deathdealer",
+      "status": "Active"
+    },
+    "14837656": {
+      "name": "Tart Dantag",
+      "status": "Active"
+    },
+    "14972737": {
+      "name": "Kayden Ironhead",
+      "status": "Active"
+    },
+    "15048843": {
+      "name": "Hombre Machista",
+      "status": "Active"
+    },
+    "15048874": {
+      "name": "Hugo el Gigante",
+      "status": "Active"
+    },
+    "15048879": {
+      "name": "Terremoto",
+      "status": "Active"
+    },
+    "15048881": {
+      "name": "Tif\u00f3n",
+      "status": "Active"
+    },
+    "15048892": {
+      "name": " M\u00e1scara de Tigre",
+      "status": "Active"
+    },
+    "15048896": {
+      "name": "Infierno",
+      "status": "Active"
+    },
+    "15048897": {
+      "name": "Joven Le\u00f3n",
+      "status": "Active"
+    },
+    "15048956": {
+      "name": "Ricardo Instinto",
+      "status": "Active"
+    },
+    "15225776": {
+      "name": "Garil Sunburst",
+      "status": "Retired"
+    },
+    "15319070": {
+      "name": "Ravishing Ricardo Brusco",
+      "status": "Active"
+    },
+    "15341163": {
+      "name": "Kassandra Bravos",
+      "status": "Active"
+    },
+    "15823634": {
+      "name": "Smaku Atonne",
+      "status": "Active"
+    },
+    "16018818": {
+      "name": "Gojira Bundy",
+      "status": "Active"
+    },
+    "16175632": {
+      "name": "Justin Trueno Ligero",
+      "status": "Active"
+    },
+    "16972364": {
+      "name": "Mei the Evil Apple Goblin",
+      "status": "Active"
+    },
+    "16997892": {
+      "name": "Spud Spikely",
+      "status": "Active"
+    },
+    "17165503": {
+      "name": "Trus",
+      "status": "Active"
+    },
+    "17165505": {
+      "name": "Pronos",
+      "status": "Active"
+    },
+    "17165508": {
+      "name": "Ptosphes",
+      "status": "Active"
+    },
+    "17165509": {
+      "name": "Gildor",
+      "status": "Active"
+    },
+    "17165510": {
+      "name": "Ralibe",
+      "status": "Active"
+    },
+    "17165513": {
+      "name": "Elthin",
+      "status": "Retired"
+    },
+    "17165514": {
+      "name": "Kareth",
+      "status": "Active"
+    },
+    "17165515": {
+      "name": "Caddor",
+      "status": "Active"
+    },
+    "17210773": {
+      "name": "Wilrow",
+      "status": "Active"
+    },
+    "17236700": {
+      "name": "Setlo",
+      "status": "Active"
+    },
+    "17251106": {
+      "name": "Everett Norvi",
+      "status": "Retired"
+    },
+    "17275698": {
+      "name": "Isaac Amitel",
+      "status": "Active"
+    },
+    "17290320": {
+      "name": "Titus Saranie",
+      "status": "Active"
+    },
+    "17290321": {
+      "name": "Vanessa Carl",
+      "status": "Active"
+    },
+    "17290322": {
+      "name": "Alexa Ziva",
+      "status": "Active"
+    },
+    "17290323": {
+      "name": "Addison Bredin",
+      "status": "Active"
+    },
+    "17290325": {
+      "name": "Talia Brightmaster",
+      "status": "Active"
+    },
+    "17290327": {
+      "name": "Lilliana Barak",
+      "status": "Active"
+    },
+    "17290328": {
+      "name": "Isabella Kirik",
+      "status": "Active"
+    },
+    "17290329": {
+      "name": "Isaiah Mery",
+      "status": "Active"
+    },
+    "17290331": {
+      "name": "Elise Sourte",
+      "status": "Active"
+    },
+    "17291657": {
+      "name": "Mo'Ash",
+      "status": "Active"
+    },
+    "17291661": {
+      "name": "Kala'd'n \"Warpstone-Blessed\"",
+      "status": "Active"
+    },
+    "17291664": {
+      "name": "Drehy",
+      "status": "Active"
+    },
+    "17291665": {
+      "name": "Hobb'r",
+      "status": "Active"
+    },
+    "17306280": {
+      "name": " Leroy Hotshield",
+      "status": "Active"
+    },
+    "17307590": {
+      "name": "Loep'n",
+      "status": "Active"
+    },
+    "17313303": {
+      "name": "Jesse Caliban",
+      "status": "Active"
+    },
+    "17333294": {
+      "name": "Bildon",
+      "status": "Active"
+    },
+    "17352952": {
+      "name": "Zannan",
+      "status": "Active"
+    },
+    "17368329": {
+      "name": "Laet'n",
+      "status": "Active"
+    },
+    "17383718": {
+      "name": "Sir Theobald",
+      "status": "Active"
+    },
+    "17383719": {
+      "name": "Sir Oswald",
+      "status": "Active"
+    },
+    "17383722": {
+      "name": "Siegfried",
+      "status": "Dead"
+    },
+    "17383724": {
+      "name": "Fritz van Helsing",
+      "status": "Active"
+    },
+    "17383726": {
+      "name": "Wilhelm",
+      "status": "Active"
+    },
+    "17383727": {
+      "name": "Frederik",
+      "status": "Dead"
+    },
+    "17383728": {
+      "name": "Hans",
+      "status": "Active"
+    },
+    "17383730": {
+      "name": "Streng",
+      "status": "Active"
+    },
+    "17399973": {
+      "name": "Jekk",
+      "status": "Active"
+    },
+    "17399975": {
+      "name": "Gretakk",
+      "status": "Active"
+    },
+    "17401158": {
+      "name": "Bloodtail",
+      "status": "Active"
+    },
+    "17401159": {
+      "name": "Sharpfang",
+      "status": "Active"
+    },
+    "17401161": {
+      "name": "Doumoth Tomasson",
+      "status": "Active"
+    },
+    "17401177": {
+      "name": "Little Sven",
+      "status": "Active"
+    },
+    "17401178": {
+      "name": "Karl Da Rat",
+      "status": "Active"
+    },
+    "17401179": {
+      "name": "\"Blinky\"",
+      "status": "Active"
+    },
+    "17401180": {
+      "name": "Stabby Odinrodent",
+      "status": "Active"
+    },
+    "17404639": {
+      "name": " Ulric",
+      "status": "Active"
+    },
+    "17424023": {
+      "name": "Sgt. Tefft",
+      "status": "Active"
+    },
+    "17448336": {
+      "name": "Yuka Sakurai",
+      "status": "Active"
+    },
+    "17473206": {
+      "name": "Sean Mesoton",
+      "status": "Active"
+    },
+    "17478461": {
+      "name": "Tristan Marco",
+      "status": "Active"
+    },
+    "17478496": {
+      "name": "Matthias Thulman",
+      "status": "Dead"
+    },
+    "17483896": {
+      "name": "Juan Jun",
+      "status": "Active"
+    },
+    "17483955": {
+      "name": "Sir Franz",
+      "status": "Active"
+    },
+    "17497668": {
+      "name": "Skarr",
+      "status": "Active"
+    },
+    "17498923": {
+      "name": "Olaf Olaffson",
+      "status": "Dead"
+    },
+    "17501375": {
+      "name": "Dessfar",
+      "status": "Active"
+    },
+    "17512481": {
+      "name": "Jayce Feldor",
+      "status": "Active"
+    },
+    "17530424": {
+      "name": "Sir Rudolph",
+      "status": "Active"
+    },
+    "17536249": {
+      "name": "Nozepicka Jones",
+      "status": "Active"
+    },
+    "17536250": {
+      "name": "Finga O'Fugg",
+      "status": "Active"
+    },
+    "17563485": {
+      "name": "Mort",
+      "status": "Retired"
+    },
+    "17593106": {
+      "name": "Boneblade",
+      "status": "Retired Journeyman"
+    },
+    "17593107": {
+      "name": "Ripper",
+      "status": "Retired Journeyman"
+    },
+    "17593108": {
+      "name": " ()",
+      "status": "Retired Journeyman"
+    },
+    "17622352": {
+      "name": " Cory Quickfist",
+      "status": "Retired Journeyman"
+    },
+    "17622353": {
+      "name": " George Deepwing",
+      "status": "Retired Journeyman"
+    },
+    "17622354": {
+      "name": " Osmond Weakstream",
+      "status": "Retired Journeyman"
+    },
+    "17622355": {
+      "name": " Richard Bluefire",
+      "status": "Retired Journeyman"
+    },
+    "17622536": {
+      "name": "Fezglitch",
+      "status": "Retired Journeyman"
+    },
+    "17622537": {
+      "name": "Glorsquik Hungrytail",
+      "status": "Retired Journeyman"
+    },
+    "17622538": {
+      "name": "Merc Lineman 1 (Dirty Player)",
+      "status": "Retired Journeyman"
+    },
+    "17622539": {
+      "name": "S'gz'l",
+      "status": "Active"
+    },
+    "17622553": {
+      "name": " Yorick Grottyspike",
+      "status": "Dead"
+    },
+    "17630458": {
+      "name": "Idun",
+      "status": "Active"
+    },
+    "17644070": {
+      "name": "Ripper",
+      "status": "Retired Journeyman"
+    },
+    "17644071": {
+      "name": "Merc Ice Troll 1 ()",
+      "status": "Retired Journeyman"
+    },
+    "17644114": {
+      "name": "Arya Welisarne",
+      "status": "Active"
+    },
+    "17653812": {
+      "name": "Sickario",
+      "status": "Retired Journeyman"
+    },
+    "17653813": {
+      "name": "Groht \\'n\\' Mask\\'th",
+      "status": "Retired Journeyman"
+    },
+    "17678555": {
+      "name": "Swingin' Willy",
+      "status": "Retired Journeyman"
+    },
+    "17678565": {
+      "name": "Hunter Nogen",
+      "status": "Active"
+    },
+    "17678566": {
+      "name": "Jordan",
+      "status": "Active"
+    },
+    "17678567": {
+      "name": " Leroy Deepfire",
+      "status": "Retired Journeyman"
+    },
+    "17684285": {
+      "name": "Brutal Brad",
+      "status": "Retired Journeyman"
+    },
+    "17684286": {
+      "name": "Groht 'n' Mask'th",
+      "status": "Retired Journeyman"
+    },
+    "17684287": {
+      "name": " ()",
+      "status": "Retired Journeyman"
+    },
+    "17684294": {
+      "name": "Thomas Kan",
+      "status": "Active"
+    },
+    "17686845": {
+      "name": "Fezglitch",
+      "status": "Retired Journeyman"
+    },
+    "17686846": {
+      "name": "Glorsquik Hungrytail",
+      "status": "Retired Journeyman"
+    },
+    "17700928": {
+      "name": " Graham Coldfire",
+      "status": "journeyman"
+    },
+    "17700999": {
+      "name": "Fezglitch",
+      "status": "Retired Journeyman"
+    },
+    "17737629": {
+      "name": "Sickario",
+      "status": "Retired Journeyman"
+    },
+    "17737630": {
+      "name": "Groht \\'n\\' Mask\\'th",
+      "status": "Retired Journeyman"
+    },
+    "17737631": {
+      "name": "Easton And",
+      "status": "Active"
+    },
+    "17810445": {
+      "name": "Krug Painspear",
+      "status": "Retired Journeyman"
+    },
+    "17830341": {
+      "name": "Zorn Urkrag",
+      "status": "Retired Journeyman"
+    },
+    "17903418": {
+      "name": "Groht \\'n\\' Mask\\'th",
+      "status": "Retired Journeyman"
+    }
+  },
+  "player_career_spp": {
+    "14597503": 52,
+    "14597504": 52,
+    "14597505": 58,
+    "14597510": 72,
+    "14661239": 55,
+    "14707957": 52,
+    "14749640": 51,
+    "14818292": 34,
+    "14837656": 25,
+    "14972737": 14,
+    "15048843": 54,
+    "15048874": 37,
+    "15048879": 24,
+    "15048881": 64,
+    "15048892": 38,
+    "15048896": 34,
+    "15048897": 12,
+    "15048956": 40,
+    "15225776": 21,
+    "15319070": 0,
+    "15341163": 0,
+    "15823634": 16,
+    "16018818": 2,
+    "16175632": 15,
+    "16972364": 8,
+    "16997892": 7,
+    "17165503": 21,
+    "17165505": 19,
+    "17165508": 60,
+    "17165509": 6,
+    "17165510": 36,
+    "17165513": 12,
+    "17165514": 13,
+    "17165515": 2,
+    "17210773": 38,
+    "17236700": 28,
+    "17251106": 0,
+    "17275698": 0,
+    "17290320": 48,
+    "17290321": 45,
+    "17290322": 38,
+    "17290323": 38,
+    "17290325": 8,
+    "17290327": 37,
+    "17290328": 6,
+    "17290329": 10,
+    "17290331": 26,
+    "17291657": 24,
+    "17291661": 40,
+    "17291664": 6,
+    "17291665": 16,
+    "17306280": 12,
+    "17307590": 16,
+    "17313303": 8,
+    "17333294": 8,
+    "17352952": 0,
+    "17368329": 0,
+    "17383718": 12,
+    "17383719": 20,
+    "17383722": 39,
+    "17383724": 0,
+    "17383726": 4,
+    "17383727": 4,
+    "17383728": 0,
+    "17383730": 10,
+    "17399973": 18,
+    "17399975": 13,
+    "17401158": 10,
+    "17401159": 17,
+    "17401161": 4,
+    "17401177": 5,
+    "17401178": 0,
+    "17401179": 0,
+    "17401180": 4,
+    "17404639": 6,
+    "17424023": 7,
+    "17448336": 19,
+    "17473206": 4,
+    "17478461": 4,
+    "17478496": 7,
+    "17483896": 6,
+    "17483955": 8,
+    "17497668": 0,
+    "17498923": 5,
+    "17501375": 0,
+    "17512481": 0,
+    "17530424": 8,
+    "17536249": 0,
+    "17536250": 5,
+    "17563485": 2,
+    "17593106": 0,
+    "17593107": 0,
+    "17593108": 0,
+    "17622352": 0,
+    "17622353": 0,
+    "17622354": 0,
+    "17622355": 0,
+    "17622536": 0,
+    "17622537": 0,
+    "17622538": 0,
+    "17622539": 2,
+    "17622553": 0,
+    "17630458": 0,
+    "17644070": 0,
+    "17644071": 0,
+    "17644114": 0,
+    "17653812": 0,
+    "17653813": 0,
+    "17678555": 0,
+    "17678565": 0,
+    "17678566": 0,
+    "17678567": 0,
+    "17684285": 0,
+    "17684286": 0,
+    "17684287": 0,
+    "17684294": 7,
+    "17686845": 0,
+    "17686846": 0,
+    "17700928": 0,
+    "17700999": 0,
+    "17737629": 0,
+    "17737630": 0,
+    "17737631": 0,
+    "17810445": 0,
+    "17830341": 0,
+    "17903418": 0
+  },
+  "expected_standings": [
+    {
+      "team_id": 1060382,
+      "team_name": "Da Kombat Skwad",
+      "coach_name": "Diablange",
+      "wins": 5,
+      "draws": 1,
+      "losses": 0,
+      "td_for": 8,
+      "td_against": 2,
+      "cas_for": 6,
+      "cas_against": 11,
+      "points": 16,
+      "position": 1,
+      "td_delta": 6,
+      "cas_delta": -5
+    },
+    {
+      "team_id": 1238201,
+      "team_name": "Obsidian Phalanx",
+      "coach_name": "Kinks",
+      "wins": 4,
+      "draws": 2,
+      "losses": 0,
+      "td_for": 9,
+      "td_against": 4,
+      "cas_for": 19,
+      "cas_against": 3,
+      "points": 14,
+      "position": 2,
+      "td_delta": 5,
+      "cas_delta": 16
+    },
+    {
+      "team_id": 1243980,
+      "team_name": "Altdorf Black Roses",
+      "coach_name": "Archaon_Everchosen",
+      "wins": 3,
+      "draws": 1,
+      "losses": 2,
+      "td_for": 5,
+      "td_against": 4,
+      "cas_for": 9,
+      "cas_against": 11,
+      "points": 10,
+      "position": 3,
+      "td_delta": 1,
+      "cas_delta": -2
+    },
+    {
+      "team_id": 1230479,
+      "team_name": "Tor Archare Way Wonderers",
+      "coach_name": "townee",
+      "wins": 1,
+      "draws": 2,
+      "losses": 3,
+      "td_for": 4,
+      "td_against": 7,
+      "cas_for": 4,
+      "cas_against": 8,
+      "points": 5,
+      "position": 4,
+      "td_delta": -3,
+      "cas_delta": -4
+    },
+    {
+      "team_id": 1238284,
+      "team_name": "Under-Bridge Four",
+      "coach_name": "Arcayn",
+      "wins": 1,
+      "draws": 2,
+      "losses": 3,
+      "td_for": 3,
+      "td_against": 4,
+      "cas_for": 0,
+      "cas_against": 5,
+      "points": 5,
+      "position": 5,
+      "td_delta": -1,
+      "cas_delta": -5
+    },
+    {
+      "team_id": 1244936,
+      "team_name": "Icecastle Vargar",
+      "coach_name": "datom",
+      "wins": 0,
+      "draws": 3,
+      "losses": 3,
+      "td_for": 2,
+      "td_against": 5,
+      "cas_for": 6,
+      "cas_against": 8,
+      "points": 3,
+      "position": 6,
+      "td_delta": -3,
+      "cas_delta": -2
+    },
+    {
+      "team_id": 1091073,
+      "team_name": "Larhgoz Luchadores",
+      "coach_name": "lanky316",
+      "wins": 0,
+      "draws": 3,
+      "losses": 3,
+      "td_for": 2,
+      "td_against": 7,
+      "cas_for": 5,
+      "cas_against": 3,
+      "points": 3,
+      "position": 7,
+      "td_delta": -5,
+      "cas_delta": 2
+    }
+  ],
+  "expected_achievements": [
+    {
+      "achievement_type": "tournament_award",
+      "badges": [
+        "SPP"
+      ],
+      "player_name": "Vanessa Carl",
+      "team_name": "Obsidian Phalanx"
+    },
+    {
+      "achievement_type": "tournament_award",
+      "badges": [
+        "Casualties"
+      ],
+      "player_name": "Alexa Ziva",
+      "team_name": "Obsidian Phalanx"
+    },
+    {
+      "achievement_type": "tournament_award",
+      "badges": [
+        "Fouls"
+      ],
+      "player_name": "Talia Brightmaster",
+      "team_name": "Obsidian Phalanx"
+    },
+    {
+      "achievement_type": "tournament_award",
+      "badges": [
+        "Blocking Thrower",
+        "Triple"
+      ],
+      "player_name": "Lilliana Barak",
+      "team_name": "Obsidian Phalanx"
+    },
+    {
+      "achievement_type": "spp_milestone",
+      "achievement_name": "Star",
+      "player_name": "Bomba Jim",
+      "team_name": "Da Kombat Skwad"
+    },
+    {
+      "achievement_type": "spp_milestone",
+      "achievement_name": "Star",
+      "player_name": "Grilnash Laughingblood",
+      "team_name": "Da Kombat Skwad"
+    },
+    {
+      "achievement_type": "spp_milestone",
+      "achievement_name": "Star",
+      "player_name": "Crag Giantbones",
+      "team_name": "Da Kombat Skwad"
+    },
+    {
+      "achievement_type": "spp_milestone",
+      "achievement_name": "Star",
+      "player_name": "Coth Doombreath",
+      "team_name": "Da Kombat Skwad"
+    },
+    {
+      "achievement_type": "per_game",
+      "achievement_name": "Triple X",
+      "player_name": "Alexa Ziva",
+      "team_name": "Obsidian Phalanx"
+    }
+  ],
+  "expected_dead_players": [
+    {
+      "player_name": " Yorick Grottyspike",
+      "team_name": "Under-Bridge Four",
+      "match_id": 4679966
+    },
+    {
+      "player_name": "Olaf Olaffson",
+      "team_name": "Icecastle Vargar",
+      "match_id": 4679360
+    },
+    {
+      "player_name": "Frederik",
+      "team_name": "Altdorf Black Roses",
+      "match_id": 4679360
+    },
+    {
+      "player_name": "Siegfried",
+      "team_name": "Altdorf Black Roses",
+      "match_id": 4679739
+    },
+    {
+      "player_name": "Matthias Thulman",
+      "team_name": "Altdorf Black Roses",
+      "match_id": 4679739
+    }
+  ]
+}

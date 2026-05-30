@@ -54,20 +54,30 @@ For forfeits (no `match_id`), `result.winner` is the only signal and is trusted 
 
 ## Forfeits
 
-Occasionally a match is awarded to a team without a game being played (forfeit).
-These matches have `result.winner` set but no `result.id` (no game record exists).
+Occasionally a match is awarded without a game being played (admin forfeit).
+These have `result.status == "forfeit"` and usually no real `result.id` (no game record).
 
-**Handling**:
-- Counted as a win for the awarded team and a loss for the other.
-- TDs and CAS are recorded as 0–0 for both teams.
-- Detection: `match_id` is absent/null in the schedule result.
+**Win forfeit**: `result.winner` is the winning team ID (may be paired with `result.id: 0`).
+Counted as a win/loss; TDs and CAS are 0–0.
 
-**Filtering unplayed matches**: Schedule slots with neither a `match_id` nor a `winner_id`
-are skipped entirely — they represent future/unscheduled games.
+**Draw forfeit**: `result.winner` is `0` (both teams draw). Counted as a normal draw — 1 league
+point each, 0–0 TD/CAS.
+
+Do not use `if not winner_id` to detect missing results — `0` is a valid draw signal.
+
+**Filtering unplayed matches**: Use `_schedule_result_counts()` in `main.py`, which includes
+forfeits, played games (`result.id` set), and legacy win-only rows; skip everything else.
 
 ```python
-if not match_id and not winner_id:
-    continue
+def _schedule_result_counts(result: dict | None) -> bool:
+    if not result:
+        return False
+    if result.get("status") == "forfeit":
+        return True
+    if result.get("id"):
+        return True
+    winner = result.get("winner")
+    return winner is not None and winner != 0
 ```
 
 ---
