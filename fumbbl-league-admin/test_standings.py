@@ -110,7 +110,7 @@ def compare(actual: list, expected: list) -> list[str]:
 
 
 def run_fixture(path: pathlib.Path) -> bool:
-    fixture  = json.loads(path.read_text())
+    fixture  = json.loads(path.read_text(encoding="utf-8"))
     name     = fixture.get("tournament_name", path.stem)
     expected = fixture.get("expected_standings")
 

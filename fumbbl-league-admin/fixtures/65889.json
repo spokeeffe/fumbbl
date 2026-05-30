@@ -5507,7 +5507,7 @@
       "status": "Active"
     },
     "14036292": {
-      "name": "Riskantn\u00ed Strom",
+      "name": "Riskantní Strom",
       "status": "Active"
     },
     "14067660": {
@@ -6148,22 +6148,102 @@
   },
   "expected_standings": [],
   "expected_achievements": [
-    {"achievement_type": "tournament_award", "badges": ["Casualties"], "player_name": "Grong Hafnurson", "team_name": "Karak Kadrin Oathkeepers"},
-    {"achievement_type": "tournament_award", "badges": ["SPP", "Completions", "Scoring Thrower"], "player_name": "Hapi-Ankh", "team_name": "Everlasting Vultures of Settra"},
-    {"achievement_type": "tournament_award", "badges": ["Fouls"], "player_name": "Ayden Cipyar", "team_name": "Wolf Lands Slavers"},
-    {"achievement_type": "tournament_award", "badges": ["Interceptions"], "player_name": "Schnal Sank", "team_name": "Wolf Lands Slavers"},
-    {"achievement_name": "Mega Star", "achievement_type": "spp_milestone", "player_name": "Cypress Leyland", "team_name": "Wraiths of Woe"},
-    {"achievement_name": "Star", "achievement_type": "spp_milestone", "player_name": "Broomhilda Ungridottir", "team_name": "Karak Kadrin Oathkeepers"},
-    {"achievement_name": "Star", "achievement_type": "spp_milestone", "player_name": "Salixdua Babylonica", "team_name": "Wraiths of Woe"},
-    {"achievement_name": "Super Star", "achievement_type": "spp_milestone", "player_name": "Alnus the Awakened", "team_name": "True Roots of Khaine"},
-    {"achievement_name": "Super Star", "achievement_type": "spp_milestone", "player_name": "Grungi Oakenshield", "team_name": "Karak Kadrin Oathkeepers"},
-    {"achievement_name": "Super Star", "achievement_type": "spp_milestone", "player_name": "Klea 'Katcha", "team_name": "Everlasting Vultures of Settra"}
+    {
+      "achievement_type": "tournament_award",
+      "badges": [
+        "SPP",
+        "Completions",
+        "Scoring Thrower"
+      ],
+      "player_name": "Hapi-Ankh",
+      "team_name": "Everlasting Vultures of Settra"
+    },
+    {
+      "achievement_type": "tournament_award",
+      "badges": [
+        "Casualties"
+      ],
+      "player_name": "Grong Hafnurson",
+      "team_name": "Karak Kadrin Oathkeepers"
+    },
+    {
+      "achievement_type": "tournament_award",
+      "badges": [
+        "Fouls"
+      ],
+      "player_name": "Bufur Ironclad",
+      "team_name": "Karak Kadrin Oathkeepers"
+    },
+    {
+      "achievement_type": "tournament_award",
+      "badges": [
+        "Interceptions"
+      ],
+      "player_name": "Schnal Sank",
+      "team_name": "Wolf Lands Slavers"
+    },
+    {
+      "achievement_type": "spp_milestone",
+      "achievement_name": "Super Star",
+      "player_name": "Klea 'Katcha",
+      "team_name": "Everlasting Vultures of Settra"
+    },
+    {
+      "achievement_type": "spp_milestone",
+      "achievement_name": "Super Star",
+      "player_name": "Grungi Oakenshield",
+      "team_name": "Karak Kadrin Oathkeepers"
+    },
+    {
+      "achievement_type": "spp_milestone",
+      "achievement_name": "Mega Star",
+      "player_name": "Cypress Leyland",
+      "team_name": "Wraiths of Woe"
+    },
+    {
+      "achievement_type": "spp_milestone",
+      "achievement_name": "Super Star",
+      "player_name": "Alnus the Awakened",
+      "team_name": "True Roots of Khaine"
+    },
+    {
+      "achievement_type": "spp_milestone",
+      "achievement_name": "Star",
+      "player_name": "Broomhilda Ungridottir",
+      "team_name": "Karak Kadrin Oathkeepers"
+    },
+    {
+      "achievement_type": "spp_milestone",
+      "achievement_name": "Star",
+      "player_name": "Salixdua Babylonica",
+      "team_name": "Wraiths of Woe"
+    }
   ],
   "expected_dead_players": [
-  {"player_name": "Berta Cossmann",                   "team_name": "Brothers of Skoll",          "match_id": 4677097},
-  {"player_name": "Gerald Schock",                    "team_name": "Brothers of Skoll",          "match_id": 4679893},
-  {"player_name": "Grung Hammerfist",                 "team_name": "Karak Kadrin Oathkeepers",   "match_id": 4674494},
-  {"player_name": "Menyanthes of Forgotten Fouls",   "team_name": "True Roots of Khaine",       "match_id": 4679195},
-  {"player_name": "Munko Massacre",                   "team_name": "Wolf Lands Slavers",         "match_id": 4675990}
-]
+    {
+      "player_name": "Berta Cossmann",
+      "team_name": "Brothers of Skoll",
+      "match_id": 4677097
+    },
+    {
+      "player_name": "Gerald Schock",
+      "team_name": "Brothers of Skoll",
+      "match_id": 4679893
+    },
+    {
+      "player_name": "Grung Hammerfist",
+      "team_name": "Karak Kadrin Oathkeepers",
+      "match_id": 4674494
+    },
+    {
+      "player_name": "Menyanthes of Forgotten Fouls",
+      "team_name": "True Roots of Khaine",
+      "match_id": 4679195
+    },
+    {
+      "player_name": "Munko Massacre",
+      "team_name": "Wolf Lands Slavers",
+      "match_id": 4675990
+    }
+  ]
 }

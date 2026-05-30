@@ -178,6 +178,12 @@ These are summed across all matches at aggregation (count of qualifying matches,
 
 ## Achievements
 
+### Performance record filter (before stats/awards)
+
+When building `match_perf_records` for player stats and achievements, rows are kept if the
+player earned SPP in the tournament, **died** in that match, or **played** (`turns` > 0).
+Fouls do not earn SPP, so a player with only fouls must not be dropped by an SPP-only filter.
+
 ### SPP Milestones
 
 Players are awarded a career milestone when they cross an SPP threshold **during** a tournament.

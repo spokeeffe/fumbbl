@@ -1106,7 +1106,11 @@ async def _work_player_stats(league_id: int, tournament_ids: list, job_id: str):
             pid_spp: dict = {}
             for rec in match_perf_records:
                 pid_spp[rec["player_id"]] = pid_spp.get(rec["player_id"], 0) + rec["td"] * 3 + rec["comp"] + rec["cas"] * 2 + rec["int_"] * 2 + rec["mvp"] * 4
-            match_perf_records = [r for r in match_perf_records if pid_spp.get(r["player_id"], 0) > 0]
+            # Keep players with SPP > 0, who died, or who played (turns > 0; fouls earn no SPP)
+            match_perf_records = [
+                r for r in match_perf_records
+                if pid_spp.get(r["player_id"], 0) > 0 or r.get("died") or r.get("turns", 0) > 0
+            ]
 
             player_info, _ = await _gather_player_info(match_perf_records, job_id, need_spp=False)
 
@@ -1421,8 +1425,11 @@ async def _work_achievements(league_id: int, tournament_ids: list, job_id: str, 
             pid_spp: dict = {}
             for rec in match_perf_records:
                 pid_spp[rec["player_id"]] = pid_spp.get(rec["player_id"], 0) + rec["td"] * 3 + rec["comp"] + rec["cas"] * 2 + rec["int_"] * 2 + rec["mvp"] * 4
-            # Keep players with SPP > 0, or who died (they may have 0 SPP)
-            match_perf_records = [r for r in match_perf_records if pid_spp.get(r["player_id"], 0) > 0 or r.get("died")]
+            # Keep players with SPP > 0, who died, or who played (turns > 0; fouls earn no SPP)
+            match_perf_records = [
+                r for r in match_perf_records
+                if pid_spp.get(r["player_id"], 0) > 0 or r.get("died") or r.get("turns", 0) > 0
+            ]
 
             player_info, player_career_spp = await _gather_player_info(match_perf_records, job_id, need_spp=True)
 
