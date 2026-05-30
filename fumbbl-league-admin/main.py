@@ -301,6 +301,17 @@ def _cas_total(t: dict) -> int:
     c = t.get("casualties") or {}
     return sum(c.values()) if c else 0
 
+def _schedule_result_counts(result: dict | None) -> bool:
+    """True when a schedule slot has a recorded result (played game or forfeit)."""
+    if not result:
+        return False
+    if result.get("status") == "forfeit":
+        return True
+    if result.get("id"):
+        return True
+    winner = result.get("winner")
+    return winner is not None and winner != 0
+
 def compute_standings(match_records: list) -> list:
     """
     match_records: list of dicts with keys:
@@ -767,7 +778,7 @@ async def _work_standings(league_id: int, tournament_ids: list, job_id: str):
                 winner_id = result.get("winner")
                 match_id = result.get("id")
 
-                if not match_id and not winner_id:
+                if not _schedule_result_counts(result):
                     continue
 
                 sched_teams = {t["id"]: t for t in (scheduled_match.get("teams") or []) if t.get("id")}
@@ -1004,7 +1015,7 @@ async def _work_player_stats(league_id: int, tournament_ids: list, job_id: str):
                 winner_id = result_block.get("winner")
                 match_id = result_block.get("id")
 
-                if not match_id and not winner_id:
+                if not _schedule_result_counts(result_block):
                     continue
 
                 sched_teams = {t["id"]: t for t in (scheduled_match.get("teams") or []) if t.get("id")}
@@ -1323,7 +1334,7 @@ async def _work_achievements(league_id: int, tournament_ids: list, job_id: str, 
                 winner_id    = result_block.get("winner")
                 match_id     = result_block.get("id")
 
-                if not match_id and not winner_id:
+                if not _schedule_result_counts(result_block):
                     continue
 
                 sched_teams = {t["id"]: t for t in (scheduled_match.get("teams") or []) if t.get("id")}
