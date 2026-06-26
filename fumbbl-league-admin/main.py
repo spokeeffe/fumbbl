@@ -663,8 +663,7 @@ async def index(request: Request, success: Optional[str] = None, error: Optional
         "SELECT * FROM leagues ORDER BY created_at DESC"
     ).fetchall()
     conn.close()
-    return templates.TemplateResponse("index.html", {
-        "request": request,
+    return templates.TemplateResponse(request, "index.html", {
         "leagues": leagues,
         "success": success,
         "error": error,
@@ -913,7 +912,7 @@ async def generate_standings(
     job_id = str(uuid.uuid4())
     jobs[job_id] = {"status": "running", "completed": 0, "total": len(tournament_ids) * 2, "redirect": None, "error": None, "api_log": [], "fn_log": []}
     asyncio.create_task(_work_standings(league_id, tournament_ids, job_id))
-    return templates.TemplateResponse("progress.html", {"request": request, "job_id": job_id, "operation": "Standings"})
+    return templates.TemplateResponse(request, "progress.html", {"job_id": job_id, "operation": "Standings"})
 
 async def _gather_player_info(
     match_perf_records: list, job_id: str, need_spp: bool = False
@@ -1163,7 +1162,7 @@ async def generate_player_stats(
     job_id = str(uuid.uuid4())
     jobs[job_id] = {"status": "running", "completed": 0, "total": len(tournament_ids) * 2, "redirect": None, "error": None, "api_log": [], "fn_log": []}
     asyncio.create_task(_work_player_stats(league_id, tournament_ids, job_id))
-    return templates.TemplateResponse("progress.html", {"request": request, "job_id": job_id, "operation": "Player Stats"})
+    return templates.TemplateResponse(request, "progress.html", {"job_id": job_id, "operation": "Player Stats"})
 
 
 @app.get("/leagues/{league_id}/standings/perf", response_class=HTMLResponse)
@@ -1175,8 +1174,8 @@ async def standings_perf(request: Request, league_id: int):
     if not league or not row or not row["perf_summary"]:
         raise HTTPException(status_code=404, detail="No performance data available")
     perf = json.loads(row["perf_summary"])
-    return templates.TemplateResponse("perf.html", {
-        "request": request, "league": league, "tab_name": "Standings",
+    return templates.TemplateResponse(request, "perf.html", {
+        "league": league, "tab_name": "Standings",
         "api_summary": perf.get("api_summary", []), "fn_summary": perf.get("fn_summary", []),
     })
 
@@ -1190,8 +1189,8 @@ async def player_stats_perf(request: Request, league_id: int):
     if not league or not row or not row["perf_summary"]:
         raise HTTPException(status_code=404, detail="No performance data available")
     perf = json.loads(row["perf_summary"])
-    return templates.TemplateResponse("perf.html", {
-        "request": request, "league": league, "tab_name": "Player Stats",
+    return templates.TemplateResponse(request, "perf.html", {
+        "league": league, "tab_name": "Player Stats",
         "api_summary": perf.get("api_summary", []), "fn_summary": perf.get("fn_summary", []),
     })
 
@@ -1205,8 +1204,8 @@ async def achievements_perf(request: Request, league_id: int):
     if not league or not row or not row["perf_summary"]:
         raise HTTPException(status_code=404, detail="No performance data available")
     perf = json.loads(row["perf_summary"])
-    return templates.TemplateResponse("perf.html", {
-        "request": request, "league": league, "tab_name": "Achievements",
+    return templates.TemplateResponse(request, "perf.html", {
+        "league": league, "tab_name": "Achievements",
         "api_summary": perf.get("api_summary", []), "fn_summary": perf.get("fn_summary", []),
     })
 
@@ -1503,7 +1502,7 @@ async def generate_achievements(
     job_id = str(uuid.uuid4())
     jobs[job_id] = {"status": "running", "completed": 0, "total": len(tournament_ids) * 2, "redirect": None, "error": None, "api_log": [], "fn_log": []}
     asyncio.create_task(_work_achievements(league_id, tournament_ids, job_id))
-    return templates.TemplateResponse("progress.html", {"request": request, "job_id": job_id, "operation": "Achievements"})
+    return templates.TemplateResponse(request, "progress.html", {"job_id": job_id, "operation": "Achievements"})
 
 
 @app.post("/leagues/{league_id}/achievements/regenerate", response_class=HTMLResponse)
@@ -1520,7 +1519,7 @@ async def regenerate_achievements(request: Request, league_id: int):
     job_id = str(uuid.uuid4())
     jobs[job_id] = {"status": "running", "completed": 0, "total": len(tournament_ids) * 2, "redirect": None, "error": None, "api_log": [], "fn_log": []}
     asyncio.create_task(_work_achievements(league_id, tournament_ids, job_id, redirect_tab="dead-retired"))
-    return templates.TemplateResponse("progress.html", {"request": request, "job_id": job_id, "operation": "Dead/Retired"})
+    return templates.TemplateResponse(request, "progress.html", {"job_id": job_id, "operation": "Dead/Retired"})
 
 
 @app.get("/leagues/{league_id}/achievements/export")
@@ -1670,8 +1669,7 @@ async def league_detail(
     seasons = sorted({t["season"] for t in all_tournaments if t.get("season") is not None}, reverse=True)
     tournaments = [t for t in all_tournaments if t.get("season") == season] if season is not None else all_tournaments
 
-    return templates.TemplateResponse("league.html", {
-        "request": request,
+    return templates.TemplateResponse(request, "league.html", {
         "league": league,
         "tournaments": tournaments,
         "tournaments_error": tournaments_error,
